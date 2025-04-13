@@ -20,7 +20,7 @@ const EditProfileDialog = ({ isOpen, onClose, admin, onSave }) => {
   return (
     isOpen && (
       <div className={`fixed inset-0 flex justify-center items-center z-50 ${styles.fadeIn}`}>
-        <div className="bg-[#C08B6F] md:bg-white p-6 rounded-lg max-w-xlg w-full">
+        <div className="bg-[#E8BEBE] md:bg-white p-6 rounded-lg max-w-xlg w-full">
           <h2 className="text-xl font-semibold text-[#3D2B1F] dark:text-white mb-4">Edit Profile</h2>
           <div className="mb-4">
             <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="name">
@@ -95,13 +95,13 @@ const EditProfileDialog = ({ isOpen, onClose, admin, onSave }) => {
           <div className="flex flex-col sm:flex-row justify-between gap-2">
           <button
               onClick={onClose}
-              className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 font-semibold"
+              className="bg-gray-400 text-white px-4 py-2 rounded-md hover:bg-gray-600 font-semibold"
             >
               Cancel
             </button>
             <button
               onClick={handleSave}
-              className="bg-[#3D2B1F] text-white px-4 py-2 rounded-md hover:bg-[#C08B6F] font-semibold"
+              className="bg-[#C08B6F] text-white px-4 py-2 rounded-md hover:bg-[#C08B6F] font-semibold"
             >
               Save Changes
             </button>

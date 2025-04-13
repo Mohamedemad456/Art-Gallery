@@ -13,7 +13,7 @@ const SideBar = () => {
 
   return (
     <aside
-      className={`flex flex-col justify-between bg-[#C08B6F] text-white transition-all duration-600 ease-in-out z-40 h-full col-span-1 md:col-span-3 lg:col-span-2 ${
+      className={`flex flex-col justify-between bg-[#C08B6F] text-white transition-all duration-300 ease-out z-50 h-full ${
         isOpen
           ? 'fixed top-0 left-0 w-64 translate-x-0 z-50'
           : 'relative w-16 md:w-full md:static'
@@ -21,7 +21,7 @@ const SideBar = () => {
     >
       <div className="flex items-center justify-center p-4">
         <h2
-          className={`text-2xl font-bold text-center ${isOpen ? 'flex' : 'hidden'} md:block transition-all duration-900`}
+          className={`text-2xl font-bold text-center ${isOpen ? 'flex transition-all duration-1000' : 'hidden'} md:block`}
         >
           Admin Dashboard
         </h2>
@@ -39,28 +39,28 @@ const SideBar = () => {
             to="/admin"
             end
             className={({ isActive }) =>
-              `flex items-center gap-2 py-3 px-3 rounded transition-colors ${
-                isActive ? 'bg-[#3D2B1F]' : 'hover:bg-[#3D2B1F]'
-              } transition-all duration-900`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            <FontAwesomeIcon icon={faUser} size="lg" />
-            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2 transition-all duration-900`}>
-              Profile Management
-            </span>
-          </NavLink>
-          <NavLink
-            to="/admin/users"
-            className={({ isActive }) =>
               `flex items-center gap-2 py-3 px-4 rounded transition-colors ${
                 isActive ? 'bg-[#3D2B1F]' : 'hover:bg-[#3D2B1F]'
               } transition-all duration-900`
             }
             onClick={() => setIsOpen(false)}
           >
+            <FontAwesomeIcon icon={faUser} size="lg" />
+            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2`}>
+              Profile Management
+            </span>
+          </NavLink>
+          <NavLink
+            to="/admin/users"
+            className={({ isActive }) =>
+              `flex items-center gap-2 py-3 px-3 rounded transition-colors ${
+                isActive ? 'bg-[#3D2B1F]' : 'hover:bg-[#3D2B1F]'
+              } transition-all duration-900`
+            }
+            onClick={() => setIsOpen(false)}
+          >
             <FontAwesomeIcon icon={faUsers} size="lg" />
-            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2 transition-all duration-900`}>
+            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2`}>
               User Management
             </span>
           </NavLink>
@@ -74,7 +74,7 @@ const SideBar = () => {
             onClick={() => setIsOpen(false)}
           >
             <FontAwesomeIcon icon={faFileAlt} size="lg" />
-            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2 transition-all duration-900`}>
+            <span className={`${isOpen ? 'block' : 'hidden'} md:block ml-2`}>
               Posts Management
             </span>
           </NavLink>
@@ -84,7 +84,7 @@ const SideBar = () => {
       {/* Logout button positioned at the bottom, hidden when sidebar is closed */}
       <div className={`p-4 items-center justify-center ${isOpen ? 'flex' : 'hidden md:flex'}`}>
         <button
-          className="flex gap-2 py-3 px-4 rounded-full transition-colors bg-[#3D2B1F] hover:bg-[#8B5E3C] transition-all duration-300"
+          className="flex gap-2 py-3 px-4 rounded-full transition-colors bg-[#3D2B1F] hover:bg-[#8B5E3C]"
           onClick={() => {}}
         >
           Logout
