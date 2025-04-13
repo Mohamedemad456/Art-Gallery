@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px); /* slide from right */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  

@@ -15,7 +15,7 @@ const adminDetails = {
 
 const Admin = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-indigo-900 to-blue-800 p-4">
+    <div className="min-h-full flex justify-center items-center p-4">
       <AdminProfile admin={adminDetails} />
     </div>
   );

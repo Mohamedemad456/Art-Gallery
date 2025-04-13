@@ -1,49 +1,87 @@
-// src/components/AdminProfile.jsx
-import React from "react";
+import React, { useState } from "react";
 import styles from "./AdminProfile.module.css";
+import EditProfileDialog from "./EditProfile";
 
 const AdminProfile = ({ admin }) => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [currentAdmin, setCurrentAdmin] = useState(admin);
+
+  const handleEditProfile = () => {
+    setIsDialogOpen(true);
+  };
+
+  const handleSaveProfile = (updatedAdmin) => {
+    setCurrentAdmin(updatedAdmin); // Save the updated data
+  };
+
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl w-full p-8 ${styles.fadeIn}`}
+      className={`bg-white rounded-xl shadow-2xl max-w-6xl w-full p-8 ${styles.fadeIn} ml-8 md:ml-0 min-h-[80vh] flex justify-center items-center`}
     >
-      <div className="flex flex-col md:flex-row">
+      <div
+        className={`flex flex-col md:flex-row ${
+          isDialogOpen ? "hidden sm:flex" : ""
+        }`}
+      >
         <div className="md:w-1/3 text-center mb-8 md:mb-0">
           <img
-            src={admin.image}
+            src={currentAdmin.image}
             alt="Profile"
-            className="rounded-full w-48 h-48 mx-auto mb-4 border-4 border-indigo-800 dark:border-blue-900 transition-transform duration-300 hover:scale-105"
+            className="rounded-full w-48 h-48 mx-auto mb-4 border-4 border-[#3D2B1F] dark:border-blue-900 transition-transform duration-300 hover:scale-105"
           />
-          <h1 className="text-2xl font-bold text-indigo-800 dark:text-white mb-2">{admin.name}</h1>
-          <p className="text-gray-600 dark:text-gray-300">{admin.role}</p>
-          <button className="mt-4 bg-indigo-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300">
+          <h1 className="text-2xl font-bold text-[#3D2B1F] dark:text-white mb-2">
+            {currentAdmin.name}
+          </h1>
+          <p className="text-[#3D2B1F] dark:text-gray-300">
+            {currentAdmin.role}
+          </p>
+          <button
+            className="mt-4 bg-[#3D2B1F] text-white px-4 py-2 rounded-lg hover:bg-[#C08B6F] transition-colors duration-300"
+            onClick={handleEditProfile}
+          >
             Edit Profile
           </button>
         </div>
         <div className="md:w-2/3 md:pl-8">
-          <h2 className="text-xl font-semibold text-indigo-800 dark:text-white mb-4">About Me</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6">{admin.about}</p>
+          <h2 className="text-xl font-semibold text-[#3D2B1F] dark:text-white mb-4">
+            About Me
+          </h2>
+          <p className="text-[#3D2B1F] dark:text-gray-300 mb-6">
+            {currentAdmin.about}
+          </p>
 
-          <h2 className="text-xl font-semibold text-indigo-800 dark:text-white mb-4">Skills</h2>
+          <h2 className="text-xl font-semibold text-[#3D2B1F] dark:text-white mb-4">
+            Skills
+          </h2>
           <div className="flex flex-wrap gap-2 mb-6">
-            {admin.skills.map((skill, index) => (
+            {currentAdmin.skills.map((skill, index) => (
               <span
                 key={index}
-                className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm hover:bg-blue-900 hover:text-white transition-colors duration-300"
+                className="bg-[#C08B6F] text-white px-3 py-1 rounded-full text-sm hover:bg-[#3D2B1F] hover:text-white transition-colors duration-300"
               >
                 {skill}
               </span>
             ))}
           </div>
 
-          <h2 className="text-xl font-semibold text-indigo-800 dark:text-white mb-4">Contact Information</h2>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-            <li>{admin.email}</li>
-            <li>{admin.phone}</li>
-            <li>{admin.location}</li>
+          <h2 className="text-xl font-semibold text-[#3D2B1F] dark:text-white mb-4">
+            Contact Information
+          </h2>
+          <ul className="space-y-2 text-[#3D2B1F] dark:text-gray-300">
+            <li>{currentAdmin.email}</li>
+            <li>{currentAdmin.phone}</li>
+            <li>{currentAdmin.location}</li>
           </ul>
         </div>
       </div>
+
+      {/* Edit Profile Dialog */}
+      <EditProfileDialog
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+        admin={currentAdmin}
+        onSave={handleSaveProfile}
+      />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
+import styles from "./Card.module.css";
 const Card = ({ item }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm ml-4 md:ml-0">
-      <div className="flex justify-end px-4 pt-4 relative">
+    <div className={`w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm ml-4 md:ml-0 ${styles.fadeIn}`}>
+      <div className={`flex justify-end px-4 pt-4 relative`}>
         <button
           onClick={() => setIsDropdownOpen((prev) => !prev)}
           className="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100  focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg text-sm p-1.5"
@@ -55,12 +55,12 @@ const Card = ({ item }) => {
         </span>
         <div className="flex mt-4 md:mt-6">
           <button
-            className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#3D2B1F] rounded-lg hover:bg-[#8B5E3C] focus:ring-4 focus:outline-none focus:ring-blue-300"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#3D2B1F] rounded-lg hover:bg-[#8B5E3C] focus:ring-4 focus:outline-none focus:ring-gray-300"
           >
             Accept
           </button>
           <button
-            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+            className="py-2 px-4 ms-2 text-sm font-medium text-[#3D2B1F] focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#C08B6F] focus:z-10 focus:ring-4 focus:ring-gray-100"
           >
             Decline
           </button>
