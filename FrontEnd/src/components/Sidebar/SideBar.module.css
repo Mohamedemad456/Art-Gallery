@@ -1,0 +1,5 @@
+/* Sidebar.module.css */
+.sidebar {
+  /* Minimal custom styles that Tailwind can't cover easily */
+  min-height: 100vh;
+}

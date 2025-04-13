@@ -1,0 +1,34 @@
+.text {
+    word-break: break-word;  /* Ensures long words wrap */
+    overflow-wrap: break-word; /* Ensures proper text wrapping */
+    white-space: normal; /* Prevents text from staying in one line */
+}
+
+
+
+    .link_effect {
+      a {
+        display: inline-block; /* Restrict width to text content */
+        position: relative;
+        transition: all 0.3s ease-out 0.1s;
+  
+        &::after {
+          height: 4px;
+          width: 100%;
+          background: #8B5E3C;
+          content: "";
+          position: absolute;
+          right: 0; /* Start from the right */
+          bottom: 0;
+          transform: scaleX(0); /* Scale horizontally */
+          transform-origin: center; /* Animate from center to right and left */
+          transition: transform 0.3s ease-out;
+        }
+  
+        &:hover {
+          &::after {
+            transform: scaleX(1); /* Expand to full width */
+          }
+        }
+      }
+    }

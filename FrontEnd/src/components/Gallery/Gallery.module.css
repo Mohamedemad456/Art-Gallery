@@ -1,0 +1,46 @@
+.effectMing {
+    position: relative;
+    background: #030c17;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .effectMing img {
+    opacity: 0.9;
+    transition: opacity 0.35s;
+  }
+  
+  .figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+    content: "";
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  
+  .figcaption {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1.5);
+  }
+  
+  .effectMing:hover .figcaption::before,
+  .effectMing:hover .figcaption {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  
+  .effectMing:hover .figcaption {
+    background-color: rgba(58, 52, 42, 0.3);
+  }
+  
+  .effectMing:hover img {
+    opacity: 0.4;
+  }
+  

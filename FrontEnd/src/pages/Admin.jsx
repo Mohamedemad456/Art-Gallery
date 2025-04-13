@@ -1,0 +1,24 @@
+import React from "react";
+import AdminProfile from "../components/AdminProfile/AdminProfile";
+
+const adminDetails = {
+  name: "John Doe",
+  role: "Software Developer",
+  image: "https://i.pravatar.cc/300",
+  about:
+    "Passionate developer with 5 years of experience in building scalable web apps.",
+  skills: ["JavaScript", "React", "Node.js"],
+  email: "john@example.com",
+  phone: "+123456789",
+  location: "San Francisco",
+};
+
+const Admin = () => {
+  return (
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-indigo-900 to-blue-800 p-4">
+      <AdminProfile admin={adminDetails} />
+    </div>
+  );
+};
+
+export default Admin;
