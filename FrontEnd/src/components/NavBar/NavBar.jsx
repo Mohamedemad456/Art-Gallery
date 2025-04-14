@@ -1,50 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/images/trace.svg";
 import styles from "./NavBar.module.css";
+import Cursor from "../Cursor/Cursor";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const mobileMenuRef = useRef(null);
 
-  useEffect(() => {
-    const cursorCircle = document.getElementById("cursor-circle");
-
-    if (!cursorCircle) return;
-
-    const moveCursor = (e) => {
-      const x = e.clientX - 18;
-      const y = e.clientY - 18;
-      cursorCircle.style.transform = `translate(${x}px, ${y}px)`;
-    };
-
-    document.addEventListener("mousemove", moveCursor);
-
-    return () => {
-      document.removeEventListener("mousemove", moveCursor);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target) && !event.target.closest('button')) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-    };
-  }, []);
-
   return (
     <>
       {/* Circle Cursor */}
-      <div className={`${styles.cursor_circle} hidden lg:flex lg:items-center space-x-6`} id="cursor-circle"></div>
-
+      <Cursor/>
       <nav className="bg-[#C08B6F] text-white shadow-md">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           {/* Left: Logo */}
@@ -81,14 +50,14 @@ const Navbar = () => {
               </li>
               <li className={`${styles.link_effect}`}>
                 <NavLink
-                  to="/features"
+                  to="/gallery"
                   className={({ isActive }) =>
                     isActive
                       ? "text-white font-bold active"
                       : "text-gray-300 hover:text-white transition"
                   }
                 >
-                  Features
+                  Gallery
                 </NavLink>
               </li>
               <li className={`${styles.link_effect}`}>
@@ -146,7 +115,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/features"
+                    to="/gallery"
                     className={({ isActive }) =>
                       isActive
                         ? "text-white font-bold active"
@@ -154,7 +123,7 @@ const Navbar = () => {
                     }
                     onClick={() => setIsOpen(false)}
                   >
-                    Features
+                    Gallery
                   </NavLink>
                 </li>
                 <li>

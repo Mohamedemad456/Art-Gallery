@@ -5,6 +5,7 @@ import MainLayout from "./layouts/MainLayout";
 import Admin from "./pages/Admin";
 import AdminPosts from "./pages/AdminPosts";
 import AdminUsers from "./pages/AdminUsers";
+import GalleryPage from "./pages/GalleryPage";
 import Home from "./pages/Home";
 import {
   createBrowserRouter,
@@ -21,6 +22,7 @@ function App() {
         {/* Routes that include the Navbar */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Route>
 
         {/* Routes without Navbar (Login, Signup) */}

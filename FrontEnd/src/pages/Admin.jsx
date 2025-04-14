@@ -1,6 +1,6 @@
 import React from "react";
 import AdminProfile from "../components/AdminProfile/AdminProfile";
-
+import Loader from "../components/Loader/Loader";
 const adminDetails = {
   name: "John Doe",
   role: "Software Developer",
@@ -15,9 +15,12 @@ const adminDetails = {
 
 const Admin = () => {
   return (
+    <>
+    <Loader/>
     <div className="min-h-full flex justify-center items-center p-4">
       <AdminProfile admin={adminDetails} />
     </div>
+    </>
   );
 };
 

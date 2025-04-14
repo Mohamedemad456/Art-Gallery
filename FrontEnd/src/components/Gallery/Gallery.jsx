@@ -1,54 +1,37 @@
+// components/Gallery.js
 import React from "react";
-import styles from "./Gallery.module.css"; // Import CSS module
+import styles from "./Gallery.module.css";
 
-const images = [
-  "/assets/img-12.jpg",
-  "/assets/img-01.jpg",
-  "/assets/img-02.jpg",
-  "/assets/img-03.jpg",
-  "/assets/img-04.jpg",
-  "/assets/img-05.jpg",
-  "/assets/img-06.jpg",
-  "/assets/img-07.jpg",
-  "/assets/img-08.jpg",
-  "/assets/img-09.jpg",
-  "/assets/img-10.jpg",
-  "/assets/img-11.jpg",
-];
-
-const Gallery = () => {
+const Gallery = ({ artworks }) => {
   return (
-    <div className="mx-4 p-4 mt-12">
-      <div className="flex flex-col sm:flex-row justify-between items-center">
-        <h2 className="text-3xl sm:text-5xl font-bold text-[#3D2B1F] mb-6 sm:mb-10">
-          Gallery
-        </h2>
-        <div className="flex items-center space-x-2 font-medium">
-          <span className="text-md sm:text-lg text-[#3D2B1F]">Page</span>
-          <input
-            type="text"
-            min="1"
-            max="200"
-            defaultValue="1"
-            className="w-10 sm:w-14 text-center border focus:outline-none focus:ring-2 focus:ring-[#C08B6F] bg-gray-100 text-[#3D2B1F]"
-          />
-          <span className="text-md sm:text-lg text-[#3D2B1F]">of 200</span>
-        </div>
-      </div>
-
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-4">
-        {images.map((src, index) => (
-          <figure key={index} className={`${styles.effectMing} relative group`}>
-            <a href="/">
-            <img className="w-full h-full object-cover rounded-md" src={src} alt="Gallery" />
-            <figcaption className={`${styles.figcaption} absolute inset-0 flex items-center justify-center text-white text-lg font-bold`}>
-              img{index + 1}
+    <>
+    <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center my-4">Art Gallery</h2>
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 my-4 p-4 mt-12">
+      {artworks.map((art, index) => (
+        <figure key={art.id} className={`${styles.effectMing} relative group`}>
+          <a href={`/artwork/${art.id}`}>
+            <img
+              className="w-full h-52 object-fit rounded-md"
+              src={art.image}
+              alt={art.title}
+            />
+            <figcaption
+              className={`${styles.figcaption} absolute inset-0 flex flex-col items-center justify-center text-white text-center`}
+            >
+              <span className="font-bold text-lg">{art.title}</span>
+              <span className="text-sm mt-1">{art.artist}</span>
+              <span className="text-sm">${art.price}</span>
             </figcaption>
-            </a>
-          </figure>
-        ))}
-      </div>
+          </a>
+        </figure>
+      ))}
+      {artworks.length === 0 && (
+        <div className="col-span-full text-center text-gray-500">
+          No artworks match your criteria.
+        </div>
+      )}
     </div>
+    </>
   );
 };
 

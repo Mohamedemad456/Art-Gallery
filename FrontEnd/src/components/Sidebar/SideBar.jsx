@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './SideBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faFileAlt, faUser } from '@fortawesome/free-solid-svg-icons';
-
+import Cursor from '../Cursor/Cursor';
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,6 +12,8 @@ const SideBar = () => {
   };
 
   return (
+    <>
+    <Cursor/>
     <aside
       className={`flex flex-col justify-between bg-[#C08B6F] text-white transition-all duration-300 ease-out z-50 h-full ${
         isOpen
@@ -91,6 +93,7 @@ const SideBar = () => {
         </button>
       </div>
     </aside>
+    </>
   );
 };
 
