@@ -6,6 +6,7 @@ import Admin from "./pages/Admin";
 import AdminPosts from "./pages/AdminPosts";
 import AdminUsers from "./pages/AdminUsers";
 import Artwork from "./pages/Artwork";
+import ArtworkPostForm from "./pages/ArtworkPostForm";
 import GalleryPage from "./pages/GalleryPage";
 import Home from "./pages/Home";
 import {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/artwork" element={<Artwork />} />
+          <Route path="/artwork/create" element={<ArtworkPostForm />} />
         </Route>
 
         {/* Routes without Navbar (Login, Signup) */}
