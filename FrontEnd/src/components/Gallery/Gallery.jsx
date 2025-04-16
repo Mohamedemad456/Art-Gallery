@@ -1,7 +1,7 @@
 // components/Gallery.js
 import React from "react";
 import styles from "./Gallery.module.css";
-
+import { NavLink } from "react-router-dom";
 const Gallery = ({ artworks }) => {
   return (
     <>
@@ -9,7 +9,7 @@ const Gallery = ({ artworks }) => {
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 my-4 p-4 mt-12">
       {artworks.map((art, index) => (
         <figure key={art.id} className={`${styles.effectMing} relative group`}>
-          <a href={`/artwork/${art.id}`}>
+          <NavLink to={`/artwork`}>
             <img
               className="w-full h-52 object-fit rounded-md"
               src={art.image}
@@ -22,7 +22,7 @@ const Gallery = ({ artworks }) => {
               <span className="text-sm mt-1">{art.artist}</span>
               <span className="text-sm">${art.price}</span>
             </figcaption>
-          </a>
+          </NavLink>
         </figure>
       ))}
       {artworks.length === 0 && (

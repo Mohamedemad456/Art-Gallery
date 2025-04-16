@@ -5,6 +5,7 @@ import MainLayout from "./layouts/MainLayout";
 import Admin from "./pages/Admin";
 import AdminPosts from "./pages/AdminPosts";
 import AdminUsers from "./pages/AdminUsers";
+import Artwork from "./pages/Artwork";
 import GalleryPage from "./pages/GalleryPage";
 import Home from "./pages/Home";
 import {
@@ -23,6 +24,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/artwork" element={<Artwork />} />
         </Route>
 
         {/* Routes without Navbar (Login, Signup) */}
