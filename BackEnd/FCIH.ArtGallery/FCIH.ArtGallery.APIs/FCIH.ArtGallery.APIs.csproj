@@ -7,7 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FCIH.ArtGallery.APIs.Controllers\FCIH.ArtGallery.APIs.Controllers.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Core.Application.Abstraction\FCIH.ArtGallery.Core.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Core.Application\FCIH.ArtGallery.Core.Application.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Core.Domain\FCIH.ArtGallery.Core.Domain.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Infrastructure.Persistence\FCIH.ArtGallery.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Infrastructure\FCIH.ArtGallery.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

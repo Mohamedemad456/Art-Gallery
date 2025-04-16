@@ -5,19 +5,22 @@ namespace FCIH.ArtGallery.APIs
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            var webApplicationBuilder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+			#region Configure Services
+			// Add services to the container.
 
-            builder.Services.AddControllers();
+			webApplicationBuilder.Services.AddControllers(); // Register Required Services By ASP.NET Core Web APIs to Dependency Injection Container
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            webApplicationBuilder.Services.AddEndpointsApiExplorer();
+            webApplicationBuilder.Services.AddSwaggerGen(); 
+            #endregion
 
-            var app = builder.Build();
+            var app = webApplicationBuilder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+			#region Configure Kestrel Middlewares
+			// Configure the HTTP request pipeline.
+			if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
@@ -25,10 +28,11 @@ namespace FCIH.ArtGallery.APIs
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
 
-            app.MapControllers();
+            app.MapControllers(); 
+            #endregion
 
             app.Run();
         }
