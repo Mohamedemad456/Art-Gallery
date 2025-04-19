@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ArtworkDetail from "../components/ArtworkDetails/ArtworkDetail";
 import ArtworkModal from "../components/ArtworkDetails/ArtworkModal";
 import Loader from "../components/Loader/Loader";
+import Footer from "../components/Footer/Footer";
 
 const Artwork = () => {
   const [bidAmount, setBidAmount] = useState("");
@@ -56,6 +57,7 @@ const Artwork = () => {
             onClose={() => setShowHistory(false)}
           />
         )}
+        <Footer />
       </div>
     </>
   );

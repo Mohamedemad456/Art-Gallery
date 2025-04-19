@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Filters from "../components/Filter/Filter";
 import Gallery from "../components/Gallery/Gallery";
 import Loader from "../components/Loader/Loader";
+import Footer from "../components/Footer/Footer";
 
 const allArtworks = [
   {
@@ -101,6 +102,7 @@ const GalleryPage = () => {
           <span className="text-md sm:text-lg text-[#3D2B1F]">of 200</span>
         </div>
       </div>
+      <Footer />
     </div>
     </>
   );

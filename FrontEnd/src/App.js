@@ -15,6 +15,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import Profile from "./pages/Profile";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/artwork" element={<Artwork />} />
           <Route path="/artwork/create" element={<ArtworkPostForm />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
 
         {/* Routes without Navbar (Login, Signup) */}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import styles from "./PostForm.module.css";
 const PostForm = () => {
   const [description, setDescription] = useState("");
   const [fileName, setFileName] = useState("");
@@ -20,7 +21,7 @@ const PostForm = () => {
   };
 
   return (
-    <div className="text-gray-800">
+    <div className={`text-gray-800 ${styles.fadeIn} mb-5`}>
       <div className="text-center font-bold text-2xl m-5">New Post</div>
 
       <div className="editor mx-auto w-10/12 flex flex-col border border-gray-300 p-4 shadow-lg max-w-3xl">

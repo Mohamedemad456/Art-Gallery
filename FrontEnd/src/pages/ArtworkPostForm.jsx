@@ -1,11 +1,11 @@
 import React from 'react';
 import PostForm from '../components/PostForm/PostForm';
-import Cursor from '../components/Cursor/Cursor';
+import Footer from '../components/Footer/Footer';
 const ArtworkPostForm = () => {
     return (
         <>
-        <Cursor />
         <PostForm />
+        <Footer />
         </>
     );
 };
