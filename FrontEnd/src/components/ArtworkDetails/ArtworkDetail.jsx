@@ -39,21 +39,22 @@ const ArtworkDetails = ({ artwork, user, bidAmount, setBidAmount, handleBid, set
               min={artwork.currentBid + 10}
               required
             />
+            <div className="flex flex-row gap-3">
             <button
               type="submit"
-              className="bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition w-64 "
             >
               Place Bid
             </button>
+            <button
+          onClick={() => setShowHistory(true)}
+          className="bg-green-500 rounded-md text-white w-32 hover:bg-green-600 transition py-2"
+        >
+          Bid History
+        </button>
+        </div>
           </form>
         )}
-
-        <button
-          onClick={() => setShowHistory(true)}
-          className="mt-4 text-blue-500 underline hover:text-blue-700"
-        >
-          View Bid History
-        </button>
       </div>
     </div>
   );

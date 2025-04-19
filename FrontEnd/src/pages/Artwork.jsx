@@ -41,7 +41,7 @@ const Artwork = () => {
   return (
     <>
       <Loader />
-      <div className="flex justify-center items-center p-6 max-w-5xl mx-50">
+      <div className="flex flex-col justify-center items-center p-6 max-w-5xl mx-50">
         <ArtworkDetail
           artwork={dummyArtwork}
           user={dummyUser}
@@ -57,8 +57,8 @@ const Artwork = () => {
             onClose={() => setShowHistory(false)}
           />
         )}
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
