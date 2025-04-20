@@ -16,7 +16,7 @@ const AdminProfile = ({ admin }) => {
 
   return (
     <div
-      className={`bg-white rounded-xl shadow-2xl max-w-6xl w-full p-8 ${styles.fadeIn} ml-8 md:ml-0 min-h-[80vh] flex justify-center items-center`}
+      className={`bg-white rounded-xl shadow-2xl max-w-6xl w-full p-8 ${styles.fadeIn} min-h-[80vh] flex justify-center items-center`}
     >
       <div
         className={`flex flex-col md:flex-row ${

@@ -1,15 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Modal, Box, Typography } from '@mui/material';
 import styles from './AdminProfile.module.css';
+
+const modalStyle = {
+  position: 'absolute',
+  transform: 'translate(-50%, -50%)',
+  width: '90%',
+  maxWidth: 600,
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  borderRadius: 4,
+  p: 4,
+  overflowY: 'auto',
+  maxHeight: '90vh',
+};
 
 const EditProfileDialog = ({ isOpen, onClose, admin, onSave }) => {
   const [editedAdmin, setEditedAdmin] = useState(admin);
 
+  useEffect(() => {
+    setEditedAdmin(admin);
+  }, [admin]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setEditedAdmin({
-      ...editedAdmin,
+    setEditedAdmin((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
   const handleSave = () => {
@@ -18,97 +36,48 @@ const EditProfileDialog = ({ isOpen, onClose, admin, onSave }) => {
   };
 
   return (
-    isOpen && (
-      <div className={`fixed inset-0 flex justify-center items-center z-50 ${styles.fadeIn}`}>
-        <div className="bg-[#E8BEBE] md:bg-white p-6 rounded-lg max-w-xlg w-full">
-          <h2 className="text-xl font-semibold text-[#3D2B1F] dark:text-white mb-4">Edit Profile</h2>
-          <div className="mb-4">
-            <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="name">
-              Name
+    <Modal open={isOpen} onClose={onClose} className='flex items-center justify-center'>
+      <Box sx={modalStyle} className={styles.fadeIn}>
+        <Typography variant="h6" className="text-[#3D2B1F] font-semibold mb-4">
+          Edit Profile
+        </Typography>
+
+        {['name', 'role', 'email', 'phone', 'location'].map((field) => (
+          <div className="mb-4" key={field}>
+            <label
+              htmlFor={field}
+              className="block text-[#3D2B1F] dark:text-gray-300 font-bold"
+            >
+              {field.charAt(0).toUpperCase() + field.slice(1)}
             </label>
             <input
-              type="text"
-              id="name"
-              name="name"
-              value={editedAdmin.name}
+              type={field === 'email' ? 'email' : 'text'}
+              id={field}
+              name={field}
+              value={editedAdmin[field] || ''}
               onChange={handleChange}
-              placeholder="Enter your name"
+              placeholder={`Enter your ${field}`}
               className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-200 font-semibold"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="role">
-              Role
-            </label>
-            <input
-              type="text"
-              id="role"
-              name="role"
-              value={editedAdmin.role}
-              onChange={handleChange}
-              placeholder="Enter your role"
-              className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-200 font-semibold"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={editedAdmin.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-200 font-semibold"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="phone">
-              Phone
-            </label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              value={editedAdmin.phone}
-              onChange={handleChange}
-              placeholder="Enter your phone number"
-              className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-200 font-semibold"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-[#3D2B1F] dark:text-gray-300 font-bold" htmlFor="location">
-              Location
-            </label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              value={editedAdmin.location}
-              onChange={handleChange}
-              placeholder="Enter your location"
-              className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-200 font-semibold"
-            />
-          </div>
-          <div className="flex flex-col sm:flex-row justify-between gap-2">
+        ))}
+
+        <div className="flex flex-col sm:flex-row justify-between gap-2 mt-4">
           <button
-              onClick={onClose}
-              className="bg-gray-400 text-white px-4 py-2 rounded-md hover:bg-gray-600 font-semibold"
-            >
-              Cancel
-            </button>
-            <button
-              onClick={handleSave}
-              className="bg-[#C08B6F] text-white px-4 py-2 rounded-md hover:bg-[#C08B6F] font-semibold"
-            >
-              Save Changes
-            </button>
-          </div>
+            onClick={onClose}
+            className="bg-gray-400 text-white px-4 py-2 rounded-md hover:bg-gray-600 font-semibold"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={handleSave}
+            className="bg-[#C08B6F] text-white px-4 py-2 rounded-md hover:bg-[#a57055] font-semibold"
+          >
+            Save Changes
+          </button>
         </div>
-      </div>
-    )
+      </Box>
+    </Modal>
   );
 };
 

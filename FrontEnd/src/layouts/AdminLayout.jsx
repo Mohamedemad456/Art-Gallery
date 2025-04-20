@@ -7,7 +7,7 @@ const AdminLayout = () => {
       <div className="col-span-0 md:col-span-3 lg:col-span-2">
       <SideBar />
       </div>
-      <main className="col-span-11 md:col-span-9 lg:col-span-10 bg-gray-100 p-4">
+      <main className="col-span-12 md:col-span-9 lg:col-span-10 bg-gray-100 p-4">
         <Outlet />
       </main>
     </div>
