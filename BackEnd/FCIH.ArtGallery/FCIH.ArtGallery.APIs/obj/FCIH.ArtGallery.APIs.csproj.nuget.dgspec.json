@@ -126,9 +126,6 @@
               "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
                 "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj"
               },
-              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
-                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
-              },
               "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure.Persistence\\FCIH.ArtGallery.Infrastructure.Persistence.csproj": {
                 "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure.Persistence\\FCIH.ArtGallery.Infrastructure.Persistence.csproj"
               },
@@ -219,7 +216,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -461,6 +462,9 @@
               },
               "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
                 "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
+              },
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure\\FCIH.ArtGallery.Infrastructure.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure\\FCIH.ArtGallery.Infrastructure.csproj"
               }
             }
           }

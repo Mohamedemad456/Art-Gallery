@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FCIH.ArtGallery.Core.Application.Abstraction\FCIH.ArtGallery.Core.Application.Abstraction.csproj" />
     <ProjectReference Include="..\FCIH.ArtGallery.Core.Domain\FCIH.ArtGallery.Core.Domain.csproj" />
+    <ProjectReference Include="..\FCIH.ArtGallery.Infrastructure\FCIH.ArtGallery.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

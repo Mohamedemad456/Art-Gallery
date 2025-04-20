@@ -2476,6 +2476,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "FCIH.ArtGallery.Core.Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
         },
@@ -2525,6 +2526,7 @@
         "dependencies": {
           "FCIH.ArtGallery.Core.Application.Abstraction": "1.0.0",
           "FCIH.ArtGallery.Core.Domain": "1.0.0",
+          "FCIH.ArtGallery.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15"
         },
@@ -6132,7 +6134,6 @@
       "FCIH.ArtGallery.APIs.Controllers >= 1.0.0",
       "FCIH.ArtGallery.Core.Application >= 1.0.0",
       "FCIH.ArtGallery.Core.Application.Abstraction >= 1.0.0",
-      "FCIH.ArtGallery.Core.Domain >= 1.0.0",
       "FCIH.ArtGallery.Infrastructure >= 1.0.0",
       "FCIH.ArtGallery.Infrastructure.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.SignalR >= 1.2.0",
@@ -6180,9 +6181,6 @@
             },
             "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
               "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj"
-            },
-            "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
-              "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
             },
             "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure.Persistence\\FCIH.ArtGallery.Infrastructure.Persistence.csproj": {
               "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Infrastructure.Persistence\\FCIH.ArtGallery.Infrastructure.Persistence.csproj"
