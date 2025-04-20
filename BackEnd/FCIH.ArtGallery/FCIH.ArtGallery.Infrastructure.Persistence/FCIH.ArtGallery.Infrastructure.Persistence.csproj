@@ -21,4 +21,8 @@
     <ProjectReference Include="..\FCIH.ArtGallery.Infrastructure\FCIH.ArtGallery.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="_Data\" />
+  </ItemGroup>
+
 </Project>
