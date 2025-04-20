@@ -2,9 +2,77 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{94F47FA1-E944-4B6F-B199-C61C7B2DD276}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3C3FDEA6-2797-45A2-BD7D-D13781DE0185}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EA4EBE6D-8C18-42E2-A274-7A9FBCE33AE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.APIs", "FCIH.ArtGallery.APIs\FCIH.ArtGallery.APIs.csproj", "{98FA5715-1308-437C-B24F-1113A67B59EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.APIs.Controllers", "FCIH.ArtGallery.APIs.Controllers\FCIH.ArtGallery.APIs.Controllers.csproj", "{42F163C8-C481-46C0-813B-BDFA49E2A65C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.Core.Application", "FCIH.ArtGallery.Core.Application\FCIH.ArtGallery.Core.Application.csproj", "{9E31A439-DB0B-477F-BBA5-18C48FE51022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.Core.Application.Abstraction", "FCIH.ArtGallery.Core.Application.Abstraction\FCIH.ArtGallery.Core.Application.Abstraction.csproj", "{47C87871-256A-44E6-A612-795BB2ADB79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.Core.Domain", "FCIH.ArtGallery.Core.Domain\FCIH.ArtGallery.Core.Domain.csproj", "{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.Infrastructure", "FCIH.ArtGallery.Infrastructure\FCIH.ArtGallery.Infrastructure.csproj", "{B9CA6585-B42E-4F24-8758-C74986B9D59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIH.ArtGallery.Infrastructure.Persistence", "FCIH.ArtGallery.Infrastructure.Persistence\FCIH.ArtGallery.Infrastructure.Persistence.csproj", "{5221C579-987F-4175-833A-85A8BA899F27}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98FA5715-1308-437C-B24F-1113A67B59EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FA5715-1308-437C-B24F-1113A67B59EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FA5715-1308-437C-B24F-1113A67B59EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FA5715-1308-437C-B24F-1113A67B59EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F163C8-C481-46C0-813B-BDFA49E2A65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F163C8-C481-46C0-813B-BDFA49E2A65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F163C8-C481-46C0-813B-BDFA49E2A65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F163C8-C481-46C0-813B-BDFA49E2A65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E31A439-DB0B-477F-BBA5-18C48FE51022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E31A439-DB0B-477F-BBA5-18C48FE51022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E31A439-DB0B-477F-BBA5-18C48FE51022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E31A439-DB0B-477F-BBA5-18C48FE51022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C87871-256A-44E6-A612-795BB2ADB79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C87871-256A-44E6-A612-795BB2ADB79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C87871-256A-44E6-A612-795BB2ADB79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C87871-256A-44E6-A612-795BB2ADB79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CA6585-B42E-4F24-8758-C74986B9D59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CA6585-B42E-4F24-8758-C74986B9D59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CA6585-B42E-4F24-8758-C74986B9D59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CA6585-B42E-4F24-8758-C74986B9D59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5221C579-987F-4175-833A-85A8BA899F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5221C579-987F-4175-833A-85A8BA899F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5221C579-987F-4175-833A-85A8BA899F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5221C579-987F-4175-833A-85A8BA899F27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94F47FA1-E944-4B6F-B199-C61C7B2DD276} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3C3FDEA6-2797-45A2-BD7D-D13781DE0185} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EA4EBE6D-8C18-42E2-A274-7A9FBCE33AE3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{98FA5715-1308-437C-B24F-1113A67B59EB} = {94F47FA1-E944-4B6F-B199-C61C7B2DD276}
+		{42F163C8-C481-46C0-813B-BDFA49E2A65C} = {94F47FA1-E944-4B6F-B199-C61C7B2DD276}
+		{9E31A439-DB0B-477F-BBA5-18C48FE51022} = {3C3FDEA6-2797-45A2-BD7D-D13781DE0185}
+		{47C87871-256A-44E6-A612-795BB2ADB79D} = {3C3FDEA6-2797-45A2-BD7D-D13781DE0185}
+		{CAD3ACC6-3D0C-46A9-9ECB-B569EF59F17C} = {3C3FDEA6-2797-45A2-BD7D-D13781DE0185}
+		{B9CA6585-B42E-4F24-8758-C74986B9D59B} = {EA4EBE6D-8C18-42E2-A274-7A9FBCE33AE3}
+		{5221C579-987F-4175-833A-85A8BA899F27} = {EA4EBE6D-8C18-42E2-A274-7A9FBCE33AE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C59781A1-EF5F-46E7-B634-742713EA92B4}
