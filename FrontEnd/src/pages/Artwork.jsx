@@ -1,9 +1,9 @@
-// pages/CardDetails.jsx
 import React, { useState } from "react";
-import ArtworkDetail from "../components/ArtworkDetails/ArtworkDetail";
+import ArtworkDetails from "../components/ArtworkDetails/ArtworkDetail";
 import ArtworkModal from "../components/ArtworkDetails/ArtworkModal";
 import Loader from "../components/Loader/Loader";
 import Footer from "../components/Footer/Footer";
+import ArtCarousel from "../components/Carousel/Carousel";
 
 const Artwork = () => {
   const [bidAmount, setBidAmount] = useState("");
@@ -32,6 +32,27 @@ const Artwork = () => {
     { user: "Carol", amount: 250, date: "2025-04-14" },
   ];
 
+  const artworks = [
+    {
+      id: 1,
+      image: 'https://i.pravatar.cc/300',
+      title: 'Starry Night',
+      artist: 'Vincent van Gogh',
+    },
+    {
+      id: 2,
+      image: 'https://i.pravatar.cc/300',
+      title: 'The Scream',
+      artist: 'Edvard Munch',
+    },
+    {
+      id: 3,
+      image: 'https://i.pravatar.cc/300',
+      title: 'Mona Lisa',
+      artist: 'Leonardo da Vinci',
+    },
+  ];
+
   const handleBid = (e) => {
     e.preventDefault();
     alert(`Placed a bid of $${bidAmount}`);
@@ -41,8 +62,8 @@ const Artwork = () => {
   return (
     <>
       <Loader />
-      <div className="flex flex-col justify-center items-center p-6 max-w-5xl mx-50">
-        <ArtworkDetail
+      <div className="flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 max-w-full sm:max-w-4xl md:max-w-5xl lg:max-w-7xl mx-auto">
+        <ArtworkDetails
           artwork={dummyArtwork}
           user={dummyUser}
           bidAmount={bidAmount}
@@ -50,13 +71,18 @@ const Artwork = () => {
           handleBid={handleBid}
           setShowHistory={setShowHistory}
         />
-
         {showHistory && (
           <ArtworkModal
             history={dummyBidHistory}
             onClose={() => setShowHistory(false)}
           />
         )}
+        <div className="flex flex-col justify-center items-center mt-12 sm:mt-16 md:mt-24 w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 sm:mb-6">
+            You May Also Like
+          </h1>
+          <ArtCarousel artworks={artworks} />
+        </div>
       </div>
       <Footer />
     </>

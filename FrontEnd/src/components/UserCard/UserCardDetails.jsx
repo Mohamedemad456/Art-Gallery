@@ -1,6 +1,6 @@
 // CardDetails.jsx
 import React from "react";
-import styles from "./Card.module.css";
+import styles from "./UserCard.module.css";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CardDetails = ({ item, onClose }) => {
