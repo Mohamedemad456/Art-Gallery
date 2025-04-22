@@ -26,7 +26,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/artwork" element={<Artwork />} />
+          <Route path="/artwork/:id" element={<Artwork />} />
           <Route path="/artwork/create" element={<ArtworkPostForm />} />
           <Route path="/profile" element={<Profile />} />
         </Route>

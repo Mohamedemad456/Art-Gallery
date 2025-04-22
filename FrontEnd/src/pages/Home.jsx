@@ -1,58 +1,52 @@
+import React, { useState, useEffect } from "react";
 import Gallery from "../components/Gallery/Gallery";
 import Loader from "../components/Loader/Loader";
 import Search from "../components/SearchSection/Search";
 import Footer from "../components/Footer/Footer";
 
+function Home() {
+  const [artworks, setArtworks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchArtworks = async () => {
+      try {
+        const response = await fetch("http://localhost:5093/api/Artwork");
+        if (!response.ok) {
+          throw new Error("Failed to fetch artworks");
+        }
+        const data = await response.json();
+        setArtworks(data);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
 
-const allArtworks = [
-  {
-    id: 1,
-    title: "Sunset Dreams",
-    artist: "John Doe",
-    price: 150,
-    category: "Landscape",
-    tags: ["modern", "oil painting"],
-    image: "/assets/img-01.jpg",
-  },
-  {
-    id: 2,
-    title: "Portrait of Light",
-    artist: "Jane Smith",
-    price: 220,
-    category: "Portrait",
-    tags: ["vibrant", "oil painting"],
-    image: "/assets/img-02.jpg",
-  },
-  {
-    id: 3,
-    title: "Ocean Mood",
-    artist: "John Doe",
-    price: 180,
-    category: "Landscape",
-    tags: ["sea", "nature"],
-    image: "/assets/img-03.jpg",
-  },
-  {
-    id: 4,
-    title: "Urban Spirit",
-    artist: "Jane Smith",
-    price: 300,
-    category: "Portrait",
-    tags: ["modern", "city"],
-    image: "/assets/img-04.jpg",
-  },
-];
+    fetchArtworks();
+  }, []);
 
-function Home(){
-    return(
-        <>
-        <Loader/>
-        <Search />
-        <Gallery artworks={allArtworks} />
-        <Footer />
-        </>
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <div className="text-center text-red-500 mt-10">
+        Error: {error}
+      </div>
     );
-};
+  }
+
+  return (
+    <>
+      <Search />
+      <Gallery artworks={artworks} />
+      <Footer />
+    </>
+  );
+}
 
 export default Home;
