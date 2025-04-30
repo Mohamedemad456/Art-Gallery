@@ -11,13 +11,10 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 {
 	public class User : IdentityUser<Guid>
 	{
-		
 
-		public Role Role { get; set; }
+		public required string DisplayName { get; set; }
 
 		// Navigation
-		public Admin? Admin { get; set; }
-		public Artist? Artist { get; set; }
-		public Buyer? Buyer { get; set; }
+		public virtual UserProfile? UserProfile { get; set; }
 	}
 }

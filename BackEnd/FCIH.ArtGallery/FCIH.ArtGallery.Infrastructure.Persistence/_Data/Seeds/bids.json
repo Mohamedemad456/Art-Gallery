@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "405c0c46-b974-4c81-92bd-069a24a864e4",
+    "Amount": 110,
+    "TimePlaced": "2025-04-25T14:26:38.860691Z",
+    "AuctionId": "ee52cc77-a1f4-4fe8-8ee3-4b9efa2a29bd",
+    "BuyerId": "32bca3de-cc8e-43ea-9b05-226d3a82d53d",
+    "CreatedBy": "system",
+    "CreatedAt": "2025-04-25T12:26:38.860691Z",
+    "LastModifiedBy": "system",
+    "LastModifiedAt": "2025-04-25T12:26:38.860691Z",
+    "IsDeleted": false
+  },
+  {
+    "Id": "ff397e8f-0de2-47b1-84ea-97a36a2e3d72",
+    "Amount": 120,
+    "TimePlaced": "2025-04-25T15:26:38.860691Z",
+    "AuctionId": "ee52cc77-a1f4-4fe8-8ee3-4b9efa2a29bd",
+    "BuyerId": "32bca3de-cc8e-43ea-9b05-226d3a82d53d",
+    "CreatedBy": "system",
+    "CreatedAt": "2025-04-25T12:26:38.860691Z",
+    "LastModifiedBy": "system",
+    "LastModifiedAt": "2025-04-25T12:26:38.860691Z",
+    "IsDeleted": false
+  }
+]

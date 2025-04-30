@@ -1,9 +1,14 @@
 
+using FCIH.ArtGallery.APIs.Extensions;
+using FCIH.ArtGallery.Core.Application.Abstraction.Common;
+using FCIH.ArtGallery.Infrastructure.Persistence;
+using FCIH.ArtGallery.Infrastructure.Services;
+
 namespace FCIH.ArtGallery.APIs
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var webApplicationBuilder = WebApplication.CreateBuilder(args);
 
@@ -12,11 +17,26 @@ namespace FCIH.ArtGallery.APIs
 
 			webApplicationBuilder.Services.AddControllers(); // Register Required Services By ASP.NET Core Web APIs to Dependency Injection Container
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            webApplicationBuilder.Services.AddEndpointsApiExplorer();
-            webApplicationBuilder.Services.AddSwaggerGen(); 
-            #endregion
+            webApplicationBuilder.Services.AddEndpointsApiExplorer().AddSwaggerGen();
 
-            var app = webApplicationBuilder.Build();
+			webApplicationBuilder.Services.AddHttpContextAccessor().AddScoped(typeof(ICurrentUserService), typeof(CurrentUserService));
+
+
+			//webApplicationBuilder.Services.AddApplicationServices();
+			webApplicationBuilder.Services.AddPersistenceServices(webApplicationBuilder.Configuration);
+			//webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
+
+			webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
+
+			#endregion
+
+			var app = webApplicationBuilder.Build();
+
+			#region Update Databases Initialization
+
+			await app.InitializeDbAsync();
+
+			#endregion
 
 			#region Configure Kestrel Middlewares
 			// Configure the HTTP request pipeline.
@@ -26,12 +46,19 @@ namespace FCIH.ArtGallery.APIs
                 app.UseSwaggerUI();
             }
 
+
             app.UseHttpsRedirection();
 
-            //app.UseAuthorization();
+			app.UseStatusCodePagesWithReExecute("/Errors/{0}");
+
+			app.UseStaticFiles();
+
+			app.UseAuthentication();
+			app.UseAuthorization();
 
 
-            app.MapControllers(); 
+
+			app.MapControllers(); 
             #endregion
 
             app.Run();

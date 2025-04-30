@@ -9,11 +9,12 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 {
 	public class Artist : UserProfile
 	{
-
 		public string? Bio { get; set; }
 		public string? ProfilePictureUrl { get; set; }
 
+		public bool IsApproved { get; set; } = false;
+
 		// Navigation
-		public ICollection<Artwork> Artworks { get; set; } = new HashSet<Artwork>();
+		public virtual ICollection<Artwork> Artworks { get; set; } = new HashSet<Artwork>();
 	}
 }

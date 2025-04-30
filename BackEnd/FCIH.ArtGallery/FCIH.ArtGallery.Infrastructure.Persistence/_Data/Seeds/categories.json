@@ -1,0 +1,12 @@
+[
+  {
+    "Id": "d73a3e7d-f1e5-446e-b6bd-e8fbb45a056a",
+    "Name": "Portrait",
+    "IsDeleted": false
+  },
+  {
+    "Id": "1bfb69cf-9708-4e5a-834e-83a18f08083d",
+    "Name": "Landscape",
+    "IsDeleted": false
+  }
+]

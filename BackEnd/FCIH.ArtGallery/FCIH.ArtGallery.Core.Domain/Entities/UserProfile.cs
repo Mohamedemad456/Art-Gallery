@@ -10,6 +10,6 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 	public abstract class UserProfile : BaseEntity<Guid>
 	{
 		public required Guid UserId { get; set; }
-		public User User { get; set; } = default!;
+		public virtual User User { get; set; } = default!;
 	}
 }

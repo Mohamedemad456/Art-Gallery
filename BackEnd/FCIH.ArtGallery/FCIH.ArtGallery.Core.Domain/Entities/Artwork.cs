@@ -1,5 +1,4 @@
 ﻿using FCIH.ArtGallery.Core.Domain._Common;
-using FCIH.ArtGallery.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +13,19 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 		public string? Description { get; set; }
 		public required decimal Price { get; set; }
 		public required string ImageUrl { get; set; }
-		public Category Category { get; set; }
+		public bool IsApproved { get; set; }
+
+		public Guid CategoryId { get; set; }
+		public virtual Category Category { get; set; } = default!;
 
 
 		public Guid ArtistId { get; set; }
+		public virtual Artist Artist { get; set; } = default!;
 
-		public bool IsApproved { get; set; }
 
 		// Navigation
-		public Artist Artist { get; set; } = default!;
-		public Auction? Auction { get; set; }
+		public virtual Auction? Auction { get; set; }
+		public virtual ICollection<ArtworkTag> ArtworkTags { get; set; } = new HashSet<ArtworkTag>();
+
 	}
 }

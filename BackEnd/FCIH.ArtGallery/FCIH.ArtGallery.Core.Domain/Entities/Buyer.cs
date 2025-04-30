@@ -11,6 +11,6 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 	{
 		
 
-		public ICollection<Bid> Bids { get; set; } = new HashSet<Bid>();
+		public virtual ICollection<Bid> Bids { get; set; } = new HashSet<Bid>();
 	}
 }

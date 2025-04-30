@@ -1,0 +1,13 @@
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.deps.json
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.csproj.AssemblyReference.cache
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.AssemblyInfoInputs.cache
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.AssemblyInfo.cs
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.csproj.CoreCompileInputs.cache
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.sourcelink.json
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Domain.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Domain.dll

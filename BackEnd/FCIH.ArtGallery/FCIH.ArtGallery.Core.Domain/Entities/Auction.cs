@@ -17,7 +17,7 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 		public decimal? FinalPrice { get; set; }
 
 		// Navigation
-		public Artwork Artwork { get; set; } = default!;
-		public ICollection<Bid> Bids { get; set; } = new HashSet<Bid>();
+		public virtual Artwork Artwork { get; set; } = default!;
+		public virtual ICollection<Bid> Bids { get; set; } = new HashSet<Bid>();
 	}
 }

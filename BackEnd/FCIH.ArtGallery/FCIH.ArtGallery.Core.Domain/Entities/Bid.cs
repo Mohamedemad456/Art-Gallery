@@ -9,13 +9,14 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 {
 	public class Bid : BaseAuditableEntity<Guid>
 	{
-		public required Guid AuctionId { get; set; }
-		public required Guid BuyerId { get; set; }
 		public required decimal Amount { get; set; }
 		public required DateTime TimePlaced { get; set; }
 
-		public Auction Auction { get; set; } = default!;
+		public required Guid AuctionId { get; set; }
+		public virtual Auction Auction { get; set; } = default!;
 
-		public Buyer Buyer { get; set; } = default!;
+
+		public required Guid BuyerId { get; set; }
+		public virtual Buyer Buyer { get; set; } = default!;
 	}
 }
