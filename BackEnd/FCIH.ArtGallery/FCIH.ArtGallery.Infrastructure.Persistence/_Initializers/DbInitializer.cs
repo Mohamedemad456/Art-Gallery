@@ -10,12 +10,14 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 {
 	internal abstract class DbInitializer(DbContext _dbContext) : IDbInitializer
 	{
-		public virtual async Task InitializeAsync()
+		public virtual async Task InitializeDbAsync()
 		{
 			var pendingMigrations = await _dbContext.Database.GetPendingMigrationsAsync();
 
 			if (pendingMigrations.Any())
 				await _dbContext.Database.MigrateAsync(); // Update-Database
+
+
 		}
 
 

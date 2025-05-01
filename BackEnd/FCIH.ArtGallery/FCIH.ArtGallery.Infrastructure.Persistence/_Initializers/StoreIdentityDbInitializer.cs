@@ -79,6 +79,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			var profile = new Admin
 			{
 				Id = Guid.NewGuid(),
+				Name = adminUser.DisplayName,
 				UserId = adminUser.Id,
 				IsDeleted = false,
 			};
@@ -122,9 +123,11 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			var profile = new Artist
 			{
 				Id = Guid.Parse("10ad4851-7723-4746-95bb-fbb1c625085e"),
+				Name = artistUser.DisplayName,
 				UserId = artistUser.Id,
 				Bio = "Default artist bio",
 				IsDeleted = false,
+				IsApproved = true,
 			};
 
 			_context.UserProfiles.Add(profile);
@@ -148,7 +151,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			var buyerUser = new User
 			{
 				DisplayName = "Default Buyer",
-				UserName = "Default Buyer",
+				UserName = "default.buyer",
 				Email = email,
 				EmailConfirmed = true
 			};
@@ -166,8 +169,10 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			var profile = new Buyer
 			{
 				Id = Guid.Parse("32bca3de-cc8e-43ea-9b05-226d3a82d53d"),
+				Name = buyerUser.DisplayName,
 				UserId = buyerUser.Id,
 				IsDeleted = false,
+				
 			};
 
 			_context.UserProfiles.Add(profile);

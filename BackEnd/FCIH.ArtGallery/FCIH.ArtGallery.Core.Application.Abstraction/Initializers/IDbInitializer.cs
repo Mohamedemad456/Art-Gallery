@@ -8,7 +8,7 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Initializers
 {
 	public interface IDbInitializer
 	{
-		Task InitializeAsync();
+		Task InitializeDbAsync();
 		Task SeedAsync();
 	}
 }

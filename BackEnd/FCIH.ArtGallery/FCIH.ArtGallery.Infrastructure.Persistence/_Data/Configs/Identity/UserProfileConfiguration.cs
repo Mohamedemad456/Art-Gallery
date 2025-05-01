@@ -18,6 +18,8 @@ public class UserProfileConfiguration : BaseEntityConfiguration<UserProfile, Gui
 		{
 			base.Configure(builder);
 
+			builder.Property(p => p.Name).HasMaxLength(100).IsRequired();
+
 			builder.HasOne(p => p.User)
 				   .WithOne(u => u.UserProfile)
 				   .HasForeignKey<UserProfile>(p => p.UserId)

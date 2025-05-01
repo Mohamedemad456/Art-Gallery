@@ -9,20 +9,20 @@ namespace FCIH.ArtGallery.APIs.Extensions
 
 			using var scope = app.Services.CreateAsyncScope();
 			var services = scope.ServiceProvider;
-			var storeContextInitializer = services.GetRequiredService<IStoreDbInitializer>();
-			var storeIdentityContextInitializer = services.GetRequiredService<IStoreIdentityDbInitializer>();
+			var artGalleryIdentityContextInitializer = services.GetRequiredService<IStoreIdentityDbInitializer>();
+			var artgalleryContextInitializer = services.GetRequiredService<IStoreDbInitializer>();
 
 
 			var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
 			try
 			{
-				await storeContextInitializer.InitializeAsync();
-				await storeContextInitializer.SeedAsync();
 
-				await storeIdentityContextInitializer.InitializeAsync();
-				await storeIdentityContextInitializer.SeedAsync();
+				await artGalleryIdentityContextInitializer.InitializeDbAsync();
+				await artGalleryIdentityContextInitializer.SeedAsync();
 
+				await artgalleryContextInitializer.InitializeDbAsync();
+				await artgalleryContextInitializer.SeedAsync();
 			}
 			catch (Exception ex)
 			{

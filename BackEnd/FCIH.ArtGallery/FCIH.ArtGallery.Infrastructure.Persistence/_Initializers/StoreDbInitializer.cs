@@ -38,7 +38,6 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 					await _dbContext.SaveChangesAsync();
 				}
 			}
-
 			if (!_dbContext.Artworks.Any())
 			{
 				var ArtworksData = await File.ReadAllTextAsync("../FCIH.ArtGallery.Infrastructure.Persistence/_Data/Seeds/artworks.json");
@@ -50,6 +49,8 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 					await _dbContext.SaveChangesAsync();
 				}
 			}
+			
+
 
 			if (!_dbContext.ArtworkTags.Any())
 			{
@@ -77,11 +78,11 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			if (!_dbContext.Bids.Any())
 			{
 				var bidsData = await File.ReadAllTextAsync("../FCIH.ArtGallery.Infrastructure.Persistence/_Data/Seeds/bids.json");
-				var bids = JsonSerializer.Deserialize<List<Auction>>(bidsData);
+				var bids = JsonSerializer.Deserialize<List<Bid>>(bidsData);
 
 				if (bids?.Count > 0)
 				{
-					await _dbContext.Set<Auction>().AddRangeAsync(bids);
+					await _dbContext.Set<Bid>().AddRangeAsync(bids);
 					await _dbContext.SaveChangesAsync();
 				}
 			}

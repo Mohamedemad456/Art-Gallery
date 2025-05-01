@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250430040304_InitialMigrationOfProjectSetUp")]
+    [Migration("20250501030219_InitialMigrationOfProjectSetUp")]
     partial class InitialMigrationOfProjectSetUp
     {
         /// <inheritdoc />
@@ -309,6 +309,11 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("ProfileType")
                         .IsRequired()

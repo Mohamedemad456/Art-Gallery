@@ -23,10 +23,10 @@ namespace FCIH.ArtGallery.APIs
 
 
 			//webApplicationBuilder.Services.AddApplicationServices();
+			webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 			webApplicationBuilder.Services.AddPersistenceServices(webApplicationBuilder.Configuration);
 			//webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
 
-			webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 
 			#endregion
 

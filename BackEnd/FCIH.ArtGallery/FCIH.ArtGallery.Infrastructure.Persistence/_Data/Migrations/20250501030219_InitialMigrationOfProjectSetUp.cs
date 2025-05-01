@@ -188,6 +188,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ProfileType = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     Bio = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),

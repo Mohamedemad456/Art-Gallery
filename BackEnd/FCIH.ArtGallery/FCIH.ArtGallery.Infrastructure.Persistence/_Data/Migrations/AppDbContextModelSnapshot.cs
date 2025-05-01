@@ -307,6 +307,11 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("ProfileType")
                         .IsRequired()
                         .HasMaxLength(13)

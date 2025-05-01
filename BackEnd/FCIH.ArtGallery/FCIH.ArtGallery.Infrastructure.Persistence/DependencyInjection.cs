@@ -37,10 +37,10 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence
 				.AddInterceptors(auditableInterceptor, softDeleteInterceptor);
 			});
 
-			services.AddScoped(typeof(IStoreDbInitializer), typeof(StoreDbInitializer));
 			services.AddScoped(typeof(AuditableEntitySaveChangesInterceptor));
 			services.AddScoped(typeof(SoftDeleteInterceptor));
 			services.AddScoped(typeof(IStoreIdentityDbInitializer), typeof(StoreIdentityDbInitializer));
+			services.AddScoped(typeof(IStoreDbInitializer), typeof(StoreDbInitializer));
 
 
 			
