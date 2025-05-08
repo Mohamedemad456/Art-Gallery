@@ -1,4 +1,5 @@
 ﻿using FCIH.ArtGallery.Core.Domain._Common;
+using FCIH.ArtGallery.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace FCIH.ArtGallery.Core.Domain.Entities
 		public string? Bio { get; set; }
 		public string? ProfilePictureUrl { get; set; }
 
-		public bool IsApproved { get; set; } = false;
+
+		public ApprovalStatus? ApprovalStatus { get; set; }
 
 		// Navigation
 		public virtual ICollection<Artwork> Artworks { get; set; } = new HashSet<Artwork>();

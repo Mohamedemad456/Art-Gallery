@@ -19,12 +19,14 @@ public class AuctionConfiguration : BaseAuditableEntityConfiguration<Auction, Gu
 
 			builder.Property(a => a.StartTime).IsRequired();
 			builder.Property(a => a.EndTime).IsRequired();
-			builder.Property(a => a.FinalPrice);
+			builder.Property(a => a.FinalPrice).HasColumnType("decimal(18,2)");
 
 			builder.HasMany(a => a.Bids)
 				   .WithOne(b => b.Auction)
 				   .HasForeignKey(b => b.AuctionId)
 				   .OnDelete(DeleteBehavior.Cascade);
+
+			builder.HasQueryFilter(a => !a.IsDeleted);
 		}
 	}
 }

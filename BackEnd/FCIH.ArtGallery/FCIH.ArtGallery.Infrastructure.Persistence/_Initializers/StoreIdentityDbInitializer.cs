@@ -127,7 +127,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 				UserId = artistUser.Id,
 				Bio = "Default artist bio",
 				IsDeleted = false,
-				IsApproved = true,
+				ApprovalStatus = ApprovalStatus.Accepted
 			};
 
 			_context.UserProfiles.Add(profile);

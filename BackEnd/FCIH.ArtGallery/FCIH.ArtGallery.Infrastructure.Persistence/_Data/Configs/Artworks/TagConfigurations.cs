@@ -21,6 +21,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Configs.Artworks
 
 			builder.Property(t => t.Name).IsRequired().HasMaxLength(100);
 
+			builder.HasQueryFilter(t => !t.IsDeleted);
 
 
 		}

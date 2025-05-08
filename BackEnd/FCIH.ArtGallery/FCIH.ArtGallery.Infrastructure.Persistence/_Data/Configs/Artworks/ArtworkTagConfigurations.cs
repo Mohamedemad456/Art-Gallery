@@ -27,7 +27,10 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Configs.Artworks
 				   .WithMany(t => t.ArtworkTags)
 				   .HasForeignKey(at => at.TagId)
 				   .OnDelete(DeleteBehavior.Cascade);
-		
+
+			builder.HasQueryFilter(at => !at.Artwork.IsDeleted);
+			builder.HasQueryFilter(at => !at.Tag.IsDeleted);
+
 		}
 	}
 }

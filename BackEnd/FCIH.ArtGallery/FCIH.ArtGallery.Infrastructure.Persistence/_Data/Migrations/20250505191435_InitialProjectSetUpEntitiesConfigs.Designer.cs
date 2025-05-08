@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250501030219_InitialMigrationOfProjectSetUp")]
-    partial class InitialMigrationOfProjectSetUp
+    [Migration("20250505191435_InitialProjectSetUpEntitiesConfigs")]
+    partial class InitialProjectSetUpEntitiesConfigs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,12 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ApprovalStatus")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)")
+                        .HasDefaultValue("Pending");
 
                     b.Property<Guid>("ArtistId")
                         .HasColumnType("uniqueidentifier");
@@ -55,9 +61,6 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
-
-                    b.Property<bool>("IsApproved")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -477,14 +480,12 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                 {
                     b.HasBaseType("FCIH.ArtGallery.Core.Domain.Entities.UserProfile");
 
+                    b.Property<string>("ApprovalStatus")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Bio")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("IsApproved")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
 
                     b.Property<string>("ProfilePictureUrl")
                         .HasMaxLength(300)

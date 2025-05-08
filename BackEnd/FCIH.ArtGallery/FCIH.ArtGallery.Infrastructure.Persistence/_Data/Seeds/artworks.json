@@ -5,7 +5,7 @@
     "Description": "A beautiful sunset landscape painting in oil with vibrant colors.",
     "Price": 100,
     "ImageUrl": "images/artworks/Sunset-Overdrive.jpg",
-    "IsApproved": true,
+    "ApprovalStatus": "Accepted",
     "CategoryId": "1bfb69cf-9708-4e5a-834e-83a18f08083d",
     "ArtistId": "10ad4851-7723-4746-95bb-fbb1c625085e",
     "CreatedBy": "system",

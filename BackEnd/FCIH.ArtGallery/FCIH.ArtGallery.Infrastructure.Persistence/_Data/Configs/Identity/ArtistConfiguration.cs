@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FCIH.ArtGallery.Infrastructure.Persistence._Common;
+using FCIH.ArtGallery.Core.Domain.Enums;
 
 namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Configs.Identity
 {
@@ -20,9 +21,8 @@ public class ArtistConfiguration : IEntityTypeConfiguration<Artist>
 			builder.Property(a => a.Bio).HasMaxLength(500);
 			builder.Property(a => a.ProfilePictureUrl).HasMaxLength(300);
 
-			builder.Property(a => a.IsApproved)
-				.IsRequired()
-				.HasDefaultValue(false);
+			builder.Property(a => a.ApprovalStatus)
+				.HasConversion<string>();
 
 			builder.HasMany(a => a.Artworks)
 				   .WithOne(aw => aw.Artist)

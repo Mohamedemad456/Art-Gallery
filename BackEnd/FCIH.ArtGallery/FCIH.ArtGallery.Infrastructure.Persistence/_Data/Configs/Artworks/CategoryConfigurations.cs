@@ -25,6 +25,8 @@ public class CategoryConfiguration : BaseEntityConfiguration<Category, Guid>
 				   .WithOne(a => a.Category)
 				   .HasForeignKey(a => a.CategoryId)
 				   .OnDelete(DeleteBehavior.Restrict);
+
+			builder.HasQueryFilter(c => !c.IsDeleted);
 		}
 	}
 }

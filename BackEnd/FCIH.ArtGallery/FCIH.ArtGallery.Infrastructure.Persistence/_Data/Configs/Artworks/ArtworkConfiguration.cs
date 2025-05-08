@@ -1,4 +1,5 @@
 ﻿using FCIH.ArtGallery.Core.Domain.Entities;
+using FCIH.ArtGallery.Core.Domain.Enums;
 using FCIH.ArtGallery.Infrastructure.Persistence._Common;
 using FCIH.ArtGallery.Infrastructure.Persistence._Data.Configs._Base;
 using Microsoft.EntityFrameworkCore;
@@ -19,12 +20,16 @@ public class ArtworkConfiguration : BaseAuditableEntityConfiguration<Artwork, Gu
 
 			builder.Property(a => a.Title).HasMaxLength(200).IsRequired();
 			builder.Property(a => a.Description).HasMaxLength(1000);
-			builder.Property(a => a.Price).IsRequired();
+			builder.Property(a => a.Price).HasColumnType("decimal(18,2)").IsRequired();
 			builder.Property(a => a.ImageUrl).HasMaxLength(300).IsRequired();
-			builder.Property(a => a.IsApproved).IsRequired();
 
+			builder.Property(a => a.ApprovalStatus)
+				.HasConversion<string>()
+				.HasDefaultValue(ApprovalStatus.Pending)
+				.IsRequired();
 
-			
+			builder.HasQueryFilter(a => !a.IsDeleted);
+
 			builder.HasOne(a => a.Artist)
 			   .WithMany(ar => ar.Artworks)
 			   .HasForeignKey(a => a.ArtistId)

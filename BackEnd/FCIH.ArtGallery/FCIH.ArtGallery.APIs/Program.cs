@@ -1,8 +1,12 @@
 
+using FCIH.ArtGallery.APIs.Controllers.Errors;
 using FCIH.ArtGallery.APIs.Extensions;
+using FCIH.ArtGallery.APIs.Middlewares;
+using FCIH.ArtGallery.Core.Application;
 using FCIH.ArtGallery.Core.Application.Abstraction.Common;
 using FCIH.ArtGallery.Infrastructure.Persistence;
 using FCIH.ArtGallery.Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FCIH.ArtGallery.APIs
 {
@@ -15,14 +19,33 @@ namespace FCIH.ArtGallery.APIs
 			#region Configure Services
 			// Add services to the container.
 
-			webApplicationBuilder.Services.AddControllers(); // Register Required Services By ASP.NET Core Web APIs to Dependency Injection Container
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+			webApplicationBuilder.Services.AddControllers()
+				.ConfigureApiBehaviorOptions(options =>
+				{
+					options.SuppressModelStateInvalidFilter = false;
+					options.InvalidModelStateResponseFactory = (actionContext) =>
+					{
+						var errors = actionContext.ModelState.Where(P => P.Value!.Errors.Count > 0)
+									   .Select(P => new ApiValidationErrorResponse.ValidationError()
+									   {
+										   Field = P.Key,
+										   Errors = P.Value!.Errors.Select(E => E.ErrorMessage)
+									   });
+						return new BadRequestObjectResult(new ApiValidationErrorResponse()
+						{
+							Errors = errors
+						});
+					};
+				}).AddApplicationPart(typeof(Controllers.AssemblyInformation).Assembly); // Register Required Services By ASP.NET Core Web APIs to Dependency Injection Container
+			
+			
+			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             webApplicationBuilder.Services.AddEndpointsApiExplorer().AddSwaggerGen();
 
 			webApplicationBuilder.Services.AddHttpContextAccessor().AddScoped(typeof(ICurrentUserService), typeof(CurrentUserService));
 
 
-			//webApplicationBuilder.Services.AddApplicationServices();
+			webApplicationBuilder.Services.AddApplicationServices();
 			webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 			webApplicationBuilder.Services.AddPersistenceServices(webApplicationBuilder.Configuration);
 			//webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
@@ -40,6 +63,9 @@ namespace FCIH.ArtGallery.APIs
 
 			#region Configure Kestrel Middlewares
 			// Configure the HTTP request pipeline.
+
+			app.UseMiddleware<ExceptionHandlerMiddleware>();
+
 			if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

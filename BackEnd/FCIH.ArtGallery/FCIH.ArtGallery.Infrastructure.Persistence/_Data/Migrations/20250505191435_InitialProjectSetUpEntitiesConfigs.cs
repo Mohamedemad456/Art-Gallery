@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigrationOfProjectSetUp : Migration
+    public partial class InitialProjectSetUpEntitiesConfigs : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -193,7 +193,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                     ProfileType = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
                     Bio = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     ProfilePictureUrl = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
-                    IsApproved = table.Column<bool>(type: "bit", nullable: true, defaultValue: false),
+                    ApprovalStatus = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -216,7 +216,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Data.Migrations
                     Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
-                    IsApproved = table.Column<bool>(type: "bit", nullable: false),
+                    ApprovalStatus = table.Column<string>(type: "nvarchar(max)", nullable: false, defaultValue: "Pending"),
                     CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ArtistId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),

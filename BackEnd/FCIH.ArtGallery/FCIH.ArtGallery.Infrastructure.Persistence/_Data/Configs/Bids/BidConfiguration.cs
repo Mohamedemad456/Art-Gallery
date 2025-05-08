@@ -17,7 +17,7 @@ public class BidConfiguration : BaseAuditableEntityConfiguration<Bid, Guid>
 		{
 			base.Configure(builder);
 
-			builder.Property(b => b.Amount).IsRequired();
+			builder.Property(b => b.Amount).HasColumnType("decimal(18,2)").IsRequired();
 			builder.Property(b => b.TimePlaced).IsRequired();
 
 			builder.HasOne(b => b.Auction)
@@ -29,6 +29,9 @@ public class BidConfiguration : BaseAuditableEntityConfiguration<Bid, Guid>
 				   .WithMany(bu => bu.Bids)
 				   .HasForeignKey(b => b.BuyerId)
 				   .OnDelete(DeleteBehavior.Restrict);
+
+			builder.HasQueryFilter(b => !b.IsDeleted);
+
 		}
 	}
 }

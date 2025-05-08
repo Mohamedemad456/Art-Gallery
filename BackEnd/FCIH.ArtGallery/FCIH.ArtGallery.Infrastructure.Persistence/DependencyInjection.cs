@@ -1,20 +1,13 @@
 ﻿using FCIH.ArtGallery.Core.Application.Abstraction.Initializers;
+using FCIH.ArtGallery.Core.Application.Abstraction.Logging;
+using FCIH.ArtGallery.Core.Domain.Contracts.IRepositories;
 using FCIH.ArtGallery.Infrastructure.Persistence._Data;
 using FCIH.ArtGallery.Infrastructure.Persistence._Data.Interceptors;
 using FCIH.ArtGallery.Infrastructure.Persistence._Initializers;
+using FCIH.ArtGallery.Infrastructure.Persistence.Logging;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
-using FCIH.ArtGallery.Infrastructure.Persistence.Repositories;
-using FCIH.ArtGallery.Core.Application.Abstraction.Logging;
-using FCIH.ArtGallery.Infrastructure.Persistence.Logging;
-using FCIH.ArtGallery.Core.Domain.Contracts.IRepositories;
 
 namespace FCIH.ArtGallery.Infrastructure.Persistence
 {

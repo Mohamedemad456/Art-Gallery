@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
@@ -40,8 +41,14 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence._Initializers
 			}
 			if (!_dbContext.Artworks.Any())
 			{
+
 				var ArtworksData = await File.ReadAllTextAsync("../FCIH.ArtGallery.Infrastructure.Persistence/_Data/Seeds/artworks.json");
-				var Artworks = JsonSerializer.Deserialize<List<Artwork>>(ArtworksData);
+				var options = new JsonSerializerOptions
+				{
+					PropertyNameCaseInsensitive = true,
+					Converters ={ new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+				};
+				var Artworks = JsonSerializer.Deserialize<List<Artwork>>(ArtworksData, options);
 
 				if (Artworks?.Count > 0)
 				{
