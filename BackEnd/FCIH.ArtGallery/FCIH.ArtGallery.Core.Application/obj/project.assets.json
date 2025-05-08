@@ -481,7 +481,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "FCIH.ArtGallery.Core.Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
         },

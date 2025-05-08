@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "ee52cc77-a1f4-4fe8-8ee3-4b9efa2a29bd",
+    "ArtworkId": "2e94c3c0-3030-4404-b3c8-fd7bffaf0668",
+    "StartTime": "2025-04-25T12:26:38.860691Z",
+    "EndTime": "2025-04-30T12:26:38.860691Z",
+    "FinalPrice": null,
+    "IsDeleted": false,
+    "CreatedBy": "system",
+    "CreatedAt": "2025-04-25T12:26:38.860691Z",
+    "LastModifiedBy": "system",
+    "LastModifiedAt": "2025-04-25T12:26:38.860691Z"
+  }
+]

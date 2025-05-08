@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FCIH.ArtGallery.Core.Domain\FCIH.ArtGallery.Core.Domain.csproj" />
+    <Folder Include="Models\Admin\DTOs\" />
+    <Folder Include="Models\Common\" />
   </ItemGroup>
 
 </Project>

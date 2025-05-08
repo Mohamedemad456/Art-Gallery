@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "96db95fd-5f5b-4542-85e6-052ce7e4453c",
+    "Name": "modern",
+    "IsDeleted": false
+  },
+  {
+    "Id": "2177f03e-0e90-4020-941d-322be042114b",
+    "Name": "oil painting",
+    "IsDeleted": false
+  },
+  {
+    "Id": "d29a05c5-1023-4e1f-9a7d-80033e487683",
+    "Name": "vibrant",
+    "IsDeleted": false
+  }
+]

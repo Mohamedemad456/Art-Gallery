@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "cqvQ5MG9YA/LQWGccaI3iqgpCC7maniKGU2TyHgKc/8=",
+  "Source": "FCIH.ArtGallery.APIs",
+  "BasePath": "_content/FCIH.ArtGallery.APIs",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FCIH.ArtGallery.APIs\\wwwroot",
+      "Source": "FCIH.ArtGallery.APIs",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "BasePath": "_content/FCIH.ArtGallery.APIs",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "SourceId": "FCIH.ArtGallery.APIs",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "BasePath": "_content/FCIH.ArtGallery.APIs",
+      "RelativePath": "images/artworks/Sunset-Overdrive#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yz9cveu7ep",
+      "Integrity": "ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\artworks\\Sunset-Overdrive.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/artworks/Sunset-Overdrive.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20561614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 08:27:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/Sunset-Overdrive.yz9cveu7ep.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20561614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 08:27:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yz9cveu7ep"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/Sunset-Overdrive.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4="
+        }
+      ]
+    }
+  ]
+}
