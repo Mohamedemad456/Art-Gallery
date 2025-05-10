@@ -13,12 +13,12 @@ namespace FCIH.ArtGallery.Core.Domain.Contracts.IRepositories
 	   where TKey : IEquatable<TKey>
 	{
 		Task<IEnumerable<TEntity>> GetAllAsync(bool withTracking = false);
-		Task<IEnumerable<TEntity>> GetAllWithSpecAsync(ISpecifications<TEntity, TKey> spec, bool withTracking = false);
+		Task<IEnumerable<TEntity>> GetAllWithSpecAsync(ISpecification<TEntity, TKey> spec, bool withTracking = false);
 
 		Task<TEntity?> GetAsync(TKey id);
-		Task<TEntity?> GetWithSpecAsync(ISpecifications<TEntity, TKey> spec);
+		Task<TEntity?> GetWithSpecAsync(ISpecification<TEntity, TKey> spec);
 
-		Task<int> GetCountAsync(ISpecifications<TEntity, TKey> spec);
+		Task<int> GetCountAsync(ISpecification<TEntity, TKey> spec);
 
 		Task AddAsync(TEntity entity);
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cqvQ5MG9YA/LQWGccaI3iqgpCC7maniKGU2TyHgKc/8=",
+  "Hash": "axA5Jf6G9uUC2NB97+RRK4MAzfmASeNTJNrFmxmKj3c=",
   "Source": "FCIH.ArtGallery.APIs",
   "BasePath": "_content/FCIH.ArtGallery.APIs",
   "Mode": "Default",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 08:27:06 GMT"
+          "Value": "Thu, 08 May 2025 18:17:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 08:27:06 GMT"
+          "Value": "Thu, 08 May 2025 18:17:43 GMT"
         },
         {
           "Name": "Cache-Control",

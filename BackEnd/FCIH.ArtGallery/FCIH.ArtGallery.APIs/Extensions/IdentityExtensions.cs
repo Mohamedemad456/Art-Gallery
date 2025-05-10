@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 using System.Text;
 
 namespace FCIH.ArtGallery.APIs.Extensions
@@ -59,7 +60,10 @@ namespace FCIH.ArtGallery.APIs.Extensions
 						ValidateIssuerSigningKey = true,
 						
 						ValidAudience = jwtSettings.Audience,
+						
 						ValidIssuer = jwtSettings.Issuer,
+
+						RoleClaimType = ClaimTypes.Role,
 
 						IssuerSigningKey = new SymmetricSecurityKey(key),
 
@@ -67,6 +71,8 @@ namespace FCIH.ArtGallery.APIs.Extensions
 
 					};
 					
+
+
 					// allow cookies
 
 					options.Events = new JwtBearerEvents
@@ -82,6 +88,7 @@ namespace FCIH.ArtGallery.APIs.Extensions
 					};
 
 				});
+
 
 			services.AddScoped(typeof(IAuthService), typeof(AuthService));
 

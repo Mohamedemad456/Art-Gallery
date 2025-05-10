@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FCIH.ArtGallery.Core.Domain.Contracts.ISpecifications
 {
-	public interface ISpecifications<TEntity, TKey>
+	public interface ISpecification<TEntity, TKey>
 		where TEntity : BaseEntity<TKey>
 		where TKey : IEquatable<TKey>
 	{

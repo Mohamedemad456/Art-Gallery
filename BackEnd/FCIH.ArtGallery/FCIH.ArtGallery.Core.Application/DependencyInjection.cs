@@ -1,4 +1,5 @@
 ﻿using FCIH.ArtGallery.Core.Application.Abstraction;
+using FCIH.ArtGallery.Core.Application.Mapping;
 using FCIH.ArtGallery.Core.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -14,9 +15,10 @@ namespace FCIH.ArtGallery.Core.Application
 		public static IServiceCollection AddApplicationServices(this IServiceCollection services)
 		{
 
-			//services.AddAutoMapper(typeof(MappingProfile));
+			services.AddAutoMapper(typeof(MappingProfile));
 
 			services.AddScoped(typeof(IServiceManager), typeof(ServiceManager));
+
 
 			return services;
 		}

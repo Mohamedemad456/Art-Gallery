@@ -26,7 +26,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 
 		}
 
-		public async Task<IEnumerable<TEntity>> GetAllWithSpecAsync(ISpecifications<TEntity, TKey> spec, bool withTracking = false)
+		public async Task<IEnumerable<TEntity>> GetAllWithSpecAsync(ISpecification<TEntity, TKey> spec, bool withTracking = false)
 		{
 			var query = ApplySpecifications(spec);
 			if (!withTracking)
@@ -46,14 +46,14 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 			return await DbContext.Set<TEntity>().FirstOrDefaultAsync(E => E.Id.Equals(id));
 		}
 
-		public async Task<TEntity?> GetWithSpecAsync(ISpecifications<TEntity, TKey> spec)
+		public async Task<TEntity?> GetWithSpecAsync(ISpecification<TEntity, TKey> spec)
 		{
 			return await ApplySpecifications(spec).FirstOrDefaultAsync();
 
 		}
 
 
-		public async Task<int> GetCountAsync(ISpecifications<TEntity, TKey> spec)
+		public async Task<int> GetCountAsync(ISpecification<TEntity, TKey> spec)
 		{
 			return await ApplySpecifications(spec).CountAsync();
 		}
@@ -76,7 +76,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 
 
 		#region Helpers
-		private IQueryable<TEntity> ApplySpecifications(ISpecifications<TEntity, TKey> spec)
+		private IQueryable<TEntity> ApplySpecifications(ISpecification<TEntity, TKey> spec)
 		{
 			return SpecificationsEvaluator<TEntity, TKey>.GetQuery(DbContext.Set<TEntity>(), spec);
 		}

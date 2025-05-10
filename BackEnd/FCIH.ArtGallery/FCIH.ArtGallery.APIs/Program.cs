@@ -79,6 +79,7 @@ namespace FCIH.ArtGallery.APIs
 
 			app.UseStaticFiles();
 
+
 			app.UseAuthentication();
 			app.UseAuthorization();
 

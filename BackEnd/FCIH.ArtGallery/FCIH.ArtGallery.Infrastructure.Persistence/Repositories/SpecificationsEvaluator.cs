@@ -14,7 +14,7 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 	where TEntity : BaseEntity<TKey>
 	where TKey : IEquatable<TKey>
 	{
-		public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecifications<TEntity, TKey> spec)
+		public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity, TKey> spec)
 		{
 			var query = inputQuery; 
 

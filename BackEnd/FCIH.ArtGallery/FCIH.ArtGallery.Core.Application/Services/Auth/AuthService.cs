@@ -241,7 +241,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 		{
 			new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
 			new Claim(ClaimTypes.Email, user.Email!),
-			new Claim(ClaimTypes.Role, role),
+			new Claim(ClaimTypes.Role, role.ToString()),
 			new Claim(ClaimTypes.GivenName, user.DisplayName),
 
 		}.Union(await userManager.GetClaimsAsync(user)).ToList();
