@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCIH.ArtGallery.Core.Application.Abstraction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41a86c993a646276cdb5afa721f1aefc5339aa7f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b0a1fc22134dea5a6841c439cde259168bd8702")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCIH.ArtGallery.Core.Application.Abstraction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCIH.ArtGallery.Core.Application.Abstraction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
