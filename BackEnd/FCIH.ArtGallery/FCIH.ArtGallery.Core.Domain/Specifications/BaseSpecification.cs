@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace FCIH.ArtGallery.Core.Domain.Specifications
 {
-	public class BaseSpecifications<TEntity, TKey> : ISpecifications<TEntity, TKey>
-		where TEntity : BaseAuditableEntity<TKey>
+	public class BaseSpecifications<TEntity, TKey> : ISpecification<TEntity, TKey>
+		where TEntity : BaseEntity<TKey>
 		where TKey : IEquatable<TKey>
 	{
 		public Expression<Func<TEntity, bool>>? Criteria { get; set; } = null;
