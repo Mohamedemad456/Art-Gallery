@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCIH.ArtGallery.APIs.Controllers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c60eb4cab563e3b2a62db5262c3069716770b446")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41a86c993a646276cdb5afa721f1aefc5339aa7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCIH.ArtGallery.APIs.Controllers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCIH.ArtGallery.APIs.Controllers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
