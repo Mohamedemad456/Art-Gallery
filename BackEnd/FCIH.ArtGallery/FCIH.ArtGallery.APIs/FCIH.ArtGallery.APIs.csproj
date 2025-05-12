@@ -23,4 +23,8 @@
     <ProjectReference Include="..\FCIH.ArtGallery.Infrastructure\FCIH.ArtGallery.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\artists\" />
+  </ItemGroup>
+
 </Project>

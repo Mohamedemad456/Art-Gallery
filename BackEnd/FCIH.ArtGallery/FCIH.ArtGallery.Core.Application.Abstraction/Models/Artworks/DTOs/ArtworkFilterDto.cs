@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artworks.DTOs
 {
-	public class ArtworkSpecParams
+	public class ArtworkFilterDto
 	{
 		private string? search;
 
@@ -19,6 +19,13 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artworks.DTOs
 			get { return search; }
 			set { search = value?.ToUpper(); }
 		}
+
+		public string? Title { get; set; }
+
+
+		public Guid? ArtistId { get; set; }
+		public Guid? CategoryId { get; set; }
+		public List<Guid>? TagIds { get; set; }
 
 		public int PageIndex { get; set; } = 1;
 

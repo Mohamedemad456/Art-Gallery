@@ -95,7 +95,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 			await unitOfWork.CompleteAsync();
 
 			var accessToken = await GenerateAccessToken(user, model.Role);
-			SetRefreshTokenInCookie(user);
+			await SetRefreshTokenInCookie(user);
 
 			return new AuthResponseDto
 			{
@@ -142,7 +142,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 
 
 			var accessToken = await GenerateAccessToken(user, role);
-			SetRefreshTokenInCookie(user);
+			await SetRefreshTokenInCookie(user);
 
 			var response = new AuthResponseDto()
 			{
@@ -220,7 +220,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 			var role = roles.FirstOrDefault() ?? throw new Exception("User has no role");
 
 			var newAccessToken = await GenerateAccessToken(user, role);
-			SetRefreshTokenInCookie(user);
+			 await SetRefreshTokenInCookie(user);
 
 			var response = new RefreshTokenResponseDto
 			{
@@ -266,9 +266,9 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 			return new JwtSecurityTokenHandler().WriteToken(token);
 		}
 
-		private void SetRefreshTokenInCookie(User user)
+		private async Task SetRefreshTokenInCookie(User user)
 		{
-			var refreshToken = GenerateRefreshToken(user);
+			var refreshToken = await GenerateRefreshToken(user);
 
 			httpContextAccessor.HttpContext?.Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
 			{
@@ -279,14 +279,22 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 			});
 		}
 
-		private string GenerateRefreshToken(User user)
+		private async Task<string> GenerateRefreshToken(User user)
 		{
 			var claims = new List<Claim>
 		{
 			new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
 			new Claim(ClaimTypes.Email, user.Email!),
 
+			
+
 		};
+
+			var roles = await userManager.GetRolesAsync(user);
+
+
+			foreach (var role in roles)
+				claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
 
 			var rkey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
 			var creds = new SigningCredentials(rkey, SecurityAlgorithms.HmacSha256);

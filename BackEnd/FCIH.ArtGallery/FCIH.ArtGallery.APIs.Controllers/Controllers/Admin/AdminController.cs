@@ -2,6 +2,7 @@
 using FCIH.ArtGallery.Core.Application.Abstraction;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Admin.DTOs;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Common;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace FCIH.ArtGallery.APIs.Controllers.Controllers.Admin
 {
-	[Authorize()]
+	[Authorize( Roles = "Admin")]
 	public class AdminController (IServiceManager serviceManager) :ApiControllerBase
 	{
 
