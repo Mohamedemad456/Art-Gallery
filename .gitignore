@@ -22,3 +22,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /BackEnd/FCIH.ArtGallery/.vs/FCIH.ArtGallery
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs/obj/Debug/net8.0/FCIH.ArtGallery.APIs.AssemblyInfo.cs
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs/obj/Debug/net8.0/FCIH.ArtGallery.APIs.AssemblyInfoInputs.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs/obj/Debug/net8.0/FCIH.ArtGallery.APIs.csproj.AssemblyReference.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs.Controllers/obj/Debug/net8.0/FCIH.ArtGallery.APIs.Controllers.AssemblyInfo.cs
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs.Controllers/obj/Debug/net8.0/FCIH.ArtGallery.APIs.Controllers.AssemblyInfoInputs.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.APIs.Controllers/obj/Debug/net8.0/FCIH.ArtGallery.APIs.Controllers.csproj.AssemblyReference.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Application/obj/Debug/net8.0/FCIH.ArtGallery.Core.Application.AssemblyInfo.cs
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Application/obj/Debug/net8.0/FCIH.ArtGallery.Core.Application.AssemblyInfoInputs.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Application/obj/Debug/net8.0/FCIH.ArtGallery.Core.Application.csproj.AssemblyReference.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Application.Abstraction/obj/Debug/net8.0/FCIH.ArtGallery.Core.Application.Abstraction.AssemblyInfo.cs
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Application.Abstraction/obj/Debug/net8.0/FCIH.ArtGallery.Core.Application.Abstraction.AssemblyInfoInputs.cache
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Domain/obj/Debug/net8.0/FCIH.ArtGallery.Core.Domain.AssemblyInfo.cs
+/BackEnd/FCIH.ArtGallery/FCIH.ArtGallery.Core.Domain/obj/Debug/net8.0/FCIH.ArtGallery.Core.Domain.AssemblyInfoInputs.cache
