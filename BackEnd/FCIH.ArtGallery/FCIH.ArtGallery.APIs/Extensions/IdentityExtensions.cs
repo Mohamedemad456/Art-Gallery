@@ -63,7 +63,7 @@ namespace FCIH.ArtGallery.APIs.Extensions
 						
 						ValidIssuer = jwtSettings.Issuer,
 
-						RoleClaimType = ClaimTypes.Role,
+						//RoleClaimType = ClaimTypes.Role,
 
 						IssuerSigningKey = new SymmetricSecurityKey(key),
 

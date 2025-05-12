@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using FCIH.ArtGallery.Core.Application.Abstraction;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Admin;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Auth;
 using FCIH.ArtGallery.Core.Application.Services.Admin;
+using FCIH.ArtGallery.Core.Application.Services.Artist_Service;
 using FCIH.ArtGallery.Core.Domain.Contracts.IRepositories;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -17,6 +19,7 @@ namespace FCIH.ArtGallery.Core.Application.Services
 	{
 		private readonly Lazy<IAuthService> _authService;
 		private readonly Lazy<IAdminService> _adminService;
+		private readonly Lazy<IArtistService> _artistService;
 
 		private readonly IConfiguration _configuration;
 
@@ -25,9 +28,14 @@ namespace FCIH.ArtGallery.Core.Application.Services
 
 			_configuration = configuration;
 
-			_adminService = new Lazy<IAdminService>(() => new AdminService(unitOfWork, mapper));
+
 
 			_authService = new Lazy<IAuthService>(authServiceFactory, LazyThreadSafetyMode.ExecutionAndPublication);
+			_adminService = new Lazy<IAdminService>(() => new AdminService(unitOfWork, mapper));
+			_artistService = new Lazy<IArtistService>(() => new ArtistService(unitOfWork, mapper));
+
+
+
 		}
 
 
@@ -36,5 +44,6 @@ namespace FCIH.ArtGallery.Core.Application.Services
 
 		public IAdminService AdminService => _adminService.Value;
 
+		public IArtistService ArtistService => _artistService.Value;
 	}
 }

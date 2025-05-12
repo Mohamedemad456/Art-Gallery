@@ -1,5 +1,10 @@
 ﻿using AutoMapper;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Admin.DTOs;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Artworks.DTOs;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Bids.DTOs;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Category.DTOs;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Tag;
 using FCIH.ArtGallery.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -20,6 +25,76 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 			CreateMap<Artwork, PendingArtworkDto>()
 			.ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => src.Artist.User.DisplayName))
 			.ForMember(dest => dest.ImageUrl, O => O.MapFrom<PendingArtworkPictureUrlResolver>());
+
+
+
+			// Artwork Mappings
+			CreateMap<Artwork, ArtistArtworkListDto>()
+				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
+				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
+				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<ArtworkListPictureUrlResolver>());
+
+			CreateMap<Category, CategoryDto>();
+			CreateMap<Tag, TagDto>();
+
+
+			CreateMap<Artwork, ArtistArtworkDetailsDto>()
+				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
+				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
+				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<ArtistArtworkDetailsPictureUrlResolver>())
+				.ForMember(dest => dest.AuctionStart, opt => opt.MapFrom(src => src.Auction!.StartTime))
+				.ForMember(dest => dest.AuctionEnd, opt => opt.MapFrom(src => src.Auction!.EndTime))
+				.ForMember(dest => dest.Bids, opt => opt.MapFrom(src => src.Auction!.Bids));
+
+
+			CreateMap<Tag, TagDto>();
+			CreateMap<Bid, BidDto>()
+				.ForMember(dest => dest.BuyerName, opt => opt.MapFrom(src => src.Buyer.Name));
+
+			CreateMap<Bid, WinnerBidDto>()
+				.ForMember(dest => dest.BuyerId, opt => opt.MapFrom(src => src.BuyerId))
+				.ForMember(dest => dest.BuyerFullName, opt => opt.MapFrom(src => src.Buyer.Name))
+				.ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
+				.ForMember(dest => dest.BidTime, opt => opt.MapFrom(src => src.CreatedAt));
+
+			// Artist Profile Mapping
+			CreateMap<Artist, ArtistProfileDto>()
+				.ForMember(d => d.FullName , o => o.MapFrom(s => s.Name))
+				.ForMember(dest => dest.ProfileImageUrl, O => O.MapFrom<ArtistProfilePictureUrlResolver>());
+
+
+			// CreateArtworkDto to Artwork
+			CreateMap<ArtistCreateArtworkDto, Artwork>()
+				.ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.CategoryId))
+				.ForMember(dest => dest.ImageUrl, opt => opt.Ignore())
+				.ForMember(dest => dest.ArtworkTags, opt => opt.Ignore());
+
+			// UpdateArtworkDto to Artwork
+			CreateMap<ArtistUpdateArtworkDto, Artwork>()
+				.ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.CategoryId))
+				.ForMember(dest => dest.ImageUrl, opt => opt.Ignore())
+				.ForMember(dest => dest.ArtworkTags, opt => opt.Ignore());
+
+
+
+			// Artowrk To Return For buyer
+
+			CreateMap<Artwork, ArtworkListDto>()
+				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
+				.ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => src.Artist.Name))
+				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
+				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<PublicArtworkListPictureUrlResolver>());
+
+
+
+			CreateMap<Artwork, ArtworkDetailsDto>()
+				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
+				.ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => src.Artist.Name))
+				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
+				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<PublicArtworkDetailsPictureUrlResolver>())
+				.ForMember(dest => dest.AuctionStart, opt => opt.MapFrom(src => src.Auction!.StartTime))
+				.ForMember(dest => dest.AuctionEnd, opt => opt.MapFrom(src => src.Auction!.EndTime))
+				.ForMember(dest => dest.BidsHistory, opt => opt.MapFrom(src => src.Auction!.Bids));
 
 		}
 	}

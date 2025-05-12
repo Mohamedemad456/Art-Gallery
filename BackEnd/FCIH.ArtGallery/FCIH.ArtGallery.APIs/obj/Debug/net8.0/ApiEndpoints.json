@@ -39,7 +39,7 @@
     "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Admin.AdminController",
     "Method": "RejectArtist",
     "RelativePath": "api/Admin/artist/reject-artist/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -55,7 +55,7 @@
     "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Admin.AdminController",
     "Method": "AcceptArtwork",
     "RelativePath": "api/Admin/artwork/accept-artwork/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -102,7 +102,7 @@
     "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Admin.AdminController",
     "Method": "RejectArtwork",
     "RelativePath": "api/Admin/artwork/reject-artwork/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -113,6 +113,273 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "CreateArtwork",
+    "RelativePath": "api/Artist/artworks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartingPrice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuctionStart",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuctionEnd",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "GetOwnArtworks",
+    "RelativePath": "api/Artist/artworks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ApprovalStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FCIH.ArtGallery.Core.Application.Abstraction.Models.Common.Pagination\u00601[[FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs.ArtistArtworkListDto, FCIH.ArtGallery.Core.Application.Abstraction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "UpdateArtwork",
+    "RelativePath": "api/Artist/artworks/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartingPrice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuctionStart",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "AuctionEnd",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "DeleteArtwork",
+    "RelativePath": "api/Artist/artworks/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "GetArtworkDetails",
+    "RelativePath": "api/Artist/artworks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs.ArtistArtworkDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "ExtendAuction",
+    "RelativePath": "api/Artist/artworks/{id}/extend-auction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "duration",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "GetAuctionWinner",
+    "RelativePath": "api/Artist/artworks/winner/{artworkId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artworkId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FCIH.ArtGallery.Core.Application.Abstraction.Models.Bids.DTOs.WinnerBidDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Artist.ArtistController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Artist/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs.ArtistProfileDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "FCIH.ArtGallery.APIs.Controllers.Controllers.Auth.AuthController",

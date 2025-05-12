@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,6 +47,10 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 			return await DbContext.Set<TEntity>().FirstOrDefaultAsync(E => E.Id.Equals(id));
 		}
 
+		public async Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> predicate)
+		{
+			return await DbContext.Set<TEntity>().FirstOrDefaultAsync(predicate);
+		}
 		public async Task<TEntity?> GetWithSpecAsync(ISpecification<TEntity, TKey> spec)
 		{
 			return await ApplySpecifications(spec).FirstOrDefaultAsync();
