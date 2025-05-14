@@ -20,7 +20,7 @@ namespace FCIH.ArtGallery.APIs.Controllers.Controllers.Auth
 
 		[HttpPost("register")] // POST: /api/auth/register
 		[AllowAnonymous]
-		public async Task<ActionResult<AuthResponseDto>> Register([FromBody] RegisterRequestDto model)
+		public async Task<ActionResult<AuthResponseDto>> Register([FromForm] RegisterRequestDto model)
 		{
 			var response = await serviceManager.AuthService.RegisterAsync(model);
 			return Ok(response);

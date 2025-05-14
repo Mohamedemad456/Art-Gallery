@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "PackagePath": "staticwebassets\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg"
+    },
+    {
       "Id": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
       "PackagePath": "staticwebassets\\images\\artworks\\Sunset-Overdrive.jpg"
     },

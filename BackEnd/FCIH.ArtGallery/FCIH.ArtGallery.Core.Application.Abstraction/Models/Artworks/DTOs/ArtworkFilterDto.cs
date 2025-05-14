@@ -8,17 +8,9 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artworks.DTOs
 {
 	public class ArtworkFilterDto
 	{
-		private string? search;
 
 		private const int MaxPageSize = 10;
 		private int pageSize = 5;
-		public string? Sort { get; set; }
-
-		public string? Search
-		{
-			get { return search; }
-			set { search = value?.ToUpper(); }
-		}
 
 		public string? Title { get; set; }
 

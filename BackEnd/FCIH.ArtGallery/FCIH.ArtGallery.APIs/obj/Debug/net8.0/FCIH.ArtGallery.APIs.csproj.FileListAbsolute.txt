@@ -58,7 +58,6 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\MimeKit.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Mono.TextTemplating.dll
-E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\StackExchange.Redis.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -75,7 +74,6 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Drawing.Common.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Memory.Data.dll
-E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Runtime.Caching.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
@@ -183,3 +181,8 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\obj\Debug\net8.0\FCIH.ArtGallery.APIs.pdb
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\obj\Debug\net8.0\FCIH.ArtGallery.APIs.genruntimeconfig.cache
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\obj\Debug\net8.0\ref\FCIH.ArtGallery.APIs.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.APIs\bin\Debug\net8.0\Microsoft.Extensions.Features.dll

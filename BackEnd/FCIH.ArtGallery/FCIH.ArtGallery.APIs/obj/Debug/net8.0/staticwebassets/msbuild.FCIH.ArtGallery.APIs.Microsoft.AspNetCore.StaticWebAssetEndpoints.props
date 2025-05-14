@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/FCIH.ArtGallery.APIs/images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.1xnrts8pda.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\artworks\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1xnrts8pda"},{"Name":"integrity","Value":"sha256-1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ="},{"Name":"label","Value":"_content/FCIH.ArtGallery.APIs/images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"617878"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 23:40:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FCIH.ArtGallery.APIs/images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\artworks\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"617878"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 23:40:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FCIH.ArtGallery.APIs/images/artworks/Sunset-Overdrive.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\artworks\Sunset-Overdrive.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -221,12 +221,10 @@
             "multipart/form-data": {
               "schema": {
                 "required": [
-                  "AuctionEnd",
-                  "AuctionStart",
                   "CategoryId",
                   "Description",
                   "Image",
-                  "StartingPrice",
+                  "Price",
                   "Tags",
                   "Title"
                 ],
@@ -238,17 +236,9 @@
                   "Description": {
                     "type": "string"
                   },
-                  "StartingPrice": {
+                  "Price": {
                     "type": "number",
                     "format": "double"
-                  },
-                  "AuctionStart": {
-                    "type": "string",
-                    "format": "date-time"
-                  },
-                  "AuctionEnd": {
-                    "type": "string",
-                    "format": "date-time"
                   },
                   "CategoryId": {
                     "type": "string",
@@ -264,6 +254,18 @@
                   "Image": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "Auction.StartingPrice": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Auction.AuctionStart": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Auction.AuctionEnd": {
+                    "type": "string",
+                    "format": "date-time"
                   }
                 }
               },
@@ -274,13 +276,7 @@
                 "Description": {
                   "style": "form"
                 },
-                "StartingPrice": {
-                  "style": "form"
-                },
-                "AuctionStart": {
-                  "style": "form"
-                },
-                "AuctionEnd": {
+                "Price": {
                   "style": "form"
                 },
                 "CategoryId": {
@@ -290,6 +286,15 @@
                   "style": "form"
                 },
                 "Image": {
+                  "style": "form"
+                },
+                "Auction.StartingPrice": {
+                  "style": "form"
+                },
+                "Auction.AuctionStart": {
+                  "style": "form"
+                },
+                "Auction.AuctionEnd": {
                   "style": "form"
                 }
               }
@@ -324,7 +329,6 @@
           {
             "name": "Tags",
             "in": "query",
-            "required": true,
             "schema": {
               "type": "array",
               "items": {
@@ -402,10 +406,6 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "Description",
-                  "Title"
-                ],
                 "type": "object",
                 "properties": {
                   "Title": {
@@ -414,17 +414,9 @@
                   "Description": {
                     "type": "string"
                   },
-                  "StartingPrice": {
+                  "Price": {
                     "type": "number",
                     "format": "double"
-                  },
-                  "AuctionStart": {
-                    "type": "string",
-                    "format": "date-time"
-                  },
-                  "AuctionEnd": {
-                    "type": "string",
-                    "format": "date-time"
                   },
                   "CategoryId": {
                     "type": "string",
@@ -440,6 +432,18 @@
                   "Image": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "Auction.StartingPrice": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Auction.AuctionStart": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Auction.AuctionEnd": {
+                    "type": "string",
+                    "format": "date-time"
                   }
                 }
               },
@@ -450,13 +454,7 @@
                 "Description": {
                   "style": "form"
                 },
-                "StartingPrice": {
-                  "style": "form"
-                },
-                "AuctionStart": {
-                  "style": "form"
-                },
-                "AuctionEnd": {
+                "Price": {
                   "style": "form"
                 },
                 "CategoryId": {
@@ -466,6 +464,15 @@
                   "style": "form"
                 },
                 "Image": {
+                  "style": "form"
+                },
+                "Auction.StartingPrice": {
+                  "style": "form"
+                },
+                "Auction.AuctionStart": {
+                  "style": "form"
+                },
+                "Auction.AuctionEnd": {
                   "style": "form"
                 }
               }
@@ -609,6 +616,176 @@
         }
       }
     },
+    "/api/Artwork/artworks": {
+      "get": {
+        "tags": [
+          "Artwork"
+        ],
+        "parameters": [
+          {
+            "name": "Title",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ArtistId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "CategoryId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "TagIds",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          },
+          {
+            "name": "PageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkListDtoPagination"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkListDtoPagination"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkListDtoPagination"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Artwork/artworks/{artworkId}": {
+      "get": {
+        "tags": [
+          "Artwork"
+        ],
+        "parameters": [
+          {
+            "name": "artworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkDetailsDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkDetailsDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkDetailsDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Artwork/artworks/{artworkId}/bids": {
+      "get": {
+        "tags": [
+          "Artwork"
+        ],
+        "parameters": [
+          {
+            "name": "artworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BidDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BidDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BidDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Auth/register": {
       "post": {
         "tags": [
@@ -616,19 +793,65 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
+                "required": [
+                  "DisplayName",
+                  "Email",
+                  "Password",
+                  "Role",
+                  "UserName"
+                ],
+                "type": "object",
+                "properties": {
+                  "DisplayName": {
+                    "type": "string"
+                  },
+                  "UserName": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "Bio": {
+                    "type": "string"
+                  },
+                  "ProfilePictureUrl": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Password": {
+                    "pattern": "(?=^.{6,10}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\\s).*$",
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "DisplayName": {
+                  "style": "form"
+                },
+                "UserName": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Bio": {
+                  "style": "form"
+                },
+                "ProfilePictureUrl": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -813,6 +1036,66 @@
         }
       }
     },
+    "/api/Buyer/profile": {
+      "get": {
+        "tags": [
+          "Buyer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BuyerProfileDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BuyerProfileDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BuyerProfileDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Buyer/artworks/placeBid": {
+      "post": {
+        "tags": [
+          "Buyer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaceBidDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaceBidDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaceBidDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Errors/{Code}": {
       "get": {
         "tags": [
@@ -832,6 +1115,82 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/categories": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Lookup/tags": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TagDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TagDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TagDto"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1007,6 +1366,151 @@
         },
         "additionalProperties": false
       },
+      "ArtworkDetailsDto": {
+        "required": [
+          "artistName",
+          "category",
+          "description",
+          "id",
+          "imageUrl",
+          "startingPrice",
+          "tags",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "artistName": {
+            "type": "string",
+            "nullable": true
+          },
+          "auctionStart": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "auctionEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryDto"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TagDto"
+            },
+            "nullable": true
+          },
+          "bidsHistory": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BidDto"
+            },
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ArtworkListDto": {
+        "required": [
+          "artistName",
+          "category",
+          "description",
+          "id",
+          "imageUrl",
+          "startingPrice",
+          "tags",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "artistName": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryDto"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TagDto"
+            },
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ArtworkListDtoPagination": {
+        "required": [
+          "data"
+        ],
+        "type": "object",
+        "properties": {
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArtworkListDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "AuthResponseDto": {
         "required": [
           "accessToken",
@@ -1057,6 +1561,24 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BuyerProfileDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1196,6 +1718,20 @@
         },
         "additionalProperties": false
       },
+      "PlaceBidDto": {
+        "type": "object",
+        "properties": {
+          "artworkId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "RefreshTokenResponseDto": {
         "required": [
           "accessToken"
@@ -1205,49 +1741,6 @@
           "accessToken": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "RegisterRequestDto": {
-        "required": [
-          "displayName",
-          "email",
-          "password",
-          "role",
-          "userName"
-        ],
-        "type": "object",
-        "properties": {
-          "displayName": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userName": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
-          },
-          "bio": {
-            "type": "string",
-            "nullable": true
-          },
-          "profilePictureUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "minLength": 1,
-            "pattern": "(?=^.{6,10}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\\s).*$",
-            "type": "string"
-          },
-          "role": {
-            "minLength": 1,
-            "type": "string"
           }
         },
         "additionalProperties": false

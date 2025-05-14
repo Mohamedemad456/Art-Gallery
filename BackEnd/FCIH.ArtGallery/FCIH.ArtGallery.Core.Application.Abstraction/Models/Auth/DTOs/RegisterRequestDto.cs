@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Auth.DTOs
 
 		public string? Bio { get; set; }
 
-		public string? ProfilePictureUrl { get; set; }
+		public IFormFile? ProfilePictureUrl { get; set; }
 
 
 

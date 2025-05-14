@@ -15,12 +15,12 @@ namespace FCIH.ArtGallery.Core.Domain.Specifications
 	{
 		public Expression<Func<TEntity, bool>>? Criteria { get; set; } = null;
 		public List<Expression<Func<TEntity, object>>> Includes { get; set; } = new();
+		public List<string> StringIncludes { get; set; } = new();
 		public Expression<Func<TEntity, object>>? OrderBy { get; set; } = null;
 		public Expression<Func<TEntity, object>>? OrderByDesc { get; set; } = null;
 		public int Skip { get; set; }
 		public int Take { get; set; }
 		public bool IsPaginationEnabled { get; set; }
-
 		protected BaseSpecifications(Expression<Func<TEntity, bool>> criteriaExpression)
 		{
 			Criteria = criteriaExpression;

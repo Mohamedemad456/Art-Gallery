@@ -36,7 +36,10 @@ namespace FCIH.ArtGallery.Infrastructure.Persistence.Repositories
 
 			query = spec.Includes.Aggregate(query, (currentQuery, include) => currentQuery.Include(include));
 
-
+			foreach (var include in spec.StringIncludes)
+			{
+				query = query.Include(include); // Include("ArtworkTags.Tag")
+			}
 
 
 			return query;

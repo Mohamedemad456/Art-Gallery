@@ -4,8 +4,10 @@ using FCIH.ArtGallery.APIs.Extensions;
 using FCIH.ArtGallery.APIs.Middlewares;
 using FCIH.ArtGallery.Core.Application;
 using FCIH.ArtGallery.Core.Application.Abstraction.Common;
+using FCIH.ArtGallery.Infrastructure;
 using FCIH.ArtGallery.Infrastructure.Persistence;
 using FCIH.ArtGallery.Infrastructure.Services;
+using FCIH.ArtGallery.Infrastructure.SignalR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FCIH.ArtGallery.APIs
@@ -45,10 +47,10 @@ namespace FCIH.ArtGallery.APIs
 			webApplicationBuilder.Services.AddHttpContextAccessor().AddScoped(typeof(ICurrentUserService), typeof(CurrentUserService));
 
 
+			webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
 			webApplicationBuilder.Services.AddApplicationServices();
 			webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 			webApplicationBuilder.Services.AddPersistenceServices(webApplicationBuilder.Configuration);
-			//webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
 
 
 			#endregion
@@ -73,7 +75,9 @@ namespace FCIH.ArtGallery.APIs
             }
 
 
-            app.UseHttpsRedirection();
+			app.MapHub<BidHub>("/bidHub");
+
+			app.UseHttpsRedirection();
 
 			app.UseStatusCodePagesWithReExecute("/Errors/{0}");
 
