@@ -25,21 +25,18 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 	{
 		public async Task<Guid> CreateArtworkAsync(Guid userId, ArtistCreateArtworkDto dto)
 		{
-			
-
-			var repo = unitOfWork.GetRepository<Artwork, Guid>();
+			var artworkRepo = unitOfWork.GetRepository<Artwork, Guid>();
 
 			var artwork = mapper.Map<Artwork>(dto);
 			artwork.ArtistId = await GetArtistId(userId);
 			artwork.ApprovalStatus = ApprovalStatus.Pending;
 
-
-			
-
+			// Image Upload
 			if (dto.Image is not null && dto.Image.Length > 0)
 			{
 				var uploadsFolder = Path.Combine("wwwroot", "images", "artworks");
 				Directory.CreateDirectory(uploadsFolder);
+
 				var fileName = $"{Guid.NewGuid()}{Path.GetExtension(dto.Image.FileName)}";
 				var filePath = Path.Combine(uploadsFolder, fileName);
 
@@ -49,11 +46,12 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 				artwork.ImageUrl = $"images/artworks/{fileName}";
 			}
 
-
-			await repo.AddAsync(artwork);
+			// Save artwork first to generate its ID
+			await artworkRepo.AddAsync(artwork);
 			await unitOfWork.CompleteAsync();
 
-			if (dto.Tags is not null && dto.Tags.Count != 0)
+			// Artwork Tags (even if empty, we continue)
+			if (dto.Tags is not null && dto.Tags.Count > 0)
 			{
 				artwork.ArtworkTags = dto.Tags.Select(tagId => new ArtworkTag
 				{
@@ -61,7 +59,23 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 					ArtworkId = artwork.Id
 				}).ToList();
 
-				repo.Update(artwork); // Update entity with tags
+				artworkRepo.Update(artwork);
+				await unitOfWork.CompleteAsync();
+			}
+
+			// Auction
+			if (dto.Auction is not null)
+			{
+				var auctionRepo = unitOfWork.GetRepository<Auction, Guid>();
+				await auctionRepo.AddAsync(new Auction
+				{
+					Id = Guid.NewGuid(),
+					ArtworkId = artwork.Id,
+					StartTime = dto.Auction.AuctionStart,
+					EndTime = dto.Auction.AuctionEnd,
+					FinalPrice = dto.Auction.StartingPrice
+				});
+
 				await unitOfWork.CompleteAsync();
 			}
 
@@ -76,34 +90,77 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 			if (artwork == null || artwork.ArtistId != await GetArtistId(userId))
 				throw new UnAuthorizedException("Artwork not found or unauthorized");
 
-			// Apply updates from DTO first
-			mapper.Map(dto, artwork);
-			artwork.CategoryId = dto.CategoryId;
+			if (!string.IsNullOrWhiteSpace(dto.Title))
+				artwork.Title = dto.Title;
 
-			// Then handle image
-			if (dto.Image is not null)
+			if (!string.IsNullOrWhiteSpace(dto.Description))
+				artwork.Description = dto.Description;
+
+			if (dto.Price.HasValue)
+				artwork.Price = dto.Price.Value;
+
+			if (dto.CategoryId.HasValue)
+				artwork.CategoryId = dto.CategoryId.Value;
+
+			if (dto.Image is not null && dto.Image.Length > 0)
 			{
-				var fileName = $"{Guid.NewGuid()}{Path.GetExtension(dto.Image.FileName)}";
-				var savePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "artworks", fileName);
+				if (!string.IsNullOrWhiteSpace(artwork.ImageUrl))
+				{
+					var oldPath = Path.Combine("wwwroot", artwork.ImageUrl);
+					if (File.Exists(oldPath))
+						File.Delete(oldPath);
+				}
 
-				using var stream = new FileStream(savePath, FileMode.Create);
+				var uploadsFolder = Path.Combine("wwwroot", "images", "artworks");
+				Directory.CreateDirectory(uploadsFolder);
+				var fileName = $"{Guid.NewGuid()}{Path.GetExtension(dto.Image.FileName)}";
+				var filePath = Path.Combine(uploadsFolder, fileName);
+
+				using var stream = new FileStream(filePath, FileMode.Create);
 				await dto.Image.CopyToAsync(stream);
 
 				artwork.ImageUrl = Path.Combine("images", "artworks", fileName).Replace("\\", "/");
 			}
 
-			// Then update tags
-			if (dto.Tags is not null && dto.Tags.Count != 0)
+			if (dto.Tags is not null)
 			{
 				artwork.ArtworkTags = dto.Tags.Select(tagId => new ArtworkTag
 				{
 					TagId = tagId,
-					ArtworkId = artworkId
+					ArtworkId = artwork.Id
 				}).ToList();
 			}
 
 			repo.Update(artwork);
 			await unitOfWork.CompleteAsync();
+
+			if (dto.Auction is not null)
+			{
+				var auctionRepo = unitOfWork.GetRepository<Auction, Guid>();
+				var existingAuction = await auctionRepo
+					.GetAsync(a => a.ArtworkId == artwork.Id);
+
+				if (existingAuction is null)
+				{
+					await auctionRepo.AddAsync(new Auction
+					{
+						Id = Guid.NewGuid(),
+						ArtworkId = artwork.Id,
+						StartTime = dto.Auction.AuctionStart,
+						EndTime = dto.Auction.AuctionEnd,
+						FinalPrice = dto.Auction.StartingPrice
+					});
+				}
+				else
+				{
+					existingAuction.StartTime = dto.Auction.AuctionStart;
+					existingAuction.EndTime = dto.Auction.AuctionEnd;
+					existingAuction.FinalPrice = dto.Auction.StartingPrice;
+					auctionRepo.Update(existingAuction);
+				}
+
+				await unitOfWork.CompleteAsync();
+			}
 		}
 
 		public async Task DeleteArtworkAsync(Guid userId, Guid artworkId)
@@ -159,7 +216,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 
 			var totalCount = await repo.GetCountAsync(spec);
 
-			return new Pagination<ArtistArtworkListDto>(filter.PageIndex, filter.PageSize, totalCount) { Data = data }; ;
+			return new Pagination<ArtistArtworkListDto>(filter.PageIndex, filter.PageSize, totalCount) { Data = data }; 
 		}
 
 

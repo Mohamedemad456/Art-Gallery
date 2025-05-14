@@ -1,6 +1,9 @@
 ﻿using FCIH.ArtGallery.Core.Application.Abstraction.Models.Admin;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Artworks;
 using FCIH.ArtGallery.Core.Application.Abstraction.Models.Auth;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Buyer;
+using FCIH.ArtGallery.Core.Application.Abstraction.Models.Lookup;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +19,12 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction
 		public IAdminService AdminService { get; }
 
 		public IArtistService ArtistService { get; }
+
+		public IBuyerService BuyerService { get; }
+
+		public IArtworkService ArtworkService { get; }
+
+		public ILookupService LookupService { get; }
+
 	}
 }

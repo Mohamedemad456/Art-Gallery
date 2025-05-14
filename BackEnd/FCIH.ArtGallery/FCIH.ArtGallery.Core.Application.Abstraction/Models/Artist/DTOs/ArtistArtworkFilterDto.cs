@@ -11,7 +11,7 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs
 		public string? Title { get; set; }
 		public string? ApprovalStatus { get; set; }
 
-		public required List<Guid>? Tags { get; set; }
+		public List<Guid>? Tags { get; set; }
 
 		public Guid? CategoryId { get; set; }
 

@@ -302,9 +302,9 @@
               "target": "Package",
               "version": "[8.0.15, )"
             },
-            "Microsoft.AspNetCore.SignalR": {
+            "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[8.0.15, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",

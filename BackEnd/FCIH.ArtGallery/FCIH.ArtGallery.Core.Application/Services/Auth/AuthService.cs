@@ -58,6 +58,21 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 			await userManager.AddToRoleAsync(user, model.Role);
 
 
+			string? profileImageUrl = null;
+			if (model.ProfilePictureUrl is not null && model.ProfilePictureUrl.Length > 0)
+			{
+				var uploadsFolder = Path.Combine("wwwroot", "images", "profiles");
+				Directory.CreateDirectory(uploadsFolder);
+				var fileName = $"{Guid.NewGuid()}{Path.GetExtension(model.ProfilePictureUrl.FileName)}";
+				var filePath = Path.Combine(uploadsFolder, fileName);
+
+				using var stream = new FileStream(filePath, FileMode.Create);
+				await model.ProfilePictureUrl.CopyToAsync(stream);
+
+				profileImageUrl = $"images/profiles/{fileName}";
+			}
+
+
 
 			switch (model.Role.ToLower())
 			{
@@ -71,7 +86,7 @@ namespace FCIH.ArtGallery.Core.Application.Services.Auth
 						IsDeleted = false,
 						Bio = model.Bio,
 						Name = model.DisplayName,
-						ProfilePictureUrl = model.ProfilePictureUrl
+						ProfilePictureUrl = profileImageUrl
 
 					});
 					break;
