@@ -1,0 +1,6 @@
+@FCIH.ArtGallery.APIs_HostAddress = http://localhost:5039
+
+GET {{FCIH.ArtGallery.APIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

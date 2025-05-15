@@ -1,0 +1,25 @@
+[
+  {
+    "Id": "2e94c3c0-3030-4404-b3c8-fd7bffaf0668",
+    "Title": "Sunset Glory",
+    "Description": "A beautiful sunset landscape painting in oil with vibrant colors.",
+    "Price": 100,
+    "ImageUrl": "images/artworks/Sunset-Overdrive.jpg",
+    "ApprovalStatus": "Accepted",
+    "CategoryId": "1bfb69cf-9708-4e5a-834e-83a18f08083d",
+    "ArtistId": "10ad4851-7723-4746-95bb-fbb1c625085e",
+    "CreatedBy": "system",
+    "CreatedAt": "2025-04-25T12:26:38.860691Z",
+    "LastModifiedBy": "system",
+    "LastModifiedAt": "2025-04-25T12:26:38.860691Z",
+    "IsDeleted": false,
+    "ArtworkTags": [
+      {
+        "TagId": "2177f03e-0e90-4020-941d-322be042114b"
+      },
+      {
+        "TagId": "d29a05c5-1023-4e1f-9a7d-80033e487683"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "PackagePath": "staticwebassets\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg"
+    },
+    {
+      "Id": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "PackagePath": "staticwebassets\\images\\artworks\\Sunset-Overdrive.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FCIH.ArtGallery.APIs.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FCIH.ArtGallery.APIs.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FCIH.ArtGallery.APIs.props",
+      "PackagePath": "build\\FCIH.ArtGallery.APIs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FCIH.ArtGallery.APIs.props",
+      "PackagePath": "buildMultiTargeting\\FCIH.ArtGallery.APIs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FCIH.ArtGallery.APIs.props",
+      "PackagePath": "buildTransitive\\FCIH.ArtGallery.APIs.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

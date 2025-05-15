@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FCIH.ArtGallery.APIs.props" />
+</Project>
