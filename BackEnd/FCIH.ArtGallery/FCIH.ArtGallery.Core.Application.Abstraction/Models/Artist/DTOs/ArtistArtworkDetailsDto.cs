@@ -15,6 +15,7 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs
 		public required string Title { get; set; }
 		public required string Description { get; set; }
 		public required decimal StartingPrice { get; set; }
+		public required decimal CurrentPrice { get; set; }
 		public  DateTime? AuctionStart { get; set; }
 		public  DateTime? AuctionEnd { get; set; }
 		public required CategoryDto Category { get; set; }

@@ -8,7 +8,6 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs
 {
 	public class AuctionCreateDto
 	{
-		public  decimal StartingPrice { get; set; }
 		public  DateTime AuctionStart { get; set; }
 		public DateTime AuctionEnd { get; set; }
 	}

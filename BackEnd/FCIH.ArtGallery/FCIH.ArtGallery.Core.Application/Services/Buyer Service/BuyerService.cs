@@ -43,8 +43,16 @@ namespace FCIH.ArtGallery.Core.Application.Services.Buyer_Service
 							?? throw new NotFoundException(nameof(Artwork), placeBid.ArtworkId);
 
 			var now = DateTime.UtcNow;
-			if (artwork.Auction!.StartTime > now || artwork.Auction.EndTime < now)
-				throw new InvalidOperationException("Auction has ended.");
+
+			if (artwork.Auction == null)
+				throw new InvalidOperationException("Bidding is not allowed. This artwork has no auction.");
+
+
+			if (artwork.Auction.StartTime > now)
+				throw new InvalidOperationException("The auction has not started yet.");
+
+			if (artwork.Auction.EndTime < now)
+				throw new InvalidOperationException("The auction has ended.");
 
 			var lastBid = artwork.Auction.Bids!.OrderByDescending(b => b.Amount).FirstOrDefault();
 			var minBid = lastBid != null ? lastBid.Amount + 10 : artwork.Price;

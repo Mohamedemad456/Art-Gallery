@@ -255,10 +255,6 @@
                     "type": "string",
                     "format": "binary"
                   },
-                  "Auction.StartingPrice": {
-                    "type": "number",
-                    "format": "double"
-                  },
                   "Auction.AuctionStart": {
                     "type": "string",
                     "format": "date-time"
@@ -286,9 +282,6 @@
                   "style": "form"
                 },
                 "Image": {
-                  "style": "form"
-                },
-                "Auction.StartingPrice": {
                   "style": "form"
                 },
                 "Auction.AuctionStart": {
@@ -433,10 +426,6 @@
                     "type": "string",
                     "format": "binary"
                   },
-                  "Auction.StartingPrice": {
-                    "type": "number",
-                    "format": "double"
-                  },
                   "Auction.AuctionStart": {
                     "type": "string",
                     "format": "date-time"
@@ -464,9 +453,6 @@
                   "style": "form"
                 },
                 "Image": {
-                  "style": "form"
-                },
-                "Auction.StartingPrice": {
                   "style": "form"
                 },
                 "Auction.AuctionStart": {
@@ -1202,6 +1188,7 @@
         "required": [
           "approvalStatus",
           "category",
+          "currentPrice",
           "description",
           "id",
           "imageUrl",
@@ -1224,6 +1211,10 @@
             "nullable": true
           },
           "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "currentPrice": {
             "type": "number",
             "format": "double"
           },
@@ -1284,6 +1275,10 @@
             "nullable": true
           },
           "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "currentPrice": {
             "type": "number",
             "format": "double"
           },
@@ -1370,6 +1365,7 @@
         "required": [
           "artistName",
           "category",
+          "currentPrice",
           "description",
           "id",
           "imageUrl",
@@ -1392,6 +1388,10 @@
             "nullable": true
           },
           "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "currentPrice": {
             "type": "number",
             "format": "double"
           },
@@ -1437,6 +1437,7 @@
         "required": [
           "artistName",
           "category",
+          "currentPrice",
           "description",
           "id",
           "imageUrl",
@@ -1459,6 +1460,10 @@
             "nullable": true
           },
           "startingPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "currentPrice": {
             "type": "number",
             "format": "double"
           },

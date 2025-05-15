@@ -13,6 +13,7 @@ namespace FCIH.ArtGallery.Core.Application.Abstraction.Models.Artist.DTOs
 		public Guid Id { get; set; }
 		public required string Title { get; set; }
 		public decimal StartingPrice { get; set; }
+		public decimal CurrentPrice  { get; set; }
 		public DateTime AuctionEnd { get; set; }
 
 		public required List<TagDto> Tags { get; set; }

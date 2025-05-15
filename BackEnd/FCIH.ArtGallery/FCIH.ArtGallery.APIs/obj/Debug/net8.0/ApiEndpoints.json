@@ -153,11 +153,6 @@
         "IsRequired": false
       },
       {
-        "Name": "Auction.StartingPrice",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
         "Name": "Auction.AuctionStart",
         "Type": "System.DateTime",
         "IsRequired": false
@@ -262,11 +257,6 @@
       {
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "Auction.StartingPrice",
-        "Type": "System.Decimal",
         "IsRequired": false
       },
       {

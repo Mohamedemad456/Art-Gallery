@@ -30,6 +30,7 @@ namespace FCIH.ArtGallery.Core.Domain.Specifications.Artwork_specs
 		{
 			base.AddIncludes();
 			Includes.Add(a => a.Category);
+			Includes.Add(a => a.Auction!.Bids);
 			Includes.Add(a => a.ArtworkTags.Select(at => at.Tag));
 		}
 	}
