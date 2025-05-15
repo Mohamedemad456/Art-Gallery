@@ -66,14 +66,18 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 			// Auction
 			if (dto.Auction is not null)
 			{
+				if (dto.Auction.AuctionEnd <= dto.Auction.AuctionStart)
+					throw new BadRequestException("Auction end time must be after start time.");
 				var auctionRepo = unitOfWork.GetRepository<Auction, Guid>();
+
+				
 				await auctionRepo.AddAsync(new Auction
 				{
 					Id = Guid.NewGuid(),
 					ArtworkId = artwork.Id,
 					StartTime = dto.Auction.AuctionStart,
 					EndTime = dto.Auction.AuctionEnd,
-					FinalPrice = dto.Auction.StartingPrice
+					FinalPrice = dto.Price
 				});
 
 				await unitOfWork.CompleteAsync();
@@ -148,14 +152,14 @@ namespace FCIH.ArtGallery.Core.Application.Services.Artist_Service
 						ArtworkId = artwork.Id,
 						StartTime = dto.Auction.AuctionStart,
 						EndTime = dto.Auction.AuctionEnd,
-						FinalPrice = dto.Auction.StartingPrice
+						FinalPrice = dto.Price
 					});
 				}
 				else
 				{
 					existingAuction.StartTime = dto.Auction.AuctionStart;
 					existingAuction.EndTime = dto.Auction.AuctionEnd;
-					existingAuction.FinalPrice = dto.Auction.StartingPrice;
+					existingAuction.FinalPrice = dto.Price;
 					auctionRepo.Update(existingAuction);
 				}
 

@@ -33,6 +33,8 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 			CreateMap<Artwork, ArtistArtworkListDto>()
 				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
 				.ForMember(dest => dest.StartingPrice, opt => opt.MapFrom(src => src.Price))
+				.ForMember(dest => dest.CurrentPrice, opt => opt.MapFrom<CurrentPriceResolver>())
+
 				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
 				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<ArtworkListPictureUrlResolver>());
 
@@ -43,6 +45,7 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 			CreateMap<Artwork, ArtistArtworkDetailsDto>()
 				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
 				.ForMember(dest => dest.StartingPrice, opt => opt.MapFrom(src => src.Price))
+				.ForMember(dest => dest.CurrentPrice, opt => opt.MapFrom<ArtistArtworkDetailsCurrentPriceResolver>())
 				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
 				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<ArtistArtworkDetailsPictureUrlResolver>())
 				.ForMember(dest => dest.AuctionStart, opt => opt.MapFrom(src => src.Auction!.StartTime))
@@ -98,6 +101,7 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
 				.ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => src.Artist.Name))
 				.ForMember(dest => dest.StartingPrice, opt => opt.MapFrom(src => src.Price))
+				.ForMember(dest => dest.CurrentPrice, opt => opt.MapFrom<ArtworkCurrentPriceResolver>())
 				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
 				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<PublicArtworkListPictureUrlResolver>());
 
@@ -107,6 +111,7 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
 				.ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => src.Artist.Name))
 				.ForMember(dest => dest.StartingPrice, opt => opt.MapFrom(src => src.Price))
+				.ForMember(dest => dest.CurrentPrice, opt => opt.MapFrom<ArtworkDetailsCurrentPriceResolver>())
 				.ForMember(dest => dest.Tags, opt => opt.MapFrom(src => src.ArtworkTags.Select(at => at.Tag)))
 				.ForMember(dest => dest.ImageUrl, O => O.MapFrom<PublicArtworkDetailsPictureUrlResolver>())
 				.ForMember(dest => dest.AuctionStart, opt => opt.MapFrom(src => src.Auction!.StartTime))
