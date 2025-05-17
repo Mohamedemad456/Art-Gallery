@@ -57,22 +57,21 @@ namespace FCIH.ArtGallery.Core.Application.Mapping
 
 			// Bid → BidResponseDto
 			CreateMap<Bid, BidResponseDto>()
-				
 				.ForMember(dest => dest.ArtworkId, opt => opt.MapFrom(src => src.Auction.ArtworkId))
 				.ForMember(dest => dest.BuyerName, opt => opt.MapFrom(src => src.Buyer.Name))
 				.ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
-				.ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt));
+				.ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.TimePlaced));
 
 			CreateMap<Bid, BidDto>()
 				.ForMember(dest => dest.BuyerName, opt => opt.MapFrom(src => src.Buyer.Name))
-				 .ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
-				.ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt));
+				.ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
+				.ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.TimePlaced));
 
 			CreateMap<Bid, WinnerBidDto>()
 				.ForMember(dest => dest.BuyerId, opt => opt.MapFrom(src => src.BuyerId))
 				.ForMember(dest => dest.BuyerFullName, opt => opt.MapFrom(src => src.Buyer.Name))
 				.ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Amount))
-				.ForMember(dest => dest.BidTime, opt => opt.MapFrom(src => src.CreatedAt));
+				.ForMember(dest => dest.BidTime, opt => opt.MapFrom(src => src.TimePlaced));
 
 			// Artist Profile Mapping
 			CreateMap<Artist, ArtistProfileDto>()

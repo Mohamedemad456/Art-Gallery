@@ -21,6 +21,7 @@ namespace FCIH.ArtGallery.Core.Domain.Specifications.Bid_specs
 
 			Includes.Add(b => b.Buyer);
 			Includes.Add(b => b.Auction);
+			Includes.Add(b => b.Auction.Artwork);
 		}
 	}
 }

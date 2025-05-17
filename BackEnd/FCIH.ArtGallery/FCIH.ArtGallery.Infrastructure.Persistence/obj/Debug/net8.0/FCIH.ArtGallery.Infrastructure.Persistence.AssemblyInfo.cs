@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCIH.ArtGallery.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7a8fbdde5665f55322d90e5876641b5643b3919")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d5baa6b7f991fa1854da312159bee4694185be2")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCIH.ArtGallery.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCIH.ArtGallery.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

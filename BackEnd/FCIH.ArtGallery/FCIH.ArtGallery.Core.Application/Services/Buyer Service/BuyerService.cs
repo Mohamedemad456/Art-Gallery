@@ -42,11 +42,12 @@ namespace FCIH.ArtGallery.Core.Application.Services.Buyer_Service
 			var artwork = await artworkRepo.GetWithSpecAsync(spec)
 							?? throw new NotFoundException(nameof(Artwork), placeBid.ArtworkId);
 
-			var now = DateTime.UtcNow;
-
 			if (artwork.Auction == null)
-				throw new InvalidOperationException("Bidding is not allowed. This artwork has no auction.");
+			{
+				throw new InvalidOperationException("This artwork does not have an associated auction.");
+			}
 
+			var now = DateTime.UtcNow;
 
 			if (artwork.Auction.StartTime > now)
 				throw new InvalidOperationException("The auction has not started yet.");
@@ -61,19 +62,19 @@ namespace FCIH.ArtGallery.Core.Application.Services.Buyer_Service
 				throw new InvalidOperationException($"Bid must be at least ${minBid}");
 
 			var bid = new Bid
-
 			{
 				Id = Guid.NewGuid(),
 				Amount = placeBid.Amount,
 				TimePlaced = now,
 				AuctionId = artwork.Auction.Id,
 				BuyerId = buyerId
-
 			};
 
-			var bidWithNav = await unitOfWork.GetRepository<Bid, Guid>()
-			.GetWithSpecAsync(new BidWithBuyerAndAuctionSpec(bid.Id));
+			var bidRepo = unitOfWork.GetRepository<Bid, Guid>();
+			await bidRepo.AddAsync(bid);
+			await unitOfWork.CompleteAsync();
 
+			var bidWithNav = await bidRepo.GetWithSpecAsync(new BidWithBuyerAndAuctionSpec(bid.Id));
 			var response = mapper.Map<BidResponseDto>(bidWithNav);
 
 			await notification.PlaceBidAsync(response);
