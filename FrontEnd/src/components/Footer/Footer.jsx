@@ -12,15 +12,19 @@ const Footer = () => {
   return (
     <footer className="footer bg-[#E8BEBE]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 p-10 text-center">
+        {/* About Us */}
         <div className="flex flex-col justify-start items-center ms-5">
           <h3 className={`${style.title} font-bold text-[#3D2B1F] text-3xl`}>
             About Us
           </h3>
           <p className={`${style.text}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in
-            ante.
+            We are a creative platform connecting talented artists with art
+            lovers worldwide. Explore, showcase, and celebrate unique artworks
+            in a vibrant community.
           </p>
         </div>
+
+        {/* Our Links */}
         <div className="flex flex-col justify-start items-center">
           <h3 className={`${style.title} font-bold text-[#3D2B1F] text-3xl`}>
             Our Links
@@ -66,7 +70,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        {/* Social Media + Contact */}
         <div className="flex flex-col justify-start items-center me-5">
+          {/* Social Icons */}
           <div className="flex flex-row gap-3">
             <div className="w-15 h-15 bg-white flex justify-center items-center shadow-md rounded-full">
               <NavLink
@@ -102,7 +109,34 @@ const Footer = () => {
               </NavLink>
             </div>
           </div>
+
+          {/* Social Text */}
           <p className={style.text}>Follow us on social media.</p>
+
+          {/* Contact Us Section */}
+          <div className="mt-4 text-center">
+            <h4 className={`${style.title} font-bold text-[#3D2B1F] text-xl`}>
+              Contact Us
+            </h4>
+            <p className={`${style.text}`}>
+              Email:{" "}
+              <a
+                href="mailto:info@artplatform.com"
+                className="text-[#8B5E3C] hover:underline"
+              >
+                info@artplatform.com
+              </a>
+            </p>
+            <p className={`${style.text}`}>
+              Phone:{" "}
+              <a
+                href="tel:+201234567890"
+                className="text-[#8B5E3C] hover:underline"
+              >
+                +20 123 456 7890
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

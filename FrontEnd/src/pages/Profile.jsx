@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import UserProfile from '../components/UserProfile/UserProfile';
-import UserModal from '../components/UserProfile/UserModal';
 import Footer from '../components/Footer/Footer';
 import Loader from '../components/Loader/Loader';
+import axios from 'axios';
+import { jwtDecode } from 'jwt-decode';
 
 const Profile = () => {
-  const [showModal, setShowModal] = useState(false);
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: '',
@@ -21,87 +22,72 @@ const Profile = () => {
   };
 
   useEffect(() => {
-    const authToken = sessionStorage.getItem('authToken');
-
-    if (!authToken) {
-      navigate('/');
-      return;
-    }
-
     const fetchUserProfile = async () => {
-      try {
-        const res = await fetch('http://localhost:5093/api/User/profile', {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
-        });
+      const authToken = sessionStorage.getItem('accessToken');
 
-        if (!res.ok) {
-          if (res.status === 401) {
-            navigate('/login');
-          }
-          throw new Error('Failed to fetch user profile');
+      if (!authToken) {
+        showAlert('Please login to view your profile', 'error');
+        navigate('/signup');
+        return;
+      }
+
+      try {
+        // Verify token expiration
+        const decodedToken = jwtDecode(authToken);
+        const currentTime = Date.now() / 1000;
+        
+        if (decodedToken.exp < currentTime) {
+          sessionStorage.removeItem('accessToken');
+          showAlert('Your session has expired. Please login again.', 'error');
+          navigate('/signup');
+          return;
         }
 
-        const data = await res.json();
+        const response = await axios.get('https://localhost:7043/api/Auth/me', {
+          headers: {
+            'Authorization': `Bearer ${authToken}`,
+            'Content-Type': 'application/json'
+          }
+        });
+
         setUser({
-          name: data.username,
-          email: data.email,
-          username: data.username,
+          email: response.data.email,
+          username: response.data.displayName,
+          role: response.data.role,
         });
       } catch (err) {
-        console.error(err);
-        showAlert('Error loading profile. Please try again.', 'error');
+        console.error('Error fetching profile:', err);
+        if (err.response?.status === 401) {
+          sessionStorage.removeItem('accessToken');
+          showAlert('Your session has expired. Please login again.', 'error');
+          navigate('/signup');
+        } else {
+          showAlert('Error loading profile. Please try again.', 'error');
+        }
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchUserProfile();
   }, [navigate]);
 
-  const handlePasswordChange = async (oldPassword, newPassword) => {
-    const authToken = sessionStorage.getItem('authToken');
-    try {
-      const res = await fetch('http://localhost:5093/api/User/change-password', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${authToken}`,
-        },
-        body: JSON.stringify({ oldPassword, newPassword }),
-      });
-
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data.message || 'Password change failed');
-      }
-
-      showAlert('Password changed successfully!', 'success');
-      setShowModal(false);
-    } catch (error) {
-      showAlert(error.message, 'error');
-    }
-  };
+  if (loading) {
+    return <Loader />;
+  }
 
   if (!user) {
-    return <Loader />;
+    return null;
   }
 
   return (
     <>
-    {user && <Loader />}
       <div className="min-h-screen flex items-center justify-center p-4">
         <UserProfile
           user={user}
-          onChangePasswordClick={() => setShowModal(true)}
           snackbar={snackbar}
           setSnackbar={setSnackbar}
         />
-        {showModal && (
-          <UserModal
-            onClose={() => setShowModal(false)}
-            onSubmit={handlePasswordChange}
-          />
-        )}
       </div>
       <Footer />
     </>

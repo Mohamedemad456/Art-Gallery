@@ -1,4 +1,3 @@
-
 using FCIH.ArtGallery.APIs.Controllers.Errors;
 using FCIH.ArtGallery.APIs.Extensions;
 using FCIH.ArtGallery.APIs.Middlewares;
@@ -46,6 +45,22 @@ namespace FCIH.ArtGallery.APIs
 
 			webApplicationBuilder.Services.AddHttpContextAccessor().AddScoped(typeof(ICurrentUserService), typeof(CurrentUserService));
 
+			// Add CORS configuration
+			webApplicationBuilder.Services.AddCors(options =>
+			{
+				options.AddPolicy("AllowLocalhost5173", builder =>
+				{
+					builder.WithOrigins(
+						"http://localhost:5173",
+						"https://localhost:5173",
+						"http://localhost:7043",
+						"https://localhost:7043"
+					)
+					.AllowAnyMethod()
+					.AllowAnyHeader()
+					.AllowCredentials();
+				});
+			});
 
 			webApplicationBuilder.Services.AddInfrastructureServices(webApplicationBuilder.Configuration);
 			webApplicationBuilder.Services.AddApplicationServices();
@@ -78,6 +93,9 @@ namespace FCIH.ArtGallery.APIs
 			app.MapHub<BidHub>("/bidHub");
 
 			app.UseHttpsRedirection();
+
+			// Enable CORS
+			app.UseCors("AllowLocalhost5173");
 
 			app.UseStatusCodePagesWithReExecute("/Errors/{0}");
 

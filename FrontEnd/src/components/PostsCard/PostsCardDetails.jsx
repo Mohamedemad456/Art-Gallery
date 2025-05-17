@@ -2,8 +2,14 @@ import React from 'react';
 import styles from './PostsCard.module.css';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Chip, Box } from '@mui/material';
 
 const PostsCardDetails = ({ item, onClose }) => {
+  // Format tags to ensure they're strings
+  const formattedTags = Array.isArray(item?.tags) 
+    ? item.tags.map(tag => typeof tag === 'object' ? tag.name : tag)
+    : [];
+
   return (
     <div className={`fixed inset-0 flex items-center justify-center z-50 ${styles.fadeIn}`}>
       <div className="bg-[#FDF6E3] md:bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl relative mx-4 md:mx-0">
@@ -24,7 +30,31 @@ const PostsCardDetails = ({ item, onClose }) => {
           <p><strong>Auction Start:</strong> {item?.auctionStart ? new Date(item.auctionStart).toLocaleString() : 'N/A'}</p>
           <p><strong>Auction End:</strong> {item?.auctionEnd ? new Date(item.auctionEnd).toLocaleString() : 'N/A'}</p>
           <p><strong>Category:</strong> {item?.category || 'N/A'}</p>
-          <p><strong>Tags:</strong> {item?.tags?.join(', ') || 'N/A'}</p>
+          
+          {/* Tags display */}
+          <div>
+            <strong>Tags:</strong>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 1 }}>
+              {formattedTags.length > 0 ? (
+                formattedTags.map((tag, index) => (
+                  <Chip
+                    key={index}
+                    label={tag}
+                    size="small"
+                    sx={{
+                      backgroundColor: '#F3F4F6',
+                      color: '#4B5563',
+                      '&:hover': {
+                        backgroundColor: '#E5E7EB',
+                      },
+                    }}
+                  />
+                ))
+              ) : (
+                <span className="text-gray-500">No tags</span>
+              )}
+            </Box>
+          </div>
         </div>
       </div>
     </div>

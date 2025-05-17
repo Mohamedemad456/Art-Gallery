@@ -1,57 +1,118 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import UserCard from "../components/UserCard/UserCard";
 import Loader from "../components/Loader/Loader";
+import { useNavigate } from "react-router-dom";
 
 const AdminUsers = () => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const dummyUsers = [
-    {
-      title: "Alice Johnson",
-      description: "Creative Director",
-      img: "https://i.pravatar.cc/300",
-      role: "Artist",
-      createdAt: "2023-06-12T09:00:00Z",
-      artistName: "Alice J.",
-      initialPrice: 1500,
-      auctionStart: "2023-06-15T12:00:00Z",
-      auctionEnd: "2023-06-20T12:00:00Z",
-      category: "Digital Art",
-      tags: ["modern", "colorful"],
-    },
-    {
-      title: "James Smith",
-      description: "UI/UX Designer",
-      img: "https://i.pravatar.cc/300",
-      role: "Artist",
-      createdAt: "2023-07-08T14:30:00Z",
-      artistName: "James S.",
-      initialPrice: 800,
-      auctionStart: "2023-07-10T10:00:00Z",
-      auctionEnd: "2023-07-15T10:00:00Z",
-      category: "Illustration",
-      tags: ["vector", "minimalist"],
-    },
-    {
-      title: "Sarah Lee",
-      description: "Graphic Artist",
-      img: "https://i.pravatar.cc/300",
-      role: "Artist",
-      createdAt: "2023-08-01T11:45:00Z",
-      artistName: "S. Lee",
-      initialPrice: 1200,
-      auctionStart: "2023-08-05T11:00:00Z",
-      auctionEnd: "2023-08-10T11:00:00Z",
-      category: "Painting",
-      tags: ["abstract", "bold"],
-    },
-  ];
+  const fetchPendingArtists = async () => {
+    try {
+      const response = await fetch('https://localhost:7043/api/Admin/artist/pending-artists', {
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
+        }
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch pending artists');
+      }
+      
+      const data = await response.json();
+      
+      // Transform the data to ensure it has the correct structure
+      const transformedData = data.map(user => ({
+        id: user.id,
+        name: user.username || user.name,
+        email: user.email,
+        role: 'Artist',
+        approvalStatus: 'Pending',
+        createdAt: user.createdAt,
+        bio: user.bio,
+        portfolio: user.portfolio
+      }));
+      
+      setUsers(transformedData);
+      setLoading(false);
+    } catch (err) {
+      setError(err.message);
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPendingArtists();
+  }, []);
+
+  const handleApprove = async (userId) => {
+    try {
+      const response = await fetch(`https://localhost:7043/api/Admin/artist/accept-artist/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to approve artist');
+      }
+
+      await fetchPendingArtists();
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  const handleDecline = async (userId) => {
+    try {
+      const response = await fetch(`https://localhost:7043/api/Admin/artist/reject-artist/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to reject artist');
+      }
+
+      await fetchPendingArtists();
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <div className="text-center text-red-500 mt-10">
+        Error: {error}
+      </div>
+    );
+  }
+
   return (
     <>
-      <Loader />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        {dummyUsers.map((user, idx) => (
-          <UserCard key={idx} item={user} />
+        {users.map((user) => (
+          <UserCard 
+            key={user.id} 
+            item={user} 
+            onApprove={handleApprove}
+            onDecline={handleDecline}
+          />
         ))}
+        {users.length === 0 && (
+          <div className="col-span-full text-center text-gray-500">
+            No pending artists to show.
+          </div>
+        )}
       </div>
     </>
   );

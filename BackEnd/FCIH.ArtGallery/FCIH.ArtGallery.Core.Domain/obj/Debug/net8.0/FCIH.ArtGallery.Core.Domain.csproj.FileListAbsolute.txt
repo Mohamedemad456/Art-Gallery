@@ -11,3 +11,16 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Domain.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.deps.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.csproj.AssemblyReference.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.AssemblyInfoInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.AssemblyInfo.cs
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.csproj.CoreCompileInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.sourcelink.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Domain\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Domain.dll

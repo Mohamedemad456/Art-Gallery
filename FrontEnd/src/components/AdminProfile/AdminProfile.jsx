@@ -68,9 +68,9 @@ const AdminProfile = ({ admin }) => {
             Contact Information
           </h2>
           <ul className="space-y-2 text-[#3D2B1F] dark:text-gray-300">
-            <li>{currentAdmin.email}</li>
-            <li>{currentAdmin.phone}</li>
-            <li>{currentAdmin.location}</li>
+            <li>Email: {currentAdmin.email}</li>
+            <li>Phone: {currentAdmin.phone}</li>
+            <li>Location: {currentAdmin.location}</li>
           </ul>
         </div>
       </div>

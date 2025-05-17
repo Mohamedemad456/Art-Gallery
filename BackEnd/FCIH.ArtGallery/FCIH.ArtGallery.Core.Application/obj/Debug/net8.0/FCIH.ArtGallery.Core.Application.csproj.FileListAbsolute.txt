@@ -16,3 +16,21 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Application.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.pdb
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Application.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.deps.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.csproj.AssemblyReference.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.AssemblyInfoInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.AssemblyInfo.cs
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.csproj.CoreCompileInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.sourcelink.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.Art.096F3B6B.Up2Date
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Application.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Application.dll

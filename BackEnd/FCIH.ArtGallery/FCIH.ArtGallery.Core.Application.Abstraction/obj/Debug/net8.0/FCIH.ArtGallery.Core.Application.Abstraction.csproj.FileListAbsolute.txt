@@ -11,3 +11,16 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Application.Abstraction.dll
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.pdb
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.deps.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.csproj.AssemblyReference.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.AssemblyInfoInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.AssemblyInfo.cs
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.csproj.CoreCompileInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.sourcelink.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\refint\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Core.Application.Abstraction\obj\Debug\net8.0\ref\FCIH.ArtGallery.Core.Application.Abstraction.dll

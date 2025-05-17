@@ -13,8 +13,7 @@ const Gallery = ({ artworks }) => {
   const indexOfLastArtwork = currentPage * artworksPerPage;
   const indexOfFirstArtwork = indexOfLastArtwork - artworksPerPage;
   const currentArtworks = artworks.slice(indexOfFirstArtwork, indexOfLastArtwork);
-
-  // Handle page navigation
+  console.log(currentArtworks);
   const handlePreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
@@ -28,9 +27,6 @@ const Gallery = ({ artworks }) => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
-
-  console.log(artworks);
-
   return (
     <>
       <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center my-4">
@@ -43,14 +39,15 @@ const Gallery = ({ artworks }) => {
               <img
                 className="w-full h-52 object-cover rounded-md"
                 src={art.image}
-                alt={art.title}
+                alt={art.title || 'Artwork'}
               />
               <figcaption
-                className={`${styles.figcaption} absolute inset-0 flex flex-col items-center justify-center text-white text-center`}
+                className={`${styles.figcaption} absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4`}
               >
-                <span className="font-bold text-lg">{art.title}</span>
-                <span className="text-sm mt-1">{art.artistName}</span>
-                <span className="text-sm">${art.initialPrice}</span>
+                <h3 className="font-bold text-xl mb-2">{art.title || 'Untitled'}</h3>
+                <p className="text-sm mb-1">By {art.artistName || 'Unknown Artist'}</p>
+                <p className="text-sm mb-1">${art.currentPrice || '0'}</p>
+                <p className="text-sm mb-1">{art.category || 'Uncategorized'}</p>
               </figcaption>
             </NavLink>
           </figure>

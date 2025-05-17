@@ -306,7 +306,7 @@
         },
         "runtime": {
           "FCIH.ArtGallery.Core.Application.Abstraction.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -317,7 +317,7 @@
         },
         "runtime": {
           "FCIH.ArtGallery.Core.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

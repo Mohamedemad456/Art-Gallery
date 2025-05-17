@@ -20,3 +20,25 @@ E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gal
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.pdb
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.genruntimeconfig.cache
 E:\Route Fullstack\Back-End Course (ASP.NET)\Projects\ArtGallery Project\Art-Gallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\ref\FCIH.ArtGallery.Infrastructure.Persistence.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.deps.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.runtimeconfig.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Core.Application.Abstraction.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Core.Domain.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\bin\Debug\net8.0\FCIH.ArtGallery.Infrastructure.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.csproj.AssemblyReference.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.AssemblyInfoInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.AssemblyInfo.cs
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.sourcelink.json
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.Art.FFDD3794.Up2Date
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\refint\FCIH.ArtGallery.Infrastructure.Persistence.dll
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.pdb
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\FCIH.ArtGallery.Infrastructure.Persistence.genruntimeconfig.cache
+D:\c\artgallery\BackEnd\FCIH.ArtGallery\FCIH.ArtGallery.Infrastructure.Persistence\obj\Debug\net8.0\ref\FCIH.ArtGallery.Infrastructure.Persistence.dll

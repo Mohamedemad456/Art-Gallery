@@ -73,3 +73,4 @@ Secondary Accent: #8B5E3C (Wood Brown - for headers, footer, frames)
 Text Color: #3D2B1F (Deep Brown - for readability)
 Light Neutral: #F8EDE3 (Warm Beige - for contrast)
 */
+

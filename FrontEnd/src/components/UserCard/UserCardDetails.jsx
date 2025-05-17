@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./UserCard.module.css";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const CardDetails = ({ item, onClose }) => {
   return (
     <div
@@ -17,23 +18,57 @@ const CardDetails = ({ item, onClose }) => {
           <FontAwesomeIcon icon={faTimes} className="w-4 h-4" size="lg" />
         </button>
 
-        <h2 className="text-2xl font-bold mb-4">Details</h2>
-        <div className="space-y-2">
-          <p>
-            <strong>Title:</strong> {item?.title || "N/A"}
-          </p>
-          <p>
-            <strong>Description:</strong> {item?.description || "N/A"}
-          </p>
-          <p>
-            <strong>Email:</strong> {item?.email || "example@mail.com"}
-          </p>
-          <p>
-            <strong>Joined:</strong> {item?.joined || "2025-04-01"}
-          </p>
-          <p>
-            <strong>Status:</strong> {item?.status || "Pending"}
-          </p>
+        <h2 className="text-2xl font-bold mb-4">Artist Details</h2>
+        <div className="space-y-3">
+          <div className="flex items-center space-x-2">
+            <div className="w-20 font-semibold">Name:</div>
+            <div>{item?.name || "N/A"}</div>
+          </div>
+          
+          <div className="flex items-center space-x-2">
+            <div className="w-20 font-semibold">Email:</div>
+            <div className="break-all">{item?.email || "N/A"}</div>
+          </div>
+          
+          <div className="flex items-center space-x-2">
+            <div className="w-20 font-semibold">Role:</div>
+            <div className="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-sm">
+              {item?.role || "N/A"}
+            </div>
+          </div>
+          
+          <div className="flex items-center space-x-2">
+            <div className="w-20 font-semibold">Status:</div>
+            <div className="px-2 py-1 bg-red-100 text-red-800 rounded-md text-sm">
+              {item?.approvalStatus || "Pending"}
+            </div>
+          </div>
+          
+          <div className="flex items-center space-x-2">
+            <div className="w-20 font-semibold">Joined:</div>
+            <div>{new Date(item?.createdAt || Date.now()).toLocaleDateString()}</div>
+          </div>
+          
+          {item?.bio && (
+            <div className="mt-4">
+              <div className="font-semibold mb-2">Bio:</div>
+              <div className="text-gray-600">{item.bio}</div>
+            </div>
+          )}
+          
+          {item?.portfolio && (
+            <div className="mt-4">
+              <div className="font-semibold mb-2">Portfolio:</div>
+              <a 
+                href={item.portfolio} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                {item.portfolio}
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

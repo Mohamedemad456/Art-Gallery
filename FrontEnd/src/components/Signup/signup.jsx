@@ -1,13 +1,17 @@
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import SnackbarAlert from '../SnackbarAlert/snackbarAlert';
-import style from './signup.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPalette, faShoppingCart, faUser, faEnvelope, faLock, faSignature } from '@fortawesome/free-solid-svg-icons';
 
 function AuthForm() {
   const [isRightExist, setisRightExist] = React.useState(true);
+  const [displayName, setDisplayName] = React.useState('');
   const [userName, setUserName] = React.useState('');
-  const [Email, setEmail] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [bio, setBio] = React.useState('');
   const [password, setPassword] = React.useState('');
+  const [role, setRole] = React.useState('Artist');
   const [snackbar, setSnackbar] = React.useState({ open: false, message: '', type: 'success' });
 
   const navigate = useNavigate();
@@ -18,59 +22,89 @@ function AuthForm() {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
+    
+    // Validate form
+    if (!displayName || !userName || !email || !password) {
+      showAlert('Please fill in all required fields', 'error');
+      return;
+    }
+
     try {
-      const response = await fetch('http://localhost:5093/api/Auth/register', {
+      const formData = new FormData();
+      formData.append('DisplayName', displayName);
+      formData.append('UserName', userName);
+      formData.append('Email', email);
+      formData.append('Password', password);
+      formData.append('Role', role);
+      formData.append('Bio', bio || '');
+
+      const response = await fetch('https://localhost:7043/api/Auth/register', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userName, email: Email, password }),
+        body: formData,
+        credentials: 'include'
       });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Registration failed');
+      }
 
       const data = await response.json();
 
-      if (!response.ok) throw new Error(data.message || 'Signup failed');
+      if (data.token) {
+        sessionStorage.setItem('accessToken', data.token);
+      }
 
-      showAlert('Signup successful!', 'success');
+      showAlert('Registration successful! Welcome to our art community!', 'success');
+
+      setDisplayName('');
+      setUserName('');
+      setEmail('');
+      setPassword('');
+      setBio('');
+      setRole('Artist');
 
       setTimeout(() => {
         setisRightExist(false);
-      }, 500);
+      }, 1500);
+
     } catch (error) {
-      showAlert(error.message || 'Something went wrong', 'danger');
+      showAlert(error.message || 'Registration failed', 'error');
     }
   };
 
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5093/api/Auth/login', {
+      const response = await fetch('https://localhost:7043/api/Auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: Email, password, userName }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password }),
+        credentials: 'include'
       });
 
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Invalid credentials');
+      }
+
       const data = await response.json();
-
-      if (!response.ok) throw new Error(data.message || 'Login failed');
-
-      sessionStorage.setItem('authToken', data.token);
-
+      if (data.accessToken) {
+        sessionStorage.setItem('accessToken', data.accessToken);
+      }
       showAlert('Login successful!', 'success');
-
       setTimeout(() => {
         navigate('/');
       }, 500);
     } catch (error) {
-      showAlert(error.message || 'Invalid credentials', 'danger');
+      showAlert(error.message || 'Invalid credentials', 'error');
     }
   };
 
   return (
-    <div
-      className={`${style.container} ${
-        isRightExist ? style.right_panel_active : ''
-      }`}
-    >
-      {/* One Snackbar above login panel */}
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       {snackbar.open && (
         <SnackbarAlert
           open={snackbar.open}
@@ -81,110 +115,206 @@ function AuthForm() {
         />
       )}
 
-      <div className="row">
-        {/* Sign Up */}
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <div className={`${style.container__form} ${style.container__signup}`}>
-            <form className={`${style.form}`} onSubmit={handleSignUp}>
-              <h2 className={`${style.form__title}`}>Sign Up</h2>
-              <div className="form-group">
+      <div className="max-w-4xl w-full space-y-8 bg-white rounded-2xl shadow-xl overflow-hidden">
+        {/* Mobile Toggle Buttons - Only visible on small screens */}
+        <div className="lg:hidden flex justify-center space-x-4 p-4 border-b">
+          <button
+            onClick={() => setisRightExist(true)}
+            className={`px-6 py-2 rounded-full transition-all ${
+              isRightExist
+                ? 'bg-[#3D2B1F] text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            Sign Up
+          </button>
+          <button
+            onClick={() => setisRightExist(false)}
+            className={`px-6 py-2 rounded-full transition-all ${
+              !isRightExist
+                ? 'bg-[#3D2B1F] text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            Sign In
+          </button>
+        </div>
+
+        <div className="flex flex-col lg:flex-row min-h-[600px]">
+          {/* Sign Up Form */}
+          <div className={`w-full lg:w-1/2 p-4 sm:p-8 transition-all duration-500 ${
+            isRightExist ? 'block' : 'hidden lg:block lg:translate-x-0'
+          }`}>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#3D2B1F]">Create Account</h2>
+              <p className="text-gray-600 mt-2">Join our art community today</p>
+            </div>
+
+            <form onSubmit={handleSignUp} className="space-y-4">
+              <div className="relative">
+                <FontAwesomeIcon icon={faSignature} className="absolute left-3 top-3 text-gray-400" />
+                <input
+                  type="text"
+                  value={displayName}
+                  placeholder="Display Name"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
+                  onChange={(e) => setDisplayName(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className="relative">
+                <FontAwesomeIcon icon={faUser} className="absolute left-3 top-3 text-gray-400" />
                 <input
                   type="text"
                   value={userName}
-                  placeholder="User Name"
-                  className={`${style.input} form-control`}
+                  placeholder="Username"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
                   onChange={(e) => setUserName(e.target.value)}
                   required
                 />
               </div>
-              <div className="form-group">
+
+              <div className="relative">
+                <FontAwesomeIcon icon={faEnvelope} className="absolute left-3 top-3 text-gray-400" />
                 <input
                   type="email"
-                  value={Email}
+                  value={email}
                   placeholder="Email"
-                  className={`${style.input} form-control`}
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
-              <div className="form-group">
+
+              <div className="relative">
+                <textarea
+                  value={bio}
+                  placeholder="Bio"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
+                  onChange={(e) => setBio(e.target.value)}
+                  required
+                  rows="3"
+                />
+              </div>
+
+              <div className="relative">
+                <FontAwesomeIcon icon={faLock} className="absolute left-3 top-3 text-gray-400" />
                 <input
                   type="password"
                   value={password}
                   placeholder="Password"
-                  className={`${style.input} form-control`}
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   minLength={8}
                 />
               </div>
+
+              <div className="flex flex-wrap justify-center gap-4 my-6">
+                <button
+                  type="button"
+                  className={`flex items-center gap-2 px-4 sm:px-6 py-2 rounded-full transition-all ${
+                    role === 'Artist'
+                      ? 'bg-[#3D2B1F] text-white'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+                  onClick={() => setRole('Artist')}
+                >
+                  <FontAwesomeIcon icon={faPalette} />
+                  <span className="whitespace-nowrap">Artist</span>
+                </button>
+                <button
+                  type="button"
+                  className={`flex items-center gap-2 px-4 sm:px-6 py-2 rounded-full transition-all ${
+                    role === 'Buyer'
+                      ? 'bg-[#3D2B1F] text-white'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+                  onClick={() => setRole('Buyer')}
+                >
+                  <FontAwesomeIcon icon={faShoppingCart} />
+                  <span className="whitespace-nowrap">Buyer</span>
+                </button>
+              </div>
+
               <button
-                className="bg-white text-[#3D2B1F] btn px-4 mt-5 py-2 rounded-full font-bold hover:bg-gray-300 transition"
                 type="submit"
+                className="w-full bg-[#3D2B1F] text-white py-3 rounded-lg font-semibold hover:bg-[#2d1f17] transition-colors"
               >
-                Sign Up
+                Create Account
               </button>
             </form>
           </div>
-        </div>
 
-        {/* Sign In */}
-        <div className="col-lg-6 col-md-6 col-sm-12">
-          <div className={`${style.container__form} ${style.container__signin}`}>
-            <form className={`${style.form}`} onSubmit={handleSignIn}>
-              <h2 className={`${style.form__title}`}>Sign In</h2>
-              <div className="form-group">
+          {/* Sign In Form */}
+          <div className={`w-full lg:w-1/2 p-4 sm:p-8 transition-all duration-500 ${
+            !isRightExist ? 'block' : 'hidden lg:block lg:translate-x-0'
+          }`}>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#3D2B1F]">Welcome Back</h2>
+              <p className="text-gray-600 mt-2">Sign in to your account</p>
+            </div>
+
+            <form onSubmit={handleSignIn} className="space-y-4">
+              <div className="relative">
+                <FontAwesomeIcon icon={faEnvelope} className="absolute left-3 top-3 text-gray-400" />
                 <input
                   type="email"
                   placeholder="Email"
-                  value={Email}
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className={`${style.input} form-control`}
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
                   required
                 />
               </div>
-              <div className="form-group">
+
+              <div className="relative">
+                <FontAwesomeIcon icon={faLock} className="absolute left-3 top-3 text-gray-400" />
                 <input
                   type="password"
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className={`${style.input} form-control`}
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3D2B1F] focus:border-transparent"
                   required
                 />
               </div>
-              <a href="/" className={`${style.link}`}>
-                Forgot your password?
-              </a>
+
+              <div className="flex items-center justify-between">
+                <a href="/" className="text-[#3D2B1F] hover:text-[#2d1f17] text-sm">
+                  Forgot your password?
+                </a>
+              </div>
+
               <button
-                className="bg-white text-[#3D2B1F] btn px-4 py-2 rounded-full font-bold hover:bg-gray-200 transition"
                 type="submit"
+                className="w-full bg-[#3D2B1F] text-white py-3 rounded-lg font-semibold hover:bg-[#2d1f17] transition-colors"
               >
                 Sign In
               </button>
             </form>
           </div>
-        </div>
-      </div>
 
-      {/* Overlay */}
-      <div className={`${style.container__overlay}`}>
-        <div className={`${style.overlay}`}>
-          <div className={`${style.overlay__panel} ${style.overlay__left}`}>
-            <button
-              className="bg-white text-[#3D2B1F] btn px-4 py-2 rounded-full font-bold hover:bg-gray-200 transition"
-              onClick={() => setisRightExist(false)}
-            >
-              Sign In
-            </button>
-          </div>
-          <div className={`${style.overlay__panel} ${style.overlay__right}`}>
-            <button
-              className="bg-white text-[#3D2B1F] btn px-4 py-2 rounded-full font-bold hover:bg-gray-200 transition"
-              onClick={() => setisRightExist(true)}
-            >
-              Sign Up
-            </button>
+          {/* Overlay - Only visible on large screens */}
+          <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full bg-[#3D2B1F] transform transition-transform duration-500"
+               style={{ transform: isRightExist ? 'translateX(0)' : 'translateX(-100%)' }}>
+            <div className="flex flex-col items-center justify-center h-full text-white p-8">
+              <h2 className="text-3xl font-bold mb-4">
+                {isRightExist ? 'Welcome Back!' : 'New Here?'}
+              </h2>
+              <p className="text-center mb-8">
+                {isRightExist
+                  ? 'Sign in to access your account and explore our art collection'
+                  : 'Join our community of artists and art enthusiasts'}
+              </p>
+              <button
+                onClick={() => setisRightExist(!isRightExist)}
+                className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#3D2B1F] transition-colors"
+              >
+                {isRightExist ? 'Sign In' : 'Sign Up'}
+              </button>
+            </div>
           </div>
         </div>
       </div>

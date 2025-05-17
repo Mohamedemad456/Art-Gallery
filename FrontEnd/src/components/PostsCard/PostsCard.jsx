@@ -12,6 +12,7 @@ import {
   MenuItem,
   Tooltip,
   IconButton,
+  Chip,
 } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -22,7 +23,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import PostsCardDetails from './PostsCardDetails';
 
-const PostsCard = ({ item }) => {
+const PostsCard = ({ item, onApprove, onDecline }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -30,13 +31,37 @@ const PostsCard = ({ item }) => {
   const handleMenuClose = () => setAnchorEl(null);
 
   const {
+    id,
     artistName,
     title,
     description,
     image,
     artistimage,
+    initialPrice,
+    category,
+    medium,
+    year,
     createdAt,
+    status,
+    tags
   } = item || {};
+
+  const handleApprove = async () => {
+    if (onApprove) {
+      await onApprove(id);
+    }
+  };
+
+  const handleDecline = async () => {
+    if (onDecline) {
+      await onDecline(id);
+    }
+  };
+
+  // Format tags to ensure they're strings
+  const formattedTags = Array.isArray(tags) 
+    ? tags.map(tag => typeof tag === 'object' ? tag.name : tag)
+    : [];
 
   return (
     <>
@@ -87,7 +112,7 @@ const PostsCard = ({ item }) => {
 
         <CardMedia
           component="img"
-          image={image || '/assets/img-12.jpg'}
+          image={image || '/default-artwork.jpg'}
           alt={title || 'Artwork'}
           sx={{
             width: '100%',
@@ -96,54 +121,102 @@ const PostsCard = ({ item }) => {
           }}
         />
 
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
+        <CardContent sx={{ textAlign: 'center' }}>
+          <Typography 
+            variant="body2" 
+            color="text.secondary"
+            sx={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              display: '-webkit-box',
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: 'vertical',
+              mb: 1
+            }}
+          >
             {description || 'No description available'}
           </Typography>
-          <Typography
-                      variant="caption"
-                      color="text.secondary"
-                      sx={{ display: 'block', mt: 1, textAlign: 'center' }}
-                    >
-                      Joined on {createdAt ? new Date(createdAt).toLocaleDateString() : '—'}
-                    </Typography>
-        </CardContent>
-
-        <CardActions sx={{ justifyContent: 'center', pb: '2rem' }}>
-          <Tooltip title="Accept bid" arrow>
-            <Button
-              size="small"
-              variant="contained"
+          
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap', mb: 1 }}>
+            <Typography
+              variant="caption"
               sx={{
-                backgroundColor: '#3D2B1F',
-                color: 'white',
-                textTransform: 'none',
-                px: 2,
-                mx: 1,
-                '&:hover': {
-                  backgroundColor: '#8B5E3C',
-                },
+                backgroundColor: '#E0E7FF',
+                color: '#4338CA',
+                borderRadius: '0.375rem',
+                px: 1,
+                py: 0.5,
+                display: 'inline-block',
+                fontWeight: 500,
               }}
             >
-              Accept
+              {category}
+            </Typography>
+
+            <Typography
+              variant="caption"
+              sx={{
+                backgroundColor: '#FEE2E2',
+                color: '#991B1B',
+                borderRadius: '0.375rem',
+                px: 1,
+                py: 0.5,
+                display: 'inline-block',
+                fontWeight: 500,
+              }}
+            >
+              {status}
+            </Typography>
+          </div>
+
+          {/* Tags display */}
+          {formattedTags.length > 0 && (
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '4px', flexWrap: 'wrap', mt: 1 }}>
+              {formattedTags.map((tag, index) => (
+                <Chip
+                  key={index}
+                  label={tag}
+                  size="small"
+                  sx={{
+                    backgroundColor: '#F3F4F6',
+                    color: '#4B5563',
+                    '&:hover': {
+                      backgroundColor: '#E5E7EB',
+                    },
+                  }}
+                />
+              ))}
+            </div>
+          )}
+
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={{ display: 'block', mt: 1 }}
+          >
+            Posted on {createdAt ? new Date(createdAt).toLocaleDateString() : '—'}
+          </Typography>
+        </CardContent>
+
+        <CardActions sx={{ justifyContent: 'center', gap: 2, pb: 2 }}>
+          <Tooltip title="Approve">
+            <Button
+              variant="contained"
+              color="success"
+              size="small"
+              onClick={handleApprove}
+              sx={{ minWidth: '100px' }}
+            >
+              Approve
             </Button>
           </Tooltip>
-
-          <Tooltip title="Decline bid" arrow>
+          <Tooltip title="Decline">
             <Button
+              variant="contained"
+              color="error"
               size="small"
-              variant="outlined"
-              sx={{
-                color: '#3D2B1F',
-                borderColor: '#e5e7eb',
-                textTransform: 'none',
-                px: 2,
-                mx: 1,
-                '&:hover': {
-                  backgroundColor: '#f3f4f6',
-                  color: '#C08B6F',
-                },
-              }}
+              onClick={handleDecline}
+              sx={{ minWidth: '100px' }}
             >
               Decline
             </Button>
@@ -152,7 +225,10 @@ const PostsCard = ({ item }) => {
       </Card>
 
       {showDetails && (
-        <PostsCardDetails item={item} onClose={() => setShowDetails(false)} />
+        <PostsCardDetails
+          item={item}
+          onClose={() => setShowDetails(false)}
+        />
       )}
     </>
   );

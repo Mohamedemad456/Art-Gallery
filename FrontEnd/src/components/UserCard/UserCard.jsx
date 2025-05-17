@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Card,
   CardHeader,
-  CardMedia,
   CardContent,
   CardActions,
   Typography,
@@ -11,6 +10,7 @@ import {
   MenuItem,
   Tooltip,
   IconButton,
+  Avatar,
 } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -21,14 +21,42 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import CardDetails from './UserCardDetails';
 
-const UserCard = ({ item }) => {
+const UserCard = ({ item, onApprove, onDecline }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
 
-  const { title, description, img, role, createdAt } = item || {};
+  const { id, name, email, role, approvalStatus } = item || {};
+
+  // Truncate long email addresses
+  const truncateEmail = (email) => {
+    if (!email) return 'No email provided';
+    if (email.length > 25) {
+      return email.substring(0, 25) + '...';
+    }
+    return email;
+  };
+
+  const handleApprove = async () => {
+    if (onApprove) {
+      await onApprove(id);
+    }
+  };
+
+  const handleDecline = async () => {
+    if (onDecline) {
+      await onDecline(id);
+    }
+  };
+
+
+
+  // Only render if the user is an artist and pending
+  if (!item || role !== 'Artist' || approvalStatus !== 'Pending') {
+    return null;
+  }
 
   return (
     <>
@@ -47,6 +75,11 @@ const UserCard = ({ item }) => {
         }}
       >
         <CardHeader
+          avatar={
+            <Avatar sx={{ bgcolor: '#3D2B1F' }}>
+              {name?.[0]?.toUpperCase() || 'U'}
+            </Avatar>
+          }
           action={
             <>
               <IconButton onClick={handleMenuOpen} sx={{ color: 'gray' }}>
@@ -68,24 +101,23 @@ const UserCard = ({ item }) => {
               </Menu>
             </>
           }
-          title={title || 'Bonnie Green'}
-          subheader={description || 'Visual Designer'}
-        />
-
-        <CardMedia
-          component="img"
-          image={img || '/assets/img-12.jpg'}
-          alt={title || 'Profile'}
-          sx={{
-            width: '100%',
-            height: 200,
-            objectFit: 'cover',
-          }}
+          title={name || 'Unknown User'}
+          subheader={truncateEmail(email)}
         />
 
         <CardContent sx={{ textAlign: 'center' }}>
-          <Typography variant="body2" color="text.secondary">
-            {description || 'Visual Designer'}
+          <Typography 
+            variant="body2" 
+            color="text.secondary"
+            sx={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              maxWidth: '100%',
+              mb: 1
+            }}
+          >
+            {email}
           </Typography>
 
           <Typography
@@ -101,23 +133,33 @@ const UserCard = ({ item }) => {
               mt: 1,
             }}
           >
-            {role || 'User'}
+            {role}
           </Typography>
 
           <Typography
             variant="caption"
-            color="text.secondary"
-            sx={{ display: 'block', mt: 1 }}
+            sx={{
+              backgroundColor: '#FEE2E2',
+              color: '#991B1B',
+              borderRadius: '0.375rem',
+              px: 1,
+              py: 0.5,
+              display: 'inline-block',
+              fontWeight: 500,
+              mt: 1,
+              ml: 1,
+            }}
           >
-            Joined on {createdAt ? new Date(createdAt).toLocaleDateString() : '—'}
+            {approvalStatus}
           </Typography>
         </CardContent>
 
-        <CardActions sx={{ justifyContent: 'center', pb: '2.5rem' }}>
-          <Tooltip title="Approve user access" arrow>
+        <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
+          <Tooltip title="Approve artist access" arrow>
             <Button
               size="small"
               variant="contained"
+              onClick={handleApprove}
               sx={{
                 backgroundColor: '#3D2B1F',
                 color: 'white',
@@ -129,7 +171,7 @@ const UserCard = ({ item }) => {
                 },
               }}
             >
-              Accept
+              Approve
             </Button>
           </Tooltip>
 
@@ -137,6 +179,7 @@ const UserCard = ({ item }) => {
             <Button
               size="small"
               variant="outlined"
+              onClick={handleDecline}
               sx={{
                 color: '#3D2B1F',
                 borderColor: '#e5e7eb',

@@ -3,31 +3,43 @@
     background: #030c17;
     overflow: hidden;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .effectMing:hover {
+    transform: translateY(-5px);
   }
   
   .effectMing img {
     opacity: 0.9;
-    transition: opacity 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
   }
   
-  .figcaption::before {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
-    content: "";
-    opacity: 0;
-    transition: opacity 0.35s, transform 0.35s;
-    transform: scale3d(1.4, 1.4, 1);
+  .effectMing:hover img {
+    opacity: 0.4;
+    transform: scale(1.05);
   }
   
   .figcaption {
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
     transform: scale(1.5);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+  }
+  
+  .figcaption::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+    content: "";
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale3d(1.4, 1.4, 1);
   }
   
   .effectMing:hover .figcaption::before,
@@ -37,10 +49,6 @@
   }
   
   .effectMing:hover .figcaption {
-    background-color: rgba(58, 52, 42, 0.3);
-  }
-  
-  .effectMing:hover img {
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   

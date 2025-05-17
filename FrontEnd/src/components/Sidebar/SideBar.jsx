@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './SideBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faFileAlt, faUser, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -9,10 +9,18 @@ import Box from '@mui/material/Box';
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+
+  const handleLogout = () => {
+    sessionStorage.removeItem('accessToken');
+    navigate('/');
+  };
+
 
   // Reusable sidebar content
   const SidebarContent = (
@@ -86,7 +94,7 @@ const SideBar = () => {
           >
             <button
               className="flex gap-2 py-3 px-4 rounded-full transition-colors bg-[#3D2B1F] hover:bg-[#8B5E3C] w-full text-white mt-12"
-              onClick={() => {}}
+              onClick={() => {handleLogout();}}
             >
               <span className={`${isOpen ? 'block' : 'hidden'} md:block`}>
                 Logout
