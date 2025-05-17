@@ -1,39 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj": {}
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj": {}
   },
   "projects": {
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj": {
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj",
+        "projectUniqueName": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj",
         "projectName": "FCIH.ArtGallery.APIs.Controllers",
-        "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj",
-        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
-        "outputPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\obj\\",
+        "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\FCIH.ArtGallery.APIs.Controllers.csproj",
+        "packagesPath": "C:\\Users\\Geforce\\.nuget\\packages\\",
+        "outputPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs.Controllers\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Geforce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
-                "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj"
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj"
               },
-              "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
-                "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj"
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj"
               },
-              "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
-                "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
               }
             }
           }
@@ -47,7 +53,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -78,26 +85,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj",
+        "projectUniqueName": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj",
         "projectName": "FCIH.ArtGallery.Core.Application.Abstraction",
-        "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj",
-        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
-        "outputPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\obj\\",
+        "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\Geforce\\.nuget\\packages\\",
+        "outputPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Geforce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,7 +128,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -146,37 +160,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj",
+        "projectUniqueName": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj",
         "projectName": "FCIH.ArtGallery.Core.Application",
-        "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj",
-        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
-        "outputPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\obj\\",
+        "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\FCIH.ArtGallery.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\Geforce\\.nuget\\packages\\",
+        "outputPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Geforce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
-                "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj"
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Application.Abstraction\\FCIH.ArtGallery.Core.Application.Abstraction.csproj"
               },
-              "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
-                "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
+              "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
+                "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj"
               }
             }
           }
@@ -190,7 +210,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -229,26 +250,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
+        "projectUniqueName": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
         "projectName": "FCIH.ArtGallery.Core.Domain",
-        "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
-        "outputPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\obj\\",
+        "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Geforce\\.nuget\\packages\\",
+        "outputPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Geforce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -266,7 +293,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -293,7 +321,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
