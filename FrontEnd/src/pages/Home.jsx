@@ -7,8 +7,7 @@ import GalleryFeatures from "../components/FeatureSection/GalleryFeatures";
 import ScrollToHash from "../hooks/Scrolltohash";
 import FadeOnScroll from "../components/FadeOnScroll/FadeOnScroll";
 import AboutUs from "../components/AboutUs/AboutUs";
-
-const API_BASE_URL = 'https://localhost:7043';
+import { dummyAPI } from "../services/dummyData";
 
 function Home() {
   const [artworks, setArtworks] = useState([]);
@@ -18,11 +17,7 @@ function Home() {
   useEffect(() => {
     const fetchArtworks = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/Artwork/artworks`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch artworks');
-        }
-        const { data: artworksData } = await response.json();
+        const { data: artworksData } = await dummyAPI.getArtworks();
         
         // Format the artwork data
         const formattedArtworks = artworksData.map(art => {
@@ -35,12 +30,12 @@ function Home() {
             title: art.title || 'Untitled',
             artistName: art.artistName || 'Unknown Artist',
             description: art.description || 'No description available',
-            initialPrice: art.startingPrice || 0,
+            initialPrice: art.startingPrice || art.initialPrice || 0,
             currentPrice: art.currentPrice || 0,
             category: category || 'Uncategorized',
             medium: medium || 'Unknown Medium',
             year: art.year || 'Unknown Year',
-            image: art.imageUrl || '/default-artwork.jpg',
+            image: art.imageUrl || art.image || '/default-artwork.jpg',
             tags: Array.isArray(art.tags) ? art.tags.map(tag => 
               typeof tag === 'object' ? tag.name || 'Unknown Tag' : tag
             ) : [],

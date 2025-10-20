@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AdminProfile from "../components/AdminProfile/AdminProfile";
 import Loader from "../components/Loader/Loader";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
+import { dummyAPI } from "../services/dummyData";
 
 const Admin = () => {
   const [adminDetails, setAdminDetails] = useState(null);
@@ -11,30 +11,27 @@ const Admin = () => {
 
   useEffect(() => {
     const fetchAdminProfile = async () => {
-      const authToken = sessionStorage.getItem('accessToken');
+      // Disabled authentication check for demo
+      // const authToken = sessionStorage.getItem('accessToken');
       
-      if (!authToken) {
-        navigate('/login');
-        return;
-      }
+      // if (!authToken) {
+      //   navigate('/login');
+      //   return;
+      // }
 
       try {
-        const response = await axios.get('https://localhost:7043/api/Auth/me', {
-          headers: {
-            'Authorization': `Bearer ${authToken}`
-          }
-        });
+        const response = await dummyAPI.getMe();
         
         // Transform the API data to match the expected format
         setAdminDetails({
-          name: response.data.displayName,
-          role: response.data.role,
-          image: "https://i.pravatar.cc/300", // Default image since API doesn't provide one
-          about: "Administrator of the Art Gallery platform",
-          skills: ["User Management", "Content Management", "System Administration"],
-          email: response.data.email,
-          phone: response.data.phone || "Not provided",
-          location: response.data.location || "Not provided",
+          name: response.name,
+          role: response.role,
+          image: response.image,
+          about: response.about,
+          skills: response.skills,
+          email: response.email,
+          phone: response.phone,
+          location: response.location,
         });
       } catch (err) {
         console.error(err);

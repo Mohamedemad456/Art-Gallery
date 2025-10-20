@@ -23,10 +23,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faPen, faPlus, faClock } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import { jwtDecode } from 'jwt-decode';
 import SnackbarAlert from '../SnackbarAlert/snackbarAlert';
-
-const API_URL = 'https://localhost:7043/api/Artist/artworks';
+import { dummyAPI } from '../../services/dummyData';
 
 const PREDEFINED_TAGS = [
   { id: '96DB95FD-5F5B-4542-85E6-052CE7E4453C', name: 'Modern' },
@@ -74,34 +72,14 @@ const ArtworkDashboard = () => {
 
   const fetchArtworks = async () => {
     try {
-      const authToken = sessionStorage.getItem('accessToken');
-      if (!authToken) {
-        navigate('/signup');
-        return;
-      }
+      // Disabled authentication check for demo
+      // const authToken = sessionStorage.getItem('accessToken');
+      // if (!authToken) {
+      //   navigate('/signup');
+      //   return;
+      // }
 
-
-      const response = await fetch(API_URL, {
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-          'Accept': 'application/json'
-        }
-      });
-      if (!response.ok) {
-        if (response.status === 401) {
-          sessionStorage.removeItem('accessToken');
-          navigate('/signup');
-          return;
-        }
-        throw new Error(`Failed to fetch artworks: ${response.status} ${response.statusText}`);
-      }
-
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Invalid response format: Expected JSON');
-      }
-
-      const responseData = await response.json();
+      const responseData = await dummyAPI.getArtistArtworks();
 
       if (!responseData || !responseData.data || !Array.isArray(responseData.data)) {
         setArtworks([]);
@@ -117,30 +95,37 @@ const ArtworkDashboard = () => {
   };
 
   useEffect(() => {
-    const authToken = sessionStorage.getItem('accessToken');
-    if (!authToken) {
-      navigate('/signup');
-      return;
-    }
+    // Disabled authentication check for demo
+    // const authToken = sessionStorage.getItem('accessToken');
+    // if (!authToken) {
+    //   navigate('/signup');
+    //   return;
+    // }
 
-    try {
-      const decodedToken = jwtDecode(authToken);
-      const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
-      if (userRole !== 'Artist') {
-        navigate('/');
-        return;
-      }
+    // try {
+    //   const decodedToken = jwtDecode(authToken);
+    //   const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+    //   if (userRole !== 'Artist') {
+    //     navigate('/');
+    //     return;
+    //   }
 
-      const id = decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'];
-      const name = decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname'];
-      setUserId(id);
-      setArtistName(name);
-      setForm(prev => ({ ...prev, artistName: name }));
-      fetchArtworks();
-    } catch (err) {
-      sessionStorage.removeItem('accessToken');
-      navigate('/login');
-    }
+    //   const id = decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'];
+    //   const name = decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname'];
+    //   setUserId(id);
+    //   setArtistName(name);
+    //   setForm(prev => ({ ...prev, artistName: name }));
+    //   fetchArtworks();
+    // } catch (err) {
+    //   sessionStorage.removeItem('accessToken');
+    //   navigate('/login');
+    // }
+
+    // Set dummy user data for demo
+    setUserId('dummy-user-id');
+    setArtistName('Demo Artist');
+    setForm(prev => ({ ...prev, artistName: 'Demo Artist' }));
+    fetchArtworks();
   }, [navigate]);
 
   const handleSelectAll = (e) => {
@@ -155,19 +140,7 @@ const ArtworkDashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      const authToken = sessionStorage.getItem('accessToken');
-      const response = await fetch(`${API_URL}/${id}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-          'Accept': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to delete artwork');
-      }
-
+      await dummyAPI.deleteArtwork(id);
       setArtworks((prev) => prev.filter((a) => a.id !== id));
       setSelected((prev) => prev.filter((i) => i !== id));
     } catch (err) {
@@ -178,17 +151,8 @@ const ArtworkDashboard = () => {
 
   const handleBulkDelete = async () => {
     try {
-      const authToken = sessionStorage.getItem('accessToken');
       await Promise.all(
-        selected.map((id) =>
-          fetch(`${API_URL}/${id}`, {
-            method: 'DELETE',
-            headers: {
-              'Authorization': `Bearer ${authToken}`,
-              'Accept': 'application/json'
-            }
-          })
-        )
+        selected.map((id) => dummyAPI.deleteArtwork(id))
       );
       setArtworks((prev) => prev.filter((a) => !selected.includes(a.id)));
       setSelected([]);
@@ -235,11 +199,6 @@ const ArtworkDashboard = () => {
 
   const handleExtendSubmit = async () => {
     try {
-      const authToken = sessionStorage.getItem('accessToken');
-      if (!authToken) {
-        throw new Error('Authentication token is missing');
-      }
-
       // Format time as HH:mm:ss
       const hours = extendHours ? extendHours.padStart(2, '0') : '00';
       const minutes = extendMinutes ? extendMinutes.padStart(2, '0') : '00';
@@ -250,19 +209,7 @@ const ArtworkDashboard = () => {
         throw new Error('Duration must be greater than 0');
       }
 
-
-      const response = await fetch(`${API_URL}/${selectedArtworkId}/extend-auction?duration=${formattedTime}`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-          'Accept': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.message || `Failed to extend auction: ${response.status} ${response.statusText}`);
-      }
+      await dummyAPI.extendAuction(selectedArtworkId, formattedTime);
 
       await fetchArtworks();
       handleExtendDialogClose();
@@ -343,105 +290,21 @@ const ArtworkDashboard = () => {
     }
 
     try {
-      const authToken = sessionStorage.getItem('accessToken');
-      if (!authToken) {
-        throw new Error('Authentication token is missing');
-      }
+      const artworkData = {
+        title: form.title,
+        description: form.description || '',
+        category: form.category,
+        price: form.initialPrice,
+        tags: form.tags,
+        image: form.image,
+        auctionStartTime: form.auctionStartTime,
+        auctionEndTime: form.auctionEndTime
+      };
 
-      // Create FormData object
-      const formData = new FormData();
-      
-      // For update operation, include the ID
       if (editingArtwork) {
-        formData.append('id', editingArtwork.id);
-      }
-      
-      // Add fields in the exact format that works in Postman
-      formData.append('Title', form.title);
-      formData.append('Description', form.description || '');
-      formData.append('CategoryId', form.category);
-      formData.append('Price', form.initialPrice);
-      // Add each tag separately
-      if (Array.isArray(form.tags)) {
-        form.tags.forEach(tagId => {
-          formData.append('Tags', tagId);
-        });
-      }
-      
-      // Handle image file
-      if (form.image instanceof File) {
-        formData.append('Image', form.image);
-      } else if (editingArtwork && editingArtwork.image) {
-        formData.append('Image', editingArtwork.image);
+        await dummyAPI.updateArtwork(editingArtwork.id, artworkData);
       } else {
-        formData.append('Image', '/assets/img-01.jpg');
-      }
-      
-      // Add auction details with proper price handling
-      const price = parseFloat(form.initialPrice);
-      if (isNaN(price) || price < 0) {
-        throw new Error('Invalid price value');
-      }
-
-      // Log the price before adding to FormData
-      console.log('Price before adding to FormData:', price);
-      
-      // Add auction fields exactly as they work in Postman
-      formData.append('Auction.StartingPrice', price.toString());
-      if (form.auctionStartTime) {
-        formData.append('Auction.AuctionStart', formatDate(form.auctionStartTime));
-      }
-      if (form.auctionEndTime) {
-        formData.append('Auction.AuctionEnd', formatDate(form.auctionEndTime));
-      }
-
-      // Log all FormData entries
-      console.log('FormData entries:');
-      for (let [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-      }
-
-      const response = await fetch(
-        editingArtwork ? `${API_URL}/${editingArtwork.id}` : API_URL,
-        {
-          method: editingArtwork ? 'PUT' : 'POST',
-          headers: {
-            'Authorization': `Bearer ${authToken}`,
-            'Accept': 'application/json'
-          },
-          body: formData
-        }
-      );
-
-      let responseData;
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        try {
-          responseData = await response.json();
-          console.log('Response data:', responseData);
-        } catch (e) {
-          console.error('Error parsing JSON response:', e);
-          responseData = {};
-        }
-      } else {
-        responseData = {};
-      }
-
-      if (!response.ok) {
-        // Handle validation errors
-        if (responseData.errors && Array.isArray(responseData.errors)) {
-          const errorMessages = responseData.errors
-            .map(err => {
-              if (typeof err === 'string') return err;
-              if (err.message) return err.message;
-              if (err.errorMessage) return err.errorMessage;
-              return JSON.stringify(err);
-            })
-            .join(', ');
-          throw new Error(errorMessages);
-        }
-        
-        throw new Error(responseData.message || `Failed to save artwork: ${response.status} ${response.statusText}`);
+        await dummyAPI.createArtwork(artworkData);
       }
 
       await fetchArtworks();

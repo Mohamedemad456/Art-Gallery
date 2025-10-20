@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import SnackbarAlert from '../SnackbarAlert/snackbarAlert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faShoppingCart, faUser, faEnvelope, faLock, faSignature } from '@fortawesome/free-solid-svg-icons';
+import { dummyAPI } from '../../services/dummyData';
 
 function AuthForm() {
   const [isRightExist, setisRightExist] = React.useState(true);
@@ -30,26 +31,16 @@ function AuthForm() {
     }
 
     try {
-      const formData = new FormData();
-      formData.append('DisplayName', displayName);
-      formData.append('UserName', userName);
-      formData.append('Email', email);
-      formData.append('Password', password);
-      formData.append('Role', role);
-      formData.append('Bio', bio || '');
+      const userData = {
+        displayName,
+        userName,
+        email,
+        password,
+        role,
+        bio: bio || ''
+      };
 
-      const response = await fetch('https://localhost:7043/api/Auth/register', {
-        method: 'POST',
-        body: formData,
-        credentials: 'include'
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Registration failed');
-      }
-
-      const data = await response.json();
+      const data = await dummyAPI.register(userData);
 
       if (data.token) {
         sessionStorage.setItem('accessToken', data.token);
@@ -76,21 +67,8 @@ function AuthForm() {
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://localhost:7043/api/Auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email, password }),
-        credentials: 'include'
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Invalid credentials');
-      }
-
-      const data = await response.json();
+      const data = await dummyAPI.login({ email, password });
+      
       if (data.accessToken) {
         sessionStorage.setItem('accessToken', data.accessToken);
       }

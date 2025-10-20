@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import UserProfile from '../components/UserProfile/UserProfile';
 import Footer from '../components/Footer/Footer';
 import Loader from '../components/Loader/Loader';
-import axios from 'axios';
-import { jwtDecode } from 'jwt-decode';
+import { dummyAPI } from '../services/dummyData';
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -23,47 +22,26 @@ const Profile = () => {
 
   useEffect(() => {
     const fetchUserProfile = async () => {
-      const authToken = sessionStorage.getItem('accessToken');
+      // Disabled authentication check for demo
+      // const authToken = sessionStorage.getItem('accessToken');
 
-      if (!authToken) {
-        showAlert('Please login to view your profile', 'error');
-        navigate('/signup');
-        return;
-      }
+      // if (!authToken) {
+      //   showAlert('Please login to view your profile', 'error');
+      //   navigate('/signup');
+      //   return;
+      // }
 
       try {
-        // Verify token expiration
-        const decodedToken = jwtDecode(authToken);
-        const currentTime = Date.now() / 1000;
-        
-        if (decodedToken.exp < currentTime) {
-          sessionStorage.removeItem('accessToken');
-          showAlert('Your session has expired. Please login again.', 'error');
-          navigate('/signup');
-          return;
-        }
-
-        const response = await axios.get('https://localhost:7043/api/Auth/me', {
-          headers: {
-            'Authorization': `Bearer ${authToken}`,
-            'Content-Type': 'application/json'
-          }
-        });
+        const response = await dummyAPI.getMe();
 
         setUser({
-          email: response.data.email,
-          username: response.data.displayName,
-          role: response.data.role,
+          email: response.email,
+          username: response.name,
+          role: response.role,
         });
       } catch (err) {
         console.error('Error fetching profile:', err);
-        if (err.response?.status === 401) {
-          sessionStorage.removeItem('accessToken');
-          showAlert('Your session has expired. Please login again.', 'error');
-          navigate('/signup');
-        } else {
-          showAlert('Error loading profile. Please try again.', 'error');
-        }
+        showAlert('Error loading profile. Please try again.', 'error');
       } finally {
         setLoading(false);
       }

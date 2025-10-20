@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader/Loader";
 import PostsCard from "../components/PostsCard/PostsCard";
-
-const API_BASE_URL = 'https://localhost:7043';
+import { dummyAPI } from "../services/dummyData";
 
 const AdminPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -11,17 +10,7 @@ const AdminPosts = () => {
 
   const fetchPendingArtworks = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/Admin/artwork/pending-artworks`, {
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch pending artworks');
-      }
-
-      const responseData = await response.json();
+      const responseData = await dummyAPI.getPendingArtworks();
       const artworksData = responseData.data || [];
       
       const transformedData = artworksData
@@ -31,9 +20,9 @@ const AdminPosts = () => {
           artistName: artwork.artistName || artwork.artist?.name || 'Unknown Artist',
           title: artwork.title || 'Untitled',
           description: artwork.description || 'No description available',
-          image: artwork.imageUrl || '/default-artwork.jpg',
-          artistimage: artwork.artist?.image ? `${API_BASE_URL}/${artwork.artist.image}` : '/default-artist.jpg',
-          initialPrice: artwork.price || 0,
+          image: artwork.imageUrl || artwork.image || '/default-artwork.jpg',
+          artistimage: artwork.artistImage || '/default-artist.jpg',
+          initialPrice: artwork.price || artwork.initialPrice || 0,
           category: artwork.category || 'Landscape',
           medium: artwork.medium || 'Unknown Medium',
           year: artwork.year || 'Unknown Year',
@@ -58,17 +47,7 @@ const AdminPosts = () => {
 
   const handleApprove = async (artworkId) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/Admin/artwork/accept-artwork/${artworkId}`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to approve artwork');
-      }
-
+      await dummyAPI.approveArtwork(artworkId);
       await fetchPendingArtworks();
     } catch (err) {
       setError(err.message);
@@ -77,17 +56,7 @@ const AdminPosts = () => {
 
   const handleDecline = async (artworkId) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/Admin/artwork/reject-artwork/${artworkId}`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to reject artwork');
-      }
-
+      await dummyAPI.rejectArtwork(artworkId);
       await fetchPendingArtworks();
     } catch (err) {
       setError(err.message);

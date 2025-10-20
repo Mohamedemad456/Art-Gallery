@@ -5,9 +5,7 @@ import ArtworkModal from "../components/ArtworkDetails/ArtworkModal";
 import Loader from "../components/Loader/Loader";
 import Footer from "../components/Footer/Footer";
 import ArtCarousel from "../components/Carousel/Carousel";
-import * as signalR from '@microsoft/signalr';
-
-const API_BASE_URL = 'https://localhost:7043';
+import { dummyAPI, dummySignalR } from "../services/dummyData";
 
 const Artwork = () => {
   const { id } = useParams();
@@ -31,31 +29,26 @@ const Artwork = () => {
   useEffect(() => {
     const fetchArtwork = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/Artwork/artworks/${id}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch artwork');
-        }
-        
-        const data = await response.json();
+        const data = await dummyAPI.getArtworkById(id);
         const formattedArtwork = {
           id: data.id,
           title: data.title || 'Untitled',
           artistName: data.artistName || 'Unknown Artist',
           description: data.description || 'No description available',
-          initialPrice: data.startingPrice || 0,
+          initialPrice: data.startingPrice || data.initialPrice || 0,
           category: typeof data.category === 'object' ? data.category?.name || 'Uncategorized' : data.category || 'Uncategorized',
           medium: typeof data.medium === 'object' ? data.medium?.name || 'Unknown Medium' : data.medium || 'Unknown Medium',
           year: data.year || 'Unknown Year',
-          image: data.imageUrl || '/default-artwork.jpg',
+          image: data.imageUrl || data.image || '/default-artwork.jpg',
           tags: Array.isArray(data.tags) ? data.tags.map(tag => 
             typeof tag === 'object' ? tag.name || 'Unknown Tag' : tag
           ) : [],
-          auctionStartTime: data.auctionStart || null,
-          auctionEndTime: data.auctionEnd || null,
-          currentBid: data.currentPrice || 0,
-          artistImage: data.artist?.image ? `${API_BASE_URL}/${data.artist.image}` : '/default-artist.jpg',
-          artistBio: data.artist?.bio || 'No biography available',
-          artistEmail: data.artist?.email || 'No email available'
+          auctionStartTime: data.auctionStart || data.auctionStartTime || null,
+          auctionEndTime: data.auctionEnd || data.auctionEndTime || null,
+          currentBid: data.currentPrice || data.currentBid || 0,
+          artistImage: data.artistImage || '/default-artist.jpg',
+          artistBio: data.artistBio || 'No biography available',
+          artistEmail: data.artistEmail || 'No email available'
         };
 
         setArtwork(formattedArtwork);
@@ -68,36 +61,28 @@ const Artwork = () => {
 
     const fetchAllArtworks = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/Artwork/artworks`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch all artworks');
-        }
-        const responseData = await response.json();
+        const { data: artworksData } = await dummyAPI.getArtworks();
         
-        // Ensure we have an array of artworks
-        const artworksData = Array.isArray(responseData) ? responseData : 
-                           Array.isArray(responseData.data) ? responseData.data : 
-                           [];
         // Format all artworks to ensure they have proper string/number values
         const formattedArtworks = artworksData.map(art => ({
           id: art.id || Math.random().toString(),
           title: art.title || 'Untitled',
           artistName: art.artistName || 'Unknown Artist',
           description: art.description || 'No description available',
-          initialPrice: art.startingPrice || 0,
+          initialPrice: art.startingPrice || art.initialPrice || 0,
           category: typeof art.category === 'object' ? art.category?.name || 'Uncategorized' : art.category || 'Uncategorized',
           medium: typeof art.medium === 'object' ? art.medium?.name || 'Unknown Medium' : art.medium || 'Unknown Medium',
           year: art.year || 'Unknown Year',
-          image: art.imageUrl || '/default-artwork.jpg',
+          image: art.imageUrl || art.image || '/default-artwork.jpg',
           tags: Array.isArray(art.tags) ? art.tags.map(tag => 
             typeof tag === 'object' ? tag.name || 'Unknown Tag' : tag
           ) : [],
-          auctionStartTime: art.auctionStart || null,
-          auctionEndTime: art.auctionEnd  || null,
+          auctionStartTime: art.auctionStart || art.auctionStartTime || null,
+          auctionEndTime: art.auctionEnd || art.auctionEndTime || null,
           currentBid: art.currentBid || 0,
-          artistImage: art.artist?.image ? `${API_BASE_URL}/${art.artist.image}` : '/default-artist.jpg',
-          artistBio: art.artist?.bio || 'No biography available',
-          artistEmail: art.artist?.email || 'No email available'
+          artistImage: art.artistImage || '/default-artist.jpg',
+          artistBio: art.artistBio || 'No biography available',
+          artistEmail: art.artistEmail || 'No email available'
         }));
 
         setAllArtworks(formattedArtworks);
@@ -112,19 +97,19 @@ const Artwork = () => {
     fetchAllArtworks();
   }, [id]);
 
-  // SignalR connection setup
+  // SignalR connection setup (dummy)
   useEffect(() => {
-    const newConnection = new signalR.HubConnectionBuilder()
-      .withUrl(`${API_BASE_URL}/bidHub`)
+    const newConnection = dummySignalR.HubConnectionBuilder()
+      .withUrl('dummy-bid-hub')
       .withAutomaticReconnect()
       .build();
 
     newConnection.start()
       .then(() => {
-        console.log("SignalR Connected.");
+        console.log("Dummy SignalR Connected.");
         newConnection.invoke("JoinArtworkGroup", id);
       })
-      .catch(err => console.error("SignalR Connection Error: ", err));
+      .catch(err => console.error("Dummy SignalR Connection Error: ", err));
 
     newConnection.on("ReceiveBid", (bidDto) => {
       setArtwork(prev => ({
@@ -147,11 +132,12 @@ const Artwork = () => {
   const handleBid = async (e) => {
     e.preventDefault();
     
-    const authToken = sessionStorage.getItem('accessToken');
-    if (!authToken) {
-      setBidMessage({ text: 'Please login to place a bid', type: 'error' });
-      return;
-    }
+    // Disabled authentication check for demo
+    // const authToken = sessionStorage.getItem('accessToken');
+    // if (!authToken) {
+    //   setBidMessage({ text: 'Please login to place a bid', type: 'error' });
+    //   return;
+    // }
 
     if (!bidAmount || isNaN(bidAmount) || parseFloat(bidAmount) <= 0) {
       setBidMessage({ text: 'Please enter a valid bid amount', type: 'error' });
@@ -176,31 +162,10 @@ const Artwork = () => {
     }
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/Buyer/artworks/placeBid`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          artworkId: id,
-          amount: parseFloat(bidAmount)
-        })
+      await dummyAPI.placeBid({
+        artworkId: id,
+        amount: parseFloat(bidAmount)
       });
-
-      // Check if the response body is empty
-      const text = await response.text();
-      let data;
-      if (text) {
-        data = JSON.parse(text);
-      } else {
-        data = {};
-      }
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Failed to place bid');
-      }
 
       setBidMessage({ text: 'Bid placed successfully!', type: 'success' });
       setBidAmount(""); // Reset bid amount after successful bid

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import UserCard from "../components/UserCard/UserCard";
 import Loader from "../components/Loader/Loader";
 import { useNavigate } from "react-router-dom";
+import { dummyAPI } from "../services/dummyData";
 
 const AdminUsers = () => {
   const [users, setUsers] = useState([]);
@@ -11,17 +12,7 @@ const AdminUsers = () => {
 
   const fetchPendingArtists = async () => {
     try {
-      const response = await fetch('https://localhost:7043/api/Admin/artist/pending-artists', {
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch pending artists');
-      }
-      
-      const data = await response.json();
+      const data = await dummyAPI.getPendingArtists();
       
       // Transform the data to ensure it has the correct structure
       const transformedData = data.map(user => ({
@@ -49,17 +40,7 @@ const AdminUsers = () => {
 
   const handleApprove = async (userId) => {
     try {
-      const response = await fetch(`https://localhost:7043/api/Admin/artist/accept-artist/${userId}`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to approve artist');
-      }
-
+      await dummyAPI.approveArtist(userId);
       await fetchPendingArtists();
     } catch (err) {
       setError(err.message);
@@ -68,17 +49,7 @@ const AdminUsers = () => {
 
   const handleDecline = async (userId) => {
     try {
-      const response = await fetch(`https://localhost:7043/api/Admin/artist/reject-artist/${userId}`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('accessToken')}`
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to reject artist');
-      }
-
+      await dummyAPI.rejectArtist(userId);
       await fetchPendingArtists();
     } catch (err) {
       setError(err.message);
