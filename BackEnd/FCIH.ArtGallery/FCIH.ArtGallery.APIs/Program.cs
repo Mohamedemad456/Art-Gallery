@@ -48,7 +48,7 @@ namespace FCIH.ArtGallery.APIs
 			// Add CORS configuration
 			webApplicationBuilder.Services.AddCors(options =>
 			{
-				options.AddPolicy("AllowLocalhost5173", builder =>
+				options.AddPolicy("default", builder =>
 				{
 					builder.WithOrigins(
 						"http://localhost:5173",
@@ -95,7 +95,7 @@ namespace FCIH.ArtGallery.APIs
 			app.UseHttpsRedirection();
 
 			// Enable CORS
-			app.UseCors("AllowLocalhost5173");
+			app.UseCors("default");
 
 			app.UseStatusCodePagesWithReExecute("/Errors/{0}");
 

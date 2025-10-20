@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+0FxJAOzZTdvfu0xRy3b7/XovsOC/NpLpdk9HCH8msA=",
+  "Hash": "vNQvK4W3BnXuZSoNfFIr5Ga08jNv3UnuN1oha8WqxeY=",
   "Source": "FCIH.ArtGallery.APIs",
   "BasePath": "_content/FCIH.ArtGallery.APIs",
   "Mode": "Default",
@@ -10,524 +10,2794 @@
     {
       "Name": "FCIH.ArtGallery.APIs\\wwwroot",
       "Source": "FCIH.ArtGallery.APIs",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
+      "RelativePath": "images/artworks/005e94da-6dc9-486d-b13e-1a62d8064d18#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6zve7a3t95",
+      "Integrity": "niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\005e94da-6dc9-486d-b13e-1a62d8064d18.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\02ebfb06-fab8-4670-a158-149522c5a203.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\02ebfb06-fab8-4670-a158-149522c5a203.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/02ebfb06-fab8-4670-a158-149522c5a203.jpg",
+      "RelativePath": "images/artworks/02ebfb06-fab8-4670-a158-149522c5a203#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8lfr8rdem4",
+      "Integrity": "VNSOwHtJ7oi2HG+ia+FNd3eGxLWFurE/snZavdA7qB0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\02ebfb06-fab8-4670-a158-149522c5a203.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
+      "RelativePath": "images/artworks/04b820eb-5908-456e-b91a-fe23d2094bfd#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s59kl5bqaw",
+      "Integrity": "YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\04b820eb-5908-456e-b91a-fe23d2094bfd.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
+      "RelativePath": "images/artworks/28a901f8-ff3c-4338-8dba-946b705c6b7f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "b1vwhi4kwh",
+      "Integrity": "H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
+      "RelativePath": "images/artworks/337ff928-f04a-4e4b-b880-047ad936da3b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8wcp4vs31f",
+      "Integrity": "eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\337ff928-f04a-4e4b-b880-047ad936da3b.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
+      "RelativePath": "images/artworks/3a9a2eb5-486b-4796-b4f8-e7bd74056061#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "twys5724oc",
+      "Integrity": "vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
+      "RelativePath": "images/artworks/3e0db7c7-0267-43de-9431-0d3499ee461e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zhuglobd3p",
+      "Integrity": "mXz06veJ1TKvngNhnidW57K7kv+ucYBa7eHzfn3W7JU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\3e0db7c7-0267-43de-9431-0d3499ee461e.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
+      "RelativePath": "images/artworks/46475db2-2ca6-46ca-97d6-11728cbb91cf#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s59kl5bqaw",
+      "Integrity": "YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
+      "RelativePath": "images/artworks/4aea9679-a123-47b9-8478-6c9d90109e65#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "djhntgjlzg",
+      "Integrity": "iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\4aea9679-a123-47b9-8478-6c9d90109e65.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\53af3210-cdde-4177-b068-f665af9750b9.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\53af3210-cdde-4177-b068-f665af9750b9.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/53af3210-cdde-4177-b068-f665af9750b9.jpg",
+      "RelativePath": "images/artworks/53af3210-cdde-4177-b068-f665af9750b9#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s59kl5bqaw",
+      "Integrity": "YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\53af3210-cdde-4177-b068-f665af9750b9.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
+      "RelativePath": "images/artworks/57a96b4f-f73c-4666-83da-69b9db0a114e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "b1vwhi4kwh",
+      "Integrity": "H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\57a96b4f-f73c-4666-83da-69b9db0a114e.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5eea83de-4d34-4740-93db-cf384024e20e.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5eea83de-4d34-4740-93db-cf384024e20e.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/5eea83de-4d34-4740-93db-cf384024e20e.jpg",
+      "RelativePath": "images/artworks/5eea83de-4d34-4740-93db-cf384024e20e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8uo5gl57gm",
+      "Integrity": "AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\5eea83de-4d34-4740-93db-cf384024e20e.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "RelativePath": "images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1xnrts8pda",
+      "Integrity": "1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
+      "RelativePath": "images/artworks/640062d3-4e1a-49c4-ab0b-f23e9f121472#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s59kl5bqaw",
+      "Integrity": "YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
+      "RelativePath": "images/artworks/67954ca2-29c9-4a33-941d-e4ba405eae73#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5rgcsbtwag",
+      "Integrity": "L6iN8g5GB8aWQdm7hkIiNR78rrCjOS9bdHqlSm9xCLA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\67954ca2-29c9-4a33-941d-e4ba405eae73.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
+      "RelativePath": "images/artworks/6bd603a0-ed95-4da0-825d-910b66ba8be6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "twys5724oc",
+      "Integrity": "vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
+      "RelativePath": "images/artworks/839a572e-66d5-46f2-b686-2a88ec2f047b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s59kl5bqaw",
+      "Integrity": "YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\839a572e-66d5-46f2-b686-2a88ec2f047b.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
+      "RelativePath": "images/artworks/891c80bd-ca5a-4dfe-a770-55ea2ef6abc9#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6zve7a3t95",
+      "Integrity": "niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
+      "RelativePath": "images/artworks/894383e0-d596-4160-87b0-f3f5a61d9698#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "x1ap3v84ut",
+      "Integrity": "JT4MDWG+p95MSaj9V7eV3yMSe8Spc/bGHREAuVq5kWI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\894383e0-d596-4160-87b0-f3f5a61d9698.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
+      "RelativePath": "images/artworks/8de15366-02eb-4b2e-a825-0405b5ead336#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6zve7a3t95",
+      "Integrity": "niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\8de15366-02eb-4b2e-a825-0405b5ead336.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
+      "RelativePath": "images/artworks/94fbaced-3e62-4bfb-8e63-6f856544da06#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "b1vwhi4kwh",
+      "Integrity": "H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\94fbaced-3e62-4bfb-8e63-6f856544da06.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
+      "RelativePath": "images/artworks/b824244e-6de6-4b65-81d9-c2e11b2d0dc3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8uo5gl57gm",
+      "Integrity": "AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
+      "RelativePath": "images/artworks/cde076a8-d411-4608-8b72-9bb1d6d59d83#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8wcp4vs31f",
+      "Integrity": "eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
+      "RelativePath": "images/artworks/d2180b62-f963-47d2-bc5b-4f99b7e4cdb6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8wcp4vs31f",
+      "Integrity": "eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
+      "RelativePath": "images/artworks/d4017e86-a2cf-4a27-a621-518c6ccf59e0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "hgundqwoj7",
+      "Integrity": "DzHGr3/e7quIOy2tkA9Oe+94kjjNjtJlINgHC3yCznk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
+      "RelativePath": "images/artworks/e71a9cc1-74ff-4119-a0aa-681ad5a6442f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "djhntgjlzg",
+      "Integrity": "iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg"
     },
     {
-      "Identity": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "Identity": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
       "SourceId": "FCIH.ArtGallery.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
+      "ContentRoot": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\",
       "BasePath": "_content/FCIH.ArtGallery.APIs",
-      "RelativePath": "images/artworks/Sunset-Overdrive.jpg",
+      "RelativePath": "images/artworks/Sunset-Overdrive#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "yz9cveu7ep",
+      "Integrity": "ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\artworks\\Sunset-Overdrive.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/artworks/005e94da-6dc9-486d-b13e-1a62d8064d18.6zve7a3t95.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6zve7a3t95"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/005e94da-6dc9-486d-b13e-1a62d8064d18.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\005e94da-6dc9-486d-b13e-1a62d8064d18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/02ebfb06-fab8-4670-a158-149522c5a203.8lfr8rdem4.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\02ebfb06-fab8-4670-a158-149522c5a203.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VNSOwHtJ7oi2HG+ia+FNd3eGxLWFurE/snZavdA7qB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8lfr8rdem4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/02ebfb06-fab8-4670-a158-149522c5a203.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VNSOwHtJ7oi2HG+ia+FNd3eGxLWFurE/snZavdA7qB0="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/02ebfb06-fab8-4670-a158-149522c5a203.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\02ebfb06-fab8-4670-a158-149522c5a203.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VNSOwHtJ7oi2HG+ia+FNd3eGxLWFurE/snZavdA7qB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VNSOwHtJ7oi2HG+ia+FNd3eGxLWFurE/snZavdA7qB0="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/04b820eb-5908-456e-b91a-fe23d2094bfd.s59kl5bqaw.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\04b820eb-5908-456e-b91a-fe23d2094bfd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s59kl5bqaw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/04b820eb-5908-456e-b91a-fe23d2094bfd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/28a901f8-ff3c-4338-8dba-946b705c6b7f.b1vwhi4kwh.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b1vwhi4kwh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\28a901f8-ff3c-4338-8dba-946b705c6b7f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/337ff928-f04a-4e4b-b880-047ad936da3b.8wcp4vs31f.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wcp4vs31f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/337ff928-f04a-4e4b-b880-047ad936da3b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\337ff928-f04a-4e4b-b880-047ad936da3b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/3a9a2eb5-486b-4796-b4f8-e7bd74056061.twys5724oc.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "twys5724oc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/3a9a2eb5-486b-4796-b4f8-e7bd74056061.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "773895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mXz06veJ1TKvngNhnidW57K7kv+ucYBa7eHzfn3W7JU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXz06veJ1TKvngNhnidW57K7kv+ucYBa7eHzfn3W7JU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/3e0db7c7-0267-43de-9431-0d3499ee461e.zhuglobd3p.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\3e0db7c7-0267-43de-9431-0d3499ee461e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "773895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mXz06veJ1TKvngNhnidW57K7kv+ucYBa7eHzfn3W7JU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhuglobd3p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/3e0db7c7-0267-43de-9431-0d3499ee461e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mXz06veJ1TKvngNhnidW57K7kv+ucYBa7eHzfn3W7JU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/46475db2-2ca6-46ca-97d6-11728cbb91cf.s59kl5bqaw.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s59kl5bqaw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/46475db2-2ca6-46ca-97d6-11728cbb91cf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/4aea9679-a123-47b9-8478-6c9d90109e65.djhntgjlzg.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "djhntgjlzg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/4aea9679-a123-47b9-8478-6c9d90109e65.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\4aea9679-a123-47b9-8478-6c9d90109e65.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/53af3210-cdde-4177-b068-f665af9750b9.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\53af3210-cdde-4177-b068-f665af9750b9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/53af3210-cdde-4177-b068-f665af9750b9.s59kl5bqaw.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\53af3210-cdde-4177-b068-f665af9750b9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s59kl5bqaw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/53af3210-cdde-4177-b068-f665af9750b9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/57a96b4f-f73c-4666-83da-69b9db0a114e.b1vwhi4kwh.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b1vwhi4kwh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/57a96b4f-f73c-4666-83da-69b9db0a114e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\57a96b4f-f73c-4666-83da-69b9db0a114e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/5eea83de-4d34-4740-93db-cf384024e20e.8uo5gl57gm.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5eea83de-4d34-4740-93db-cf384024e20e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uo5gl57gm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/5eea83de-4d34-4740-93db-cf384024e20e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/5eea83de-4d34-4740-93db-cf384024e20e.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5eea83de-4d34-4740-93db-cf384024e20e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.1xnrts8pda.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "617878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1xnrts8pda"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\5f411a48-b11b-45e2-9f87-e6fee0f6d4bf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "617878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Z7mt1CzJhE0fcl2cM2lr/eDJn1KxeEXQocpWrTVVRQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/640062d3-4e1a-49c4-ab0b-f23e9f121472.s59kl5bqaw.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s59kl5bqaw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/640062d3-4e1a-49c4-ab0b-f23e9f121472.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/67954ca2-29c9-4a33-941d-e4ba405eae73.5rgcsbtwag.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L6iN8g5GB8aWQdm7hkIiNR78rrCjOS9bdHqlSm9xCLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5rgcsbtwag"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/67954ca2-29c9-4a33-941d-e4ba405eae73.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L6iN8g5GB8aWQdm7hkIiNR78rrCjOS9bdHqlSm9xCLA="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\67954ca2-29c9-4a33-941d-e4ba405eae73.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L6iN8g5GB8aWQdm7hkIiNR78rrCjOS9bdHqlSm9xCLA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L6iN8g5GB8aWQdm7hkIiNR78rrCjOS9bdHqlSm9xCLA="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/6bd603a0-ed95-4da0-825d-910b66ba8be6.twys5724oc.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "twys5724oc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/6bd603a0-ed95-4da0-825d-910b66ba8be6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWCegkBoRw9L78d6cqlyM6K+Yi4HQqovSnSZk8qtQGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/839a572e-66d5-46f2-b686-2a88ec2f047b.s59kl5bqaw.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\839a572e-66d5-46f2-b686-2a88ec2f047b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s59kl5bqaw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/839a572e-66d5-46f2-b686-2a88ec2f047b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YASg+LITWEVLnxJMsL8BAdKAvehW5cQquxLNxVQ/rzE="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.6zve7a3t95.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6zve7a3t95"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\891c80bd-ca5a-4dfe-a770-55ea2ef6abc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JT4MDWG+p95MSaj9V7eV3yMSe8Spc/bGHREAuVq5kWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JT4MDWG+p95MSaj9V7eV3yMSe8Spc/bGHREAuVq5kWI="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/894383e0-d596-4160-87b0-f3f5a61d9698.x1ap3v84ut.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\894383e0-d596-4160-87b0-f3f5a61d9698.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JT4MDWG+p95MSaj9V7eV3yMSe8Spc/bGHREAuVq5kWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x1ap3v84ut"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/894383e0-d596-4160-87b0-f3f5a61d9698.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JT4MDWG+p95MSaj9V7eV3yMSe8Spc/bGHREAuVq5kWI="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/8de15366-02eb-4b2e-a825-0405b5ead336.6zve7a3t95.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6zve7a3t95"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/8de15366-02eb-4b2e-a825-0405b5ead336.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\8de15366-02eb-4b2e-a825-0405b5ead336.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-niegaL0hS5vV26+j4VC+N1N0V37jI5II40jGN7Oxx30="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/94fbaced-3e62-4bfb-8e63-6f856544da06.b1vwhi4kwh.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b1vwhi4kwh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/94fbaced-3e62-4bfb-8e63-6f856544da06.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\94fbaced-3e62-4bfb-8e63-6f856544da06.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H95nMbKaeP0F9pQDKQYsbpIvjQcUIP7KyGgR4cOSo3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/b824244e-6de6-4b65-81d9-c2e11b2d0dc3.8uo5gl57gm.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uo5gl57gm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\b824244e-6de6-4b65-81d9-c2e11b2d0dc3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AF9rNbnZPGC/8x0cUZF3zLSYvs34lXG9tLf0zrfAwqc="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/cde076a8-d411-4608-8b72-9bb1d6d59d83.8wcp4vs31f.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wcp4vs31f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\cde076a8-d411-4608-8b72-9bb1d6d59d83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.8wcp4vs31f.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wcp4vs31f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d2180b62-f963-47d2-bc5b-4f99b7e4cdb6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBLgW/Kqb72FTx3v2lrT+U2MA5GJM8eW5UtJsyzV4WU="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/d4017e86-a2cf-4a27-a621-518c6ccf59e0.hgundqwoj7.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DzHGr3/e7quIOy2tkA9Oe+94kjjNjtJlINgHC3yCznk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hgundqwoj7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DzHGr3/e7quIOy2tkA9Oe+94kjjNjtJlINgHC3yCznk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\d4017e86-a2cf-4a27-a621-518c6ccf59e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DzHGr3/e7quIOy2tkA9Oe+94kjjNjtJlINgHC3yCznk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DzHGr3/e7quIOy2tkA9Oe+94kjjNjtJlINgHC3yCznk="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/e71a9cc1-74ff-4119-a0aa-681ad5a6442f.djhntgjlzg.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "djhntgjlzg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\e71a9cc1-74ff-4119-a0aa-681ad5a6442f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaWu6l80cmoW8764nDRWQsoH3ZC8if+0EeYS2HeA4DY="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/Sunset-Overdrive.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20561614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4="
+        }
+      ]
+    },
+    {
+      "Route": "images/artworks/Sunset-Overdrive.yz9cveu7ep.jpg",
+      "AssetFile": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.APIs\\wwwroot\\images\\artworks\\Sunset-Overdrive.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20561614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 12:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yz9cveu7ep"
+        },
+        {
+          "Name": "label",
+          "Value": "images/artworks/Sunset-Overdrive.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ntTxaEBnHVxvveDKABfviX9/PqFNimpAcJClbSWW1f4="
+        }
+      ]
     }
   ]
 }

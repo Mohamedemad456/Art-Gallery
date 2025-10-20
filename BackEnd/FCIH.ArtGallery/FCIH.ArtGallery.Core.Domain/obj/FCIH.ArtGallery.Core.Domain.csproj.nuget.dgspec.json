@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {}
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {}
   },
   "projects": {
-    "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
+    "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
+        "projectUniqueName": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
         "projectName": "FCIH.ArtGallery.Core.Domain",
-        "projectPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\Access\\.nuget\\packages\\",
-        "outputPath": "D:\\c\\artgallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\obj\\",
+        "projectPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\FCIH.ArtGallery.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Geforce\\.nuget\\packages\\",
+        "outputPath": "E:\\Route Fullstack\\Back-End Course (ASP.NET)\\Projects\\ArtGallery Project\\Art-Gallery\\BackEnd\\FCIH.ArtGallery\\FCIH.ArtGallery.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Access\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Geforce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
